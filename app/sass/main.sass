@@ -1,0 +1,679 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #fafafa
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  outline: none
+  transition: .3s ease
+
+  &:hover
+    text-decoration: none
+
+.color-accent
+  color: #1AA3E0
+
+button, .btn
+  outline: none
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  border: none
+    radius: 0
+
+.btn-blue
+  border-radius: 8px
+  width: 91px
+  height: 32px
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
+  border-radius: 8px
+  margin-left: 0
+
+.or
+  margin: 22px auto 24px
+  font-weight: 500
+  width: 100%
+  text-align: center
+
+.btn-green
+  background: #81C728
+
+.btn-blue
+  background: #1AA3E0
+
+.btn-red
+  background: #DB635A
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 14px
+  font-weight: bold
+  color: #fff
+
+  &:hover
+    box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
+    color: #fff
+
+
+.btn-disable
+  background: #1AA3E0
+  opacity: .5
+
+.links
+  color: #1AA3E0
+  opacity: .5
+  font-size: 14px
+  font-weight: bold
+
+.btn-accent
+  border-radius: 8px
+  background: #1AA3E0
+  box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
+  font-size: 14px
+  font-weight: bold
+
+  &:hover
+    box-shadow: none
+
+.btn-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.body
+  color: #424B62
+  .container
+    max-width: 1310px
+
+input, textarea, .form-control
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  width: 100%
+  font-family: $default-font
+  font-size: 12px
+  font-weight: 500
+  color: #424B62
+  padding: 0 10px
+  border: 1px solid rgba(#424B62, .15)
+    radius: 4px
+
+  &::placeholder
+    color: #424B62
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+select
+  outline: none
+  box-sizing: border-box
+  box-shadow: none
+  font-family: $default-font
+  color: #FFFFFF
+  font-size: 12px
+  font-weight: 500
+  padding: 0 10px
+  border: none
+    radius: 4px
+  cursor: pointer
+  &::placeholder
+    color: #FFFFFF
+  &:hover, &:focus
+    box-shadow: none
+
+svg
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.links-active
+  color: #988FF2
+
+.logo
+  span
+    display: inline-block
+
+.body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.wrapper
+  flex: 1 0 auto
+  background: url("../img/line.svg") no-repeat center
+    size: 100%
+
+footer
+  flex: 0 0 auto
+
+
+.nav
+  padding: 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.nav-item
+  margin: 0 26px 0 0
+
+  &:last-child
+    margin: 0
+
+.nav-link
+  color: #9B9EA8
+  font-size: 13px
+  padding: 0
+  font-weight: 600
+
+  &:hover
+    color: #fff
+
+.nav-link.active
+  color: #fff
+
+//wrapper
+.wrapper
+  height: 100%
+  display: flex
+
+  .row
+    height: 100%
+
+.main-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  height: 100%
+  min-height: 100%
+
+.content
+  width: calc(100% - 96px)
+  position: relative
+
+//header
+header
+  padding: 16px 0
+  background: #424B62
+  color: #fff
+
+  .support-box
+    font-weight: 500
+    margin: 0 40px 0 0
+  .dropDown-menu
+    top: 56px
+  .logo
+    width: 42px
+    svg
+      path
+        fill: #988FF2
+  .links-active
+    color: #988FF2
+
+.dropItem-language
+  padding: 0 0 0 40px
+  border-left: 1px solid #98A4C4
+
+.support-box
+  display: flex
+  align-items: center
+  color: #9B9EA8
+  font-weight: 500
+  .header-item__icon
+    margin: 0 11px 0 0
+    width: 22px
+    height: 22px
+  &:hover
+    color: #fff
+
+.header-item
+  margin: 0 32px 0 0
+  display: flex
+  align-items: center
+  font-size: 14px
+  color: #9B9EA8
+  font-weight: 500
+
+  &__icon
+    margin: 0 10px 0 0
+    fill: none
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &:last-child
+    margin: 0
+
+  &:hover
+    color: #fff
+
+.header-menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto 0 0
+  li
+    height: 100%
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin: 0 56px 0 0
+    a
+      color: #fff
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: 600
+      &:hover
+        color: #988FF2
+
+
+
+
+
+
+//footer
+footer
+  padding: 45px 0 25px
+  background: #424B62
+  .logo
+    text-align: center
+    margin: 0 auto 32px
+
+
+.list-social
+  margin: 0
+  justify-content: center
+  display: flex
+  align-items: center
+  li
+    margin: 0 24px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 18px
+      height: 18px
+
+
+
+.copyright
+  text-align: center
+  color: #98A4C4
+  font-size: 12px
+  line-height: 15px
+
+.footer-menu__wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+
+.footer-box
+  line-height: 200%
+  margin: 0 0 34px
+  h3
+    color: #fff
+    font-size: 14px
+    font-weight: 900
+
+.footer-menu
+  li
+    a
+      color: #98A4C4
+      font-size: 14px
+      font-weight: 500
+      &:hover
+        color: #fff
+
+.wrapper
+  .info-box
+    text-align: center
+    margin: 0 auto 80px
+    font-weight: 500
+    color: #424b62
+    line-height: 20px
+    a
+      display: inline
+      &:hover
+        color: #424b62
+    span
+      display: inline-block
+      width: 100%
+      font-size: 12px
+      color: #98A4C4
+      margin: 24px 0 0
+
+
+.form
+  max-width: 626px
+  width: 100%
+  border-radius: 8px
+  box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
+  background: #fff
+  border: 1px solid rgba(152, 164, 196, 0.5)
+  margin: 78px auto 46px
+  padding: 24px
+  .form-group__title
+    margin: 0
+  label
+    width: 100%
+    position: relative
+
+  input
+    padding: 0 0 12px
+    font-size: 18px
+    font-family: $default-font
+    color: rgba(#98A4C4, .8)
+    border: none
+      radius: 0
+      bottom: 1px solid #22283C
+    &::placeholder
+      color: rgba(#98A4C4, .8)
+    &:valid, &:invalid, &:required:valid, &:required:invalid
+      color: #22283C
+  .btn
+    width: 100%
+    height: 61px
+    border-radius: 8px
+    font-size: 21px
+    font-weight: bold
+    .icon
+      width: 24px
+      height: 24px
+      margin: 0 10px 0 0
+
+.form-login
+  input
+    color: #22283C
+    &::placeholder
+      color: #22283C
+
+.btn-view
+  position: absolute
+  right: 0
+  bottom: 9px
+  width: 20px
+  height: 14px
+  display: inline-flex
+  z-index: 1
+  cursor: pointer
+
+.links-green
+  color: #81C728
+  font-weight: 500
+  font-size: 16px
+  &:hover
+    color: rgba(#98A4C4, .8)
+
+.btn-soc
+  margin: 0 0 17px
+  &:last-child
+    margin: 0
+
+.form-title
+  display: flex
+  align-items: center
+  margin: 0 0 16px
+  color: rgba(#424B62, .5)
+  font-size: 21px
+  font-weight: 600
+  .icon
+    width: 40px
+    height: 40px
+    margin: 0 16px 0 0
+
+.form-group
+  margin: 0 0 23px
+
+.form-group__line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 8px
+
+.form-group__title
+  color: #424B62
+  font-size: 14px
+
+.d-mobile
+  display: none
+//footer
+
+.mobile-menu, .sorting-mobile
+  position: fixed
+  display: none
+  left: 0
+  top: 0
+  z-index: 11
+  width: 100%
+  background: #2F3545
+  height: 100%
+  overflow-y: auto
+  overflow-x: hidden
+  padding: 19px 24px 0
+
+  .header-item
+    display: flex
+    margin: 0 0 21px
+    font-size: 12px
+
+    &:last-child
+      margin: 0
+  .dropDown-menu
+    position: relative
+    left: 0
+    top: 0
+    width: 100%
+    padding: 18px 0 27px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      top: 0
+      width: calc(100% + 50px)
+      height: 100%
+      background: #232834
+  .support-box
+    display: flex
+  .header-menu
+    li
+      width: 100%
+
+.line-title__menu
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 24px
+
+  h4
+    color: #8890A7
+    font-size: 14px
+    font-weight: 600
+
+.overlay
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 9
+  background: #2F3545
+  opacity: .7
+  transform: matrix(1, 0, 0, -1, 0, 0)
+  display: none
+
+.btn-close
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 auto
+  width: 20px
+  min-width: 20px
+  height: 20px
+  position: relative
+  cursor: pointer
+
+  &:hover
+    &:before, &:after
+      background: #fff
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1px
+    height: 100%
+    background: #9B9EA8
+    transition: .3s ease
+    top: 0
+
+  &:before
+    left: 9px
+    transform: rotate(135deg)
+
+  &:after
+    right: 10px
+    transform: rotate(45deg)
+
+.btn-close
+  &:before, &:after
+    background: #fff
+
+
+.dropItem
+  position: relative
+  display: flex
+  align-items: center
+  cursor: pointer
+  flex-wrap: wrap
+
+.dropDown-menu
+  position: absolute
+  display: none
+  left: -20px
+  background: #2F3545
+  padding: 16px 63px 28px 22px
+  z-index: 2
+  top: 52px
+  min-width: 100%
+  a
+    margin: 0 0 15px
+    display: flex
+    position: relative
+    z-index: 1
+    align-items: center
+    color: #9B9EA8
+    font-size: 14px
+    font-weight: 500
+    &:hover
+      color: #fff
+    &:last-child
+      margin: 0
+
+.btn-burger
+  display: none
+  width: 24px
+
+  span
+    width: 100%
+    height: 2px
+    display: block
+    background: #fff
+    margin: 0 0 5px
+    border-radius: 3px
+    &:last-child
+      margin: 0
+
+
+@import "media"
+// Всегда в конце
