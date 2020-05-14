@@ -506,10 +506,15 @@ footer
   color: rgba(#424B62, .5)
   font-size: 21px
   font-weight: 600
-  .icon
+  &__icon
     width: 40px
+    min-width: 40px
     height: 40px
     margin: 0 16px 0 0
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
 
 .form-group
   margin: 0 0 23px
@@ -674,6 +679,46 @@ footer
     &:last-child
       margin: 0
 
+.recaptcha
+  margin: 0 auto 24px
+  width: 100%
+
+.form-description
+  margin: 40px 0 38px
+  font-size: 14px
+
+.form-message__img
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: #E6F4D4
+  width: 108px
+  height: 108px
+  padding: 14px
+  margin: 0 auto
+
+.form-message__title
+  text-align: center
+  margin: 30px auto 10px
+  text-transform: uppercase
+  font-size: 26px
+  font-weight: 600
+
+.form-message
+  margin: 78px auto 240px
+  .text
+    margin: 0 auto 50px
+    text-align: center
+    color: #98A4C4
+    font-weight: 500
+
+.form-error
+  .form-message__img
+    background: rgba(252, 139, 140, 0.2)
+
+.btn-crimson
+  background: #FC8B8C
 
 @import "media"
 // Всегда в конце

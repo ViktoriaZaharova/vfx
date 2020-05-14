@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+
 </head>
 
 <body>
@@ -202,51 +203,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form class="form">
+                    <form class="form form-message">
 
-                        <div class="form-title">
-                            <div class="form-title__icon"><svg class="icon"><use xlink:href="../img/sprite.svg#user"></use></svg></div>
-                            <h3>Sign up</h3>
+                        <div class="form-message__img"><svg class="icon"><use xlink:href="img/sprite.svg#check"></use></svg></div>
+
+                        <h3 class="form-message__title">message sent successfully</h3>
+
+                        <div class="text">
+                            <p>Check your mail</p>
                         </div>
 
-                        <div class="form-body">
-                            <div class="form-group">
-                                <div class="form-group__line">
-                                    <div class="form-group__title">Email</div>
-                                </div>
-                                <label>
-                                    <input type="text" placeholder="Enter your email" name="email" required>
-                                </label>
-                            </div>
+                        <a href="#" class="btn btn-green" type="submit">ОК</a>
 
-                            <div class="form-group">
-                                <div class="form-group__line">
-                                    <div class="form-group__title">Password</div>
-                                </div>
-                                <label><input type="text" placeholder="Enter your password" name="password" required></label>
-                            </div>
-
-                            <button class="btn btn-green" type="submit">Sign up</button>
-                            <p class="or">or</p>
-
-                            <a href="#" class="btn btn-blue btn-soc">
-                                <svg class="icon"><use xlink:href="../img/sprite.svg#fb2"></use></svg>
-                                <span class="text">Login with Facebook</span>
-                            </a>
-
-                            <a href="#" class="btn btn-red btn-soc">
-                                <svg class="icon"><use xlink:href="../img/sprite.svg#google"></use></svg>
-                                <span class="text">Login with Google</span>
-                            </a>
-                        </div>
                     </form>
 
-                    <div class="info-box">
-                        <p>Are you registered? </p>
-                        <p>You can <a href="#" class="links-active">log in here.</a></p>
-                        <span>By signing up for a VFXalert account, you agree to our <a href="#"
-                                                                                        class="links-active">Terms & Conditions</a> of use.</span>
-                    </div>
                 </div>
 
             </div>
@@ -265,9 +235,21 @@
                     </a>
 
                     <ul class="list-social">
-                        <li><a href="#"> <svg class="icon"><use xlink:href="img/sprite.svg#fb"></use></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use xlink:href="img/sprite.svg#twitter"></use></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use xlink:href="img/sprite.svg#youtube"></use></svg></a></li>
+                        <li><a href="#">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </div>
 
@@ -336,6 +318,7 @@
 
 
 
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -344,6 +327,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script src="js/common.js"></script>
+
 
 </body>
 </html>
