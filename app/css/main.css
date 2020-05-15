@@ -504,22 +504,24 @@ footer {
   .footer-menu li a:hover {
     color: #fff; }
 
-.wrapper .info-box {
+.info-box {
   text-align: center;
   margin: 0 auto 80px;
   font-weight: 500;
   color: #424b62;
   line-height: 20px; }
-  .wrapper .info-box a {
+  .info-box a {
     display: inline; }
-    .wrapper .info-box a:hover {
+    .info-box a:hover {
       color: #424b62; }
-  .wrapper .info-box span {
+  .info-box span {
     display: inline-block;
     width: 100%;
     font-size: 12px;
     color: #98A4C4;
     margin: 24px 0 0; }
+  .info-box strong {
+    font-weight: bold; }
 
 .form {
   max-width: 626px;
@@ -564,6 +566,11 @@ footer {
       width: 24px;
       height: 24px;
       margin: 0 10px 0 0; }
+  .form .form-group .links-green {
+    position: absolute;
+    right: 0;
+    bottom: 11px;
+    background: #fff; }
 
 .form-login input {
   color: #22283C;
@@ -908,16 +915,21 @@ h1 {
             justify-content: space-between;
     color: rgba(66, 75, 98, 0.6); }
     .account-body strong {
-      font-weight: 900; }
+      font-weight: 900;
+      display: block;
+      font-size: 32px;
+      line-height: 39px; }
     .account-body p {
       font-size: 32px;
       line-height: 39px; }
+      .account-body p strong {
+        display: inline; }
   .account .btn-close__account {
     position: absolute;
     right: 20px;
     top: 20px; }
 
-.account-box__cost p {
+.account-box__cost p, .account-box__cost strong {
   color: #424B62; }
 
 .account-box__check {
@@ -1290,6 +1302,9 @@ h2 {
       margin: 0 0 0 auto;
       width: 120px;
       height: 38px; }
+  .tab-content .info-box {
+    font-weight: normal;
+    margin: 0; }
 
 .status {
   margin: 0 auto 0 15px;
@@ -1319,6 +1334,9 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 4px 0 0; }
+
+.status-not {
+  background: #FC8B8C; }
 
 .table-wrapper {
   width: 100%;
@@ -1535,17 +1553,18 @@ h2 {
     width: 89px;
     border: none;
     margin: 0 0 5px auto; }
-  .account-info .name-account {
-    letter-spacing: -0.04em;
-    font-size: 46px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 5px 0 4px;
-    line-height: 100%; }
   .account-info .date {
     font-weight: 500; }
     .account-info .date strong {
       font-weight: bold; }
+
+.name-account {
+  letter-spacing: -0.04em;
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px 0 4px;
+  line-height: 100%; }
 
 .license {
   display: -webkit-box;
@@ -1556,6 +1575,8 @@ h2 {
           align-items: center; }
   .license p {
     font-weight: 500; }
+  .license strong {
+    font-weight: bold; }
 
 .copy {
   margin: 0 0 0 8px;
@@ -1586,6 +1607,183 @@ h2 {
     width: 101px;
     color: #988FF2; }
 
+.account-info__free {
+  background: #98A4C3 url("../img/bg-free.svg") no-repeat center;
+    background-size: cover; }
+  .account-info__free .btn-white {
+    color: #98A4C3;
+    margin: 0 0 22px auto; }
+
+.account-standart .account-head {
+  background: #81C728; }
+
+.account-unlimited .account-head {
+  background: #FC8B8C; }
+
+.account-basic .account-head {
+  background: #98A4C3; }
+
+.account-price {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  margin: 0 0 60px;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .account-price:hover {
+    -webkit-box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16);
+            box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16); }
+  .account-price .account-head {
+    width: 100%;
+    padding: 42px 24px 32px;
+    position: relative; }
+    .account-price .account-head .btn, .account-price .account-head .account-box {
+      display: none; }
+  .account-price .account-body {
+    width: 100%;
+    padding: 32px 24px 24px;
+    border: 1px solid rgba(152, 164, 196, 0.5);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .account-price .account-box {
+    margin: 0 0 12px; }
+  .account-price .account-box__cost {
+    margin: 0 0 32px; }
+  .account-price .btn {
+    width: 113px;
+    height: 38px;
+    margin: 0 auto; }
+  .account-price strong {
+    font-weight: bold; }
+
+.price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #424B62; }
+
+.old-price {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 12px 0 0; }
+
+.new-price {
+  font-size: 32px;
+  font-weight: bold; }
+
+.sale-item {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.icon-star {
+  width: 22px;
+  height: 22px;
+  margin: 0 0 0 10px; }
+
+.sale {
+  width: 65px;
+  height: 22px; }
+
+.account-footer {
+  width: 100%;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba(66, 75, 98, 0.2); }
+
+.checkbox-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 40px;
+  width: 100%;
+  color: #98A4C4; }
+  .checkbox-slider .check-input {
+    display: none; }
+  .checkbox-slider .checkbox-anim {
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+    width: 30px;
+    height: 16px;
+    border: 3px solid #fc8bc8;
+      border-radius: 30px;
+    background: transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .checkbox-slider .checkbox-anim:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      left: 2px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fc8bc8; }
+  .checkbox-slider .check-input:checked + .checkbox-anim:after {
+    left: auto;
+    right: 2px; }
+
+.checkbox__text {
+  position: relative;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.checkbox__text.active {
+  color: #424B62; }
+
+.toggler-button {
+  margin: 0;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
@@ -1594,8 +1792,8 @@ h2 {
     width: auto; }
   .account-info {
     font-size: 15px; }
-    .account-info .name-account {
-      font-size: 32px; }
+  .name-account {
+    font-size: 32px; }
   .license {
     font-size: 15px; } }
 
@@ -1620,7 +1818,9 @@ h2 {
         margin: 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
-                order: 1; } }
+                order: 1; }
+  .account-head .name-account, .account-body strong {
+    font-size: 26px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -1690,7 +1890,9 @@ h2 {
     margin: 0; }
   .tooltip-hidden {
     font-size: 13px;
-    width: 240px; } }
+    width: 240px; }
+  .checkbox-slider {
+    margin: 0 0 33px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -1816,7 +2018,92 @@ h2 {
   .copy {
     width: 14px;
     height: 14px;
-    min-width: 14px; } }
+    min-width: 14px; }
+  .account-price {
+    margin: 0 0 16px; }
+    .account-price .account-head {
+      padding: 15px 20px 16px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 13px; }
+      .account-price .account-head .btn, .account-price .account-head .account-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .account-price .account-head .account-box {
+        margin: 0;
+        width: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .account-price .account-head .account-box span {
+          font-size: 15px;
+          opacity: .6; }
+        .account-price .account-head .account-box .price-wrapper {
+          color: #fff; }
+        .account-price .account-head .account-box strong {
+          color: #fff;
+          font-size: 26px;
+          line-height: normal; }
+      .account-price .account-head .btn {
+        margin: 0;
+        width: 49px;
+        height: 30px;
+        font-size: 16px; }
+    .account-price .name-account {
+      font-size: 26px;
+      margin: 3px 0 0;
+      letter-spacing: -0.08em; }
+    .account-price .account-body {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 16px 20px;
+      font-size: 15px; }
+      .account-price .account-body .account-box__cost {
+        display: none; }
+      .account-price .account-body .account-box {
+        margin: 0; }
+    .account-price .account-footer {
+      display: none; }
+  .new-price {
+    font-size: 26px; }
+  .old-price {
+    font-size: 18px;
+    margin: 0 4px 0 0; }
+  .sale-item {
+    top: 6px;
+    right: 16px; }
+  .sale {
+    width: 46px;
+    height: 15px; }
+  .icon-star {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 7px; }
+  .tab-price .info-box {
+    margin: 24px 0 0; }
+  .account-standart .account-head .btn {
+    background: #fff;
+    color: #81C728; } }
 
 @media only screen and (max-width: 575px) {
   .form-login .form-group__line .links-green {
@@ -1905,7 +2192,11 @@ h2 {
       .subscribe-wrapper .line .checkbox {
         margin: 0 0 32px; }
         .subscribe-wrapper .line .checkbox:last-child {
-          margin: 0; } }
+          margin: 0; }
+  .checkbox__text {
+    font-size: 24px; }
+  .checkbox-slider .checkbox-anim {
+    margin: 0 14px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
@@ -1913,10 +2204,17 @@ h2 {
     background: url("../img/bg2.svg") right bottom no-repeat;
       background-size: 100%; } }
 
+@media only screen and (max-width: 380px) {
+  .checkbox__text {
+    font-size: 18px; } }
+
 @media only screen and (max-width: 340px) {
   .nav-tabs .nav-item {
     margin: 0 20px 0 0; }
-  .account-info .name-account {
+  .name-account {
     font-size: 28px; }
   .form input {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .account-price .name-account, .new-price, .account-price .account-head .account-box strong, .account-body strong {
+    font-size: 20px;
+    line-height: normal; } }
