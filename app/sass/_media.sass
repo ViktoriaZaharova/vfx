@@ -161,6 +161,25 @@
     font-size: 15px
     align-items: center
 
+  .download-info
+    padding: 30px 0
+    margin: 0 0 40px
+
+    &__text
+      flex-direction: column-reverse
+      .text
+        width: 100%
+        padding: 0
+        margin: 33px 0 0
+        font-size: 15px
+        text-align: center
+    .btn-group
+      margin: 0 auto
+    h2
+      text-align: center
+      margin: 0 auto 34px
+
+
 
 @media only screen and (max-width : 575px)
   .form-login
@@ -222,10 +241,39 @@
       max-width: 125px
       margin: 0 auto 16px
 
+  .download-info
+    &:before
+      height: 90%
 
 
-@media only screen and (max-width : 480px)
-	/**/
+  .open-signal
+    h1
+      margin: 0 0 24px
+    .btn-signal
+      margin: 0
+    .description
+      margin: 24px 0 40px
+    .info-box
+      margin: 40px 0
+
+  .accordion-title
+    padding: 20px
+
+  .card-header .btn-link
+    padding: 21px 40px 21px 20px
+    font-size: 15px
+
+  .card-body
+    padding: 20px
+    font-size: 15px
+
+
+@media only screen and (max-width : 420px)
+  .download-info
+    &:before
+      height: calc(100% - 54px)
+      background: url("../img/bg2.svg") right bottom no-repeat
+        size: 100%
 
 
 

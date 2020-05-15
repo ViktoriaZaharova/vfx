@@ -100,15 +100,28 @@ button, .btn
   transition: .3s ease
   cursor: pointer
   box-shadow: none
+  height: 38px
   border: none
-    radius: 0
+    radius: 8px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 14px
+  font-weight: bold
+  color: #fff
+
+  &:hover
+    box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
+    color: #fff
 
 .btn-blue
-  border-radius: 8px
   width: 91px
   height: 32px
 
-.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child), .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
   border-radius: 8px
   margin-left: 0
 
@@ -127,18 +140,13 @@ button, .btn
 .btn-red
   background: #DB635A
 
-.btn
-  display: flex
-  align-items: center
-  justify-content: center
-  text-align: center
-  font-size: 14px
-  font-weight: bold
-  color: #fff
-
+.btn-white
+  border: 1px solid rgba(152, 164, 196, 0.5)
+  background: #fff
+  color: #424B62
+  font-size: 16px
   &:hover
-    box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
-    color: #fff
+    color: #424B62
 
 
 .btn-disable
@@ -375,6 +383,9 @@ header
         font-weight: normal
         font-size: 14px
         color: #9B9EA8
+    .active
+      color: #988FF2
+      background: #353C4F
 
 
 
@@ -880,7 +891,7 @@ h2
   cursor: pointer
   margin: 0 0 40px
   &:hover
-    box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16)
+    box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
   &__icon
     height: 82px
     max-width: 188px
@@ -888,6 +899,135 @@ h2
     align-items: center
     justify-content: center
     margin: 0 auto 40px
+
+
+//download page
+.download-info
+  background: #988FF2
+  padding: 40px 0 58px
+  color: #fff
+  margin: 0 0 60px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 188px
+    background: url("../img/bg.svg") no-repeat center bottom
+      size: cover
+  h2
+    color: #fff
+    margin: 0 0 11px
+
+.download-info__text
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  .btn-group
+    flex-direction: column
+    align-items: center
+    width: 278px
+  .btn
+    width: 100%
+    height: 64px
+    padding: 0 16px
+    justify-content: flex-start
+    &:not(:last-child)
+      margin: 0 0 24px
+    .icon
+      width: 32px
+      height: 32px
+      margin: 0 10px 0 0
+      display: flex
+      align-items: center
+      justify-content: center
+  .text
+    width: calc(100% - 278px)
+    padding: 0 48px 0 0
+    line-height: 160%
+
+.open-signal
+  .btn-signal
+    max-width: 261px
+    margin: 0 0 0 auto
+  .description
+    margin: 60px 0
+    a
+      text-decoration-line: underline
+      display: inline
+    strong
+      font-size: 18px
+      font-weight: bold
+      line-height: 160%
+  .info-box
+    text-align: center
+    margin: 60px auto 40px
+    line-height: 160%
+    strong
+      font-weight: bold
+
+.accordion
+  overflow: hidden
+  width: 100%
+  background: #fff
+  border: 1px solid rgba(152, 164, 196, 0.5)
+    radius: 8px
+
+.accordion-title
+  width: 100%
+  padding: 24px
+  h2
+    margin: 0
+    color: #98A4C4
+
+.card
+  border: none
+    top: 1px solid rgba(#424B62, .2)
+  background: transparent
+
+.card-header
+  background: transparent
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  .btn-link
+    color: #000000
+    font-weight: 600
+    font-size: 18px
+    width: 100%
+    padding: 19px 24px
+    cursor: pointer
+    &:hover
+      text-decoration: none
+  .icon-arrow
+    transition: .3s ease
+    position: absolute
+    right: 30px
+    top: 50%
+    width: 12px
+    height: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: matrix(1, 0, 0, -1, 0, 0) translate(0)
+    path
+      fill: #424B62
+  .collapsed + .icon-arrow
+    transform: rotate(0) translate(0,-50%)
+    path
+      fill: #98A4C4
+
+
+.card-body
+  background: #FCFCFC
+  padding: 24px 23px 50px
+  line-height: 160%
+  font-weight: 500
 
 
 

@@ -97,32 +97,9 @@ button, .btn {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
+  height: 38px;
   border: none;
-    border-radius: 0; }
-
-.btn-blue {
-  border-radius: 8px;
-  width: 91px;
-  height: 32px; }
-
-.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
-  border-radius: 8px;
-  margin-left: 0; }
-
-.or {
-  margin: 22px auto 24px;
-  font-weight: 500;
-  width: 100%;
-  text-align: center; }
-
-.btn-green {
-  background: #81C728; }
-
-.btn-blue {
-  background: #1AA3E0; }
-
-.btn-red {
-  background: #DB635A; }
+    border-radius: 8px; }
 
 .btn {
   display: -webkit-box;
@@ -142,6 +119,37 @@ button, .btn {
     -webkit-box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3);
             box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3);
     color: #fff; }
+
+.btn-blue {
+  width: 91px;
+  height: 32px; }
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 8px;
+  margin-left: 0; }
+
+.or {
+  margin: 22px auto 24px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center; }
+
+.btn-green {
+  background: #81C728; }
+
+.btn-blue {
+  background: #1AA3E0; }
+
+.btn-red {
+  background: #DB635A; }
+
+.btn-white {
+  border: 1px solid rgba(152, 164, 196, 0.5);
+  background: #fff;
+  color: #424B62;
+  font-size: 16px; }
+  .btn-white:hover {
+    color: #424B62; }
 
 .btn-disable {
   background: #1AA3E0;
@@ -434,6 +442,9 @@ header {
       font-weight: normal;
       font-size: 14px;
       color: #9B9EA8; }
+    .header-menu li .active {
+      color: #988FF2;
+      background: #353C4F; }
 
 footer {
   padding: 45px 0 25px;
@@ -1028,8 +1039,8 @@ h2 {
   cursor: pointer;
   margin: 0 0 40px; }
   .pay-box:hover {
-    -webkit-box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16);
-            box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16); }
+    -webkit-box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16);
+            box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16); }
   .pay-box__icon {
     height: 82px;
     max-width: 188px;
@@ -1043,6 +1054,169 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto 40px; }
+
+.download-info {
+  background: #988FF2;
+  padding: 40px 0 58px;
+  color: #fff;
+  margin: 0 0 60px;
+  position: relative; }
+  .download-info:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 188px;
+    background: url("../img/bg.svg") no-repeat center bottom;
+      background-size: cover; }
+  .download-info h2 {
+    color: #fff;
+    margin: 0 0 11px; }
+
+.download-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .download-info__text .btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 278px; }
+  .download-info__text .btn {
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .download-info__text .btn:not(:last-child) {
+      margin: 0 0 24px; }
+    .download-info__text .btn .icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 10px 0 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .download-info__text .text {
+    width: calc(100% - 278px);
+    padding: 0 48px 0 0;
+    line-height: 160%; }
+
+.open-signal .btn-signal {
+  max-width: 261px;
+  margin: 0 0 0 auto; }
+
+.open-signal .description {
+  margin: 60px 0; }
+  .open-signal .description a {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    display: inline; }
+  .open-signal .description strong {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%; }
+
+.open-signal .info-box {
+  text-align: center;
+  margin: 60px auto 40px;
+  line-height: 160%; }
+  .open-signal .info-box strong {
+    font-weight: bold; }
+
+.accordion {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(152, 164, 196, 0.5);
+    border-radius: 8px; }
+
+.accordion-title {
+  width: 100%;
+  padding: 24px; }
+  .accordion-title h2 {
+    margin: 0;
+    color: #98A4C4; }
+
+.card {
+  border: none;
+    border-top: 1px solid rgba(66, 75, 98, 0.2);
+  background: transparent; }
+
+.card-header {
+  background: transparent;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  .card-header .btn-link {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    padding: 19px 24px;
+    cursor: pointer; }
+    .card-header .btn-link:hover {
+      text-decoration: none; }
+  .card-header .icon-arrow {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: 12px;
+    height: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0) translate(0);
+            transform: matrix(1, 0, 0, -1, 0, 0) translate(0); }
+    .card-header .icon-arrow path {
+      fill: #424B62; }
+  .card-header .collapsed + .icon-arrow {
+    -webkit-transform: rotate(0) translate(0, -50%);
+            transform: rotate(0) translate(0, -50%); }
+    .card-header .collapsed + .icon-arrow path {
+      fill: #98A4C4; }
+
+.card-body {
+  background: #FCFCFC;
+  padding: 24px 23px 50px;
+  line-height: 160%;
+  font-weight: 500; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1250px) {
@@ -1197,7 +1371,26 @@ h2 {
     font-size: 15px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .download-info {
+    padding: 30px 0;
+    margin: 0 0 40px; }
+    .download-info__text {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      .download-info__text .text {
+        width: 100%;
+        padding: 0;
+        margin: 33px 0 0;
+        font-size: 15px;
+        text-align: center; }
+    .download-info .btn-group {
+      margin: 0 auto; }
+    .download-info h2 {
+      text-align: center;
+      margin: 0 auto 34px; } }
 
 @media only screen and (max-width: 575px) {
   .form-login .form-group__line .links-green {
@@ -1250,7 +1443,28 @@ h2 {
     .pay-box__icon {
       height: 50px;
       max-width: 125px;
-      margin: 0 auto 16px; } }
+      margin: 0 auto 16px; }
+  .download-info:before {
+    height: 90%; }
+  .open-signal h1 {
+    margin: 0 0 24px; }
+  .open-signal .btn-signal {
+    margin: 0; }
+  .open-signal .description {
+    margin: 24px 0 40px; }
+  .open-signal .info-box {
+    margin: 40px 0; }
+  .accordion-title {
+    padding: 20px; }
+  .card-header .btn-link {
+    padding: 21px 40px 21px 20px;
+    font-size: 15px; }
+  .card-body {
+    padding: 20px;
+    font-size: 15px; } }
 
-@media only screen and (max-width: 480px) {
-  /**/ }
+@media only screen and (max-width: 420px) {
+  .download-info:before {
+    height: calc(100% - 54px);
+    background: url("../img/bg2.svg") right bottom no-repeat;
+      background-size: 100%; } }
