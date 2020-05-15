@@ -6,9 +6,33 @@
   .header-menu li a
     padding: 28px 15px
 
+  .table .td-purchase
+    width: auto
+
+  .account-info
+    font-size: 15px
+    .name-account
+      font-size: 32px
+
+  .license
+    font-size: 15px
+
 @media only screen and (max-width: 1199px)
   .header-menu li a
     font-size: 14px
+
+  .account-info__pro
+    .account-info__item
+      width: 100%
+      margin: 0 0 16px
+      &:last-child
+        margin: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .btn
+          margin: 0
+          order: 1
 
 
 @media only screen and (max-width : 991px)
@@ -72,6 +96,24 @@
     &:before, &:after
       background: #fff
 
+  .table
+    font-size: 15px
+    td
+      padding: 10px 16px
+    thead
+      font-size: 13px
+      th
+        padding: 0 16px 22px
+
+  .tab-content
+    padding: 24px 0 40px
+
+  .table-wrapper
+    margin: 0
+
+  .tooltip-hidden
+    font-size: 13px
+    width: 240px
 
 
 @media only screen and (max-width : 767px)
@@ -160,6 +202,8 @@
   .account-box__check
     font-size: 15px
     align-items: center
+    .label
+      font-size: 15px
 
   .download-info
     padding: 30px 0
@@ -179,7 +223,25 @@
       text-align: center
       margin: 0 auto 34px
 
+  .table
+    td
+      white-space: nowrap
 
+  .tabs-wrapper
+    padding: 29px 0 0
+
+  .account-info
+    height: auto
+    margin: 0 0 16px
+    padding: 16px 20px 20px
+
+  .tab-content .form
+    margin: 0 0 20px
+
+  .copy
+    width: 14px
+    height: 14px
+    min-width: 14px
 
 @media only screen and (max-width : 575px)
   .form-login
@@ -267,6 +329,20 @@
     padding: 20px
     font-size: 15px
 
+  .table
+    margin: 0 0 20px
+
+  .subscribe-wrapper
+    padding: 20px
+    .img-bg
+      display: none
+    .line
+      flex-direction: column
+      align-items: flex-start
+      .checkbox
+        margin: 0 0 32px
+        &:last-child
+          margin: 0
 
 @media only screen and (max-width : 420px)
   .download-info
@@ -278,3 +354,12 @@
 
 
 
+@media only screen and (max-width : 340px)
+  .nav-tabs .nav-item
+    margin: 0 20px 0 0
+
+  .account-info .name-account
+    font-size: 28px
+
+  .form input
+    font-size: 14px

@@ -503,6 +503,7 @@ footer
 .form-login
   input
     color: #22283C
+    font-weight: bold
     &::placeholder
       color: #22283C
 
@@ -1028,6 +1029,312 @@ h2
   padding: 24px 23px 50px
   line-height: 160%
   font-weight: 500
+
+//tabs
+.tabs-wrapper
+  box-shadow: 0 1.27294px 1.88173px rgba(0, 0, 0, 0.137761)
+  background: #fff
+  padding: 40px 0 0
+
+.nav-tabs
+  border: none
+  .nav-item
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    border: none
+      bottom: 1px solid transparent
+      radius: 0
+    padding: 0 0 7px
+    color: #98A4C4
+    font-weight: 600
+    display: flex
+    align-items: center
+    .icon
+      width: 24px
+      height: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 8px 0 0
+      svg
+        width: 100%
+        height: 100%
+        fill: none
+        transition: .3s ease
+      path
+        stroke: #988FF2
+  .nav-link.active
+    color: #424B62
+    border-color: #424B62
+    .icon
+      svg
+        path
+          stroke: #424B62
+    .icon-time
+      svg
+        .p-fill
+          fill: #424B62
+
+.tab-content
+  padding: 24px 0 40px
+  .form
+    max-width: none
+    box-shadow: none
+    transition: .3s ease
+    margin: 24px 0
+    &:hover
+      box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
+    .btn-save
+      font-size: 16px
+      margin: 0 0 0 auto
+      width: 120px
+      height: 38px
+
+.status
+  margin: 0 auto 0 15px
+  background: #81C728
+  border-radius: 4px
+  display: flex
+  align-items: center
+  color: #fff
+  height: 20px
+  padding: 0 5px
+  font-size: 14px
+  font-weight: 500
+  .icon
+    width: 11px
+    height: 9px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px 0 0
+
+
+.table-wrapper
+  width: 100%
+  overflow-x: auto
+  margin: 16px 0 0
+
+.table
+  margin: 0
+  border: none
+  color: #424B62
+  font-size: 21px
+  line-height: 145%
+  font-weight: bold
+  width: 100%
+  thead
+    color: #98A4C4
+    font-weight: 500
+    font-size: 18px
+    border-bottom: 1px solid rgba(#424B62, .2)
+  td, th
+    border: none
+    padding: 15px 22px
+    .icon
+      width: 20px
+      height: 20px
+  .td-status
+    width: 200px
+  .td-purchase
+    width: 580px
+  tbody
+   tr
+     &:nth-child(odd)
+       background: rgba(#98A4C4, .08)
+
+.tooltip-wrapper
+  position: relative
+
+
+.tooltip-hidden
+  display: none
+  position: absolute
+  top: calc(100% + 17px)
+  left: 50%
+  transform: translate(-50%,0)
+  z-index: 1
+  background: #fff
+  box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
+  border-radius: 8px
+  border: 1px solid rgba(152, 164, 196, 0.5)
+  width: 284px
+  padding: 24px 17px 24px 24px
+  font-size: 16px
+  font-weight: normal
+  line-height: 160%
+  color: #424B62
+  strong
+    font-weight: bold
+  &:before
+    width: 30px
+    height: 30px
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0) rotate(45deg)
+    background: #fff
+    border: 1px solid rgba(152, 164, 196, 0.5)
+      right: none
+      bottom: none
+      radius: 4px
+    border-bottom-left-radius: 0
+    border-top-right-radius: 0
+    top: -16px
+
+.error, .successful
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.btn-tooltip
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 20px
+  height: 20px
+  cursor: pointer
+
+.on-check
+  color: #988ff2
+
+.successful
+  color: #81c728
+
+.error
+  color: #fc8b8c
+
+.checkbox
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    min-width: 20px
+    width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid rgba(#98A4C4, .5)
+      radius: 0
+    background: transparent
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 7px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: #424B62
+    cursor: pointer
+    font-size: 18px
+    font-weight: bold
+
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 20px
+      height: 20px
+      background: url("../img/check.svg") no-repeat center
+        size: contain
+        
+.subscribe-wrapper
+  width: 100%
+  background: #fff
+  border: 1px solid rgba(152, 164, 196, 0.5)
+    radius: 8px
+  padding: 24px 24px 29px
+  position: relative
+  .form-title
+    margin: 0 0 33px
+  .line
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+  .checkbox
+    margin: 0 64px 0 0
+    &:last-child
+      margin: 0
+
+
+.img-bg
+  position: absolute
+  bottom: 0
+  right: 26px
+  width: 108px
+  height: 125px
+
+.account-info
+  padding: 23px 24px
+  color: #fff
+  border-radius: 8px
+  border: 1px solid rgba(152, 164, 196, 0.5)
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  height: 100%
+  font-weight: 500
+  .subname
+    width: 100%
+    font-weight: 600
+
+  .btn-white
+    height: 38px
+    width: 89px
+    border: none
+    margin: 0 0 5px auto
+  .name-account
+    letter-spacing: -0.04em
+    font-size: 46px
+    font-weight: 900
+    text-transform: uppercase
+    margin: 5px 0 4px
+    line-height: 100%
+  .date
+    font-weight: 500
+    strong
+      font-weight: bold
+
+.license
+  display: flex
+  align-items: center
+  p
+    font-weight: 500
+
+.copy
+  margin: 0 0 0 8px
+  width: 16px
+  min-width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.account-info__pro
+  background: #77BF1B url("../img/bg-pro.svg") no-repeat center
+    size: cover
+  .btn-white
+    color: #81C728
+
+.account-alert
+  background: #988FF2 url("../img/bg-alert.svg") no-repeat center
+    size: cover
+  padding-bottom: 40px
+  .btn-white
+    width: 101px
+    color: #988FF2
+
 
 
 

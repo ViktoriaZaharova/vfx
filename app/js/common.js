@@ -11,3 +11,7 @@ $('.btn-close').click(function () {
 $('.dropItem').click(function () {
     $(this).find('.dropDown-menu').fadeToggle();
 });
+
+$('.tooltip-wrapper').hover(function () {
+   $(this).find('.tooltip-hidden').fadeToggle();
+});
