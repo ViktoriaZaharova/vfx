@@ -2,12 +2,13 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width: 1250px)
+  .header-menu li a
+    padding: 28px 15px
+
 @media only screen and (max-width: 1199px)
   .header-menu li a
     font-size: 14px
-
-  .header-menu li:not(:last-child)
-    margin: 0 20px 0 0
 
 
 @media only screen and (max-width : 991px)
@@ -34,6 +35,7 @@
 
   .header-menu li a
     font-size: 12px
+    padding: 22px 10px
 
   .list-social
     margin: 0 0 33px
@@ -44,6 +46,32 @@
       a
         width: 33px
         height: 33px
+
+  .account
+    flex-direction: column
+    align-items: center
+
+
+  .account-head
+    width: 100%
+    padding: 20px
+    font-size: 16px
+    .name-account
+      font-size: 40px
+      line-height: 94.4%
+
+  .account-body
+    width: 100%
+    border: 1px solid rgba(152, 164, 196, 0.5)
+      top: none
+      radius: 0 0 8px 8px
+    padding: 20px
+      
+  .btn-close__account
+    z-index: 1
+    &:before, &:after
+      background: #fff
+
 
 
 @media only screen and (max-width : 767px)
@@ -121,6 +149,18 @@
   .mail-user, .language-box, .support-box
     display: none
 
+  .account-box
+    width: 50%
+    margin: 0 0 20px
+
+  .account-body
+    padding: 20px 20px 0
+    flex-wrap: wrap
+
+  .account-box__check
+    font-size: 15px
+    align-items: center
+
 
 @media only screen and (max-width : 575px)
   .form-login
@@ -149,6 +189,39 @@
 
   .form-message .text
     margin: 0 auto 30px
+
+  h1
+    margin: 40px 0 24px
+    font-size: 26px
+    line-height: 32px
+
+  h2
+    margin: 0 0 32px
+    font-size: 24px
+    line-height: 29px
+
+  .payment-method
+    margin: 40px 0 0
+    .info-box
+      margin: 32px 0
+      padding: 32px 0 0
+      .info-box__icon
+        flex-direction: column
+        align-items: center
+        margin: 0 16px 0 0
+        .icon
+          &:not(:last-child)
+            margin: 0 0 10px 0
+
+  .pay-box
+    padding: 16px 5px
+    font-size: 18px
+    margin: 0 0 16px
+    &__icon
+      height: 50px
+      max-width: 125px
+      margin: 0 auto 16px
+
 
 
 @media only screen and (max-width : 480px)

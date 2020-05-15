@@ -281,7 +281,6 @@ footer
 
 //header
 header
-  padding: 16px 0
   background: #424B62
   color: #fff
 
@@ -289,9 +288,13 @@ header
     font-weight: 500
     margin: 0 40px 0 0
   .dropDown-menu
-    top: 56px
+    top: 80px
+    a
+      padding: 0
+      width: 100%
   .logo
     width: 42px
+    height: 100%
     svg
       path
         fill: #988FF2
@@ -300,7 +303,15 @@ header
 
 .dropItem-language
   padding: 0 0 0 40px
-  border-left: 1px solid #98A4C4
+  &:before
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    content: ''
+    position: absolute
+    width: 1px
+    height: 47px
+    background: #98A4C4
 
 .support-box
   display: flex
@@ -346,17 +357,24 @@ header
     height: 100%
     display: flex
     align-items: center
-    &:not(:last-child)
-      margin: 0 56px 0 0
     a
       color: #fff
       text-transform: uppercase
       font-size: 18px
       font-weight: 600
+      padding: 29px 30px
       &:hover
         color: #988FF2
+        background: #353C4F
 
-
+    .dropDown-menu
+      a
+        padding: 0
+        width: 100%
+        text-transform: none
+        font-weight: normal
+        font-size: 14px
+        color: #9B9EA8
 
 
 
@@ -573,6 +591,8 @@ footer
   .header-menu
     li
       width: 100%
+      a
+        padding: 0
 
 .line-title__menu
   width: 100%
@@ -598,7 +618,7 @@ footer
   transform: matrix(1, 0, 0, -1, 0, 0)
   display: none
 
-.btn-close
+.btn-close, .btn-close__account
   display: flex
   align-items: center
   justify-content: center
@@ -719,6 +739,158 @@ footer
 
 .btn-crimson
   background: #FC8B8C
+
+.fill-none
+  fill: none
+
+.header-item__name
+  .icon
+    width: 20px
+    height: 22px
+
+//wrapper-main
+.wrapper-main
+  background: #fafafa
+
+h1
+  margin: 60px 0
+  color: #22283C
+  font-size: 32px
+  font-weight: 900
+  text-transform: uppercase
+
+.account
+  width: 100%
+  border-radius: 8px
+  position: relative
+  background: #fff
+  display: flex
+  align-items: stretch
+  overflow: hidden
+  &-body
+    border: 1px solid rgba(152, 164, 196, 0.5)
+      radius: 0 8px 8px 0
+      left: none
+    width: calc(100% - 302px)
+    padding: 30px 70px
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    color: rgba(#424B62, .6)
+    strong
+      font-weight: 900
+    p
+      font-size: 32px
+      line-height: 39px
+  .btn-close__account
+    position: absolute
+    right: 20px
+    top: 20px
+
+.account-box__cost
+  p
+    color: #424B62
+
+.account-box__check
+  display: flex
+  align-items: flex-end
+  font-size: 18px
+  color: #424B62
+  strong
+    font-weight: bold
+
+.icon-check
+  width: 24px
+  min-width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 3px
+  border: 2px solid #FC8B8C
+  margin: 0 9px 0 0
+
+.account-head
+  background: #988FF2
+  width: 302px
+  color: #fff
+  padding: 32px 24px
+  font-size: 18px
+  font-weight: 500
+  line-height: 22px
+  .name-account
+    font-size: 46px
+    font-weight: 900
+    margin: 8px 0 0
+    line-height: 94.4%
+    letter-spacing: -0.08em
+    text-transform: uppercase
+
+.payment-method
+  margin: 60px 0 0
+  .btn-buy
+    width: 113px
+    height: 38px
+    font-size: 16px
+    border-radius: 8px
+    margin: 0 auto
+  .info-box
+    margin: 40px auto
+    padding: 40px 0 0
+    border-top: 1px solid rgba(#424B62, .2)
+    color: #424B62
+    font-size: 14px
+    display: flex
+    line-height: 140%
+    align-items: center
+    .info-box__icon
+      display: flex
+      align-items: center
+      margin: 0 23px 0 0
+      .icon
+        width: 50px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:not(:last-child)
+          margin: 0 10px 0 0
+
+
+h2
+  text-transform: uppercase
+  margin: 0 0 40px
+  color: #424B62
+  font-size: 26px
+  font-weight: 600
+
+.pay-box
+  display: flex
+  align-items: center
+  flex-direction: column
+  border: 1px solid rgba(152, 164, 196, 0.5)
+    radius: 8px
+  background: #fff
+  transition: .3s ease
+  padding: 40px 0
+  font-size: 21px
+  font-weight: 600
+  text-align: center
+  color: rgba(#424B62, .6)
+  cursor: pointer
+  margin: 0 0 40px
+  &:hover
+    box-shadow: 0px 20px 30px rgba(68, 68, 68, 0.16)
+  &__icon
+    height: 82px
+    max-width: 188px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 40px
+
+
+
 
 @import "media"
 // Всегда в конце
