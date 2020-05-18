@@ -309,17 +309,7 @@ header
   .links-active
     color: #988FF2
 
-.dropItem-language
-  padding: 0 0 0 40px
-  &:before
-    left: 0
-    top: 50%
-    transform: translate(0,-50%)
-    content: ''
-    position: absolute
-    width: 1px
-    height: 47px
-    background: #98A4C4
+
 
 .support-box
   display: flex
@@ -680,6 +670,51 @@ footer
   align-items: center
   cursor: pointer
   flex-wrap: wrap
+  >a
+    position: relative
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      margin: 0 0 0 7px
+      width: 0
+      height: 0
+      border-left: 4px solid transparent
+      border-right: 4px solid transparent
+      border-top: 5px solid #fff
+  .language-box
+    &:after
+      border-top-color: #98A4C4
+
+
+.dropItem-language
+  padding: 0 0 0 40px
+  &:before
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    content: ''
+    position: absolute
+    width: 1px
+    height: 47px
+    background: #98A4C4
+  >a
+    &:after
+      border-top-color: #98A4C4
+  .header-item
+    margin: 0
+
+.dropItem-cabinet
+  .dropDown-menu
+    .header-item__icon
+      svg
+        path
+          stroke: #9B9EA8
+    .logout-item
+      svg
+        path
+          stroke: transparent
+
 
 .dropDown-menu
   position: absolute

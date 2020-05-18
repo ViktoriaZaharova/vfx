@@ -349,19 +349,6 @@ header {
   header .links-active {
     color: #988FF2; }
 
-.dropItem-language {
-  padding: 0 0 0 40px; }
-  .dropItem-language:before {
-    left: 0;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 47px;
-    background: #98A4C4; }
-
 .support-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,6 +769,47 @@ footer {
   cursor: pointer;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .dropItem > a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .dropItem > a:after {
+      content: '';
+      margin: 0 0 0 7px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid #fff; }
+  .dropItem .language-box:after {
+    border-top-color: #98A4C4; }
+
+.dropItem-language {
+  padding: 0 0 0 40px; }
+  .dropItem-language:before {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 47px;
+    background: #98A4C4; }
+  .dropItem-language > a:after {
+    border-top-color: #98A4C4; }
+  .dropItem-language .header-item {
+    margin: 0; }
+
+.dropItem-cabinet .dropDown-menu .header-item__icon svg path {
+  stroke: #9B9EA8; }
+
+.dropItem-cabinet .dropDown-menu .logout-item svg path {
+  stroke: transparent; }
 
 .dropDown-menu {
   position: absolute;
@@ -1820,7 +1848,9 @@ h2 {
             -ms-flex-order: 1;
                 order: 1; }
   .account-head .name-account, .account-body strong {
-    font-size: 26px; } }
+    font-size: 26px; }
+  header .dropDown-menu {
+    top: 73px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -1836,12 +1866,12 @@ h2 {
     height: 16px;
     min-width: 16px; }
   .dropItem-language {
-    padding: 0 0 0 15px; }
+    padding: 0 0 0 10px; }
   header .support-box {
-    margin: 0 15px 0 0; }
+    margin: 0 12px 0 0; }
   .header-menu li a {
     font-size: 12px;
-    padding: 22px 10px; }
+    padding: 22px 8px; }
   .list-social {
     margin: 0 0 33px; }
     .list-social li {
@@ -1892,7 +1922,9 @@ h2 {
     font-size: 13px;
     width: 240px; }
   .checkbox-slider {
-    margin: 0 0 33px; } }
+    margin: 0 0 33px; }
+  header .dropDown-menu {
+    top: 58px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -2033,7 +2065,7 @@ h2 {
       display: -ms-flexbox;
       display: flex;
       font-size: 13px; }
-      .account-price .account-head .btn, .account-price .account-head .account-box {
+      .account-price .account-head .account-box {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
@@ -2056,11 +2088,6 @@ h2 {
           color: #fff;
           font-size: 26px;
           line-height: normal; }
-      .account-price .account-head .btn {
-        margin: 0;
-        width: 49px;
-        height: 30px;
-        font-size: 16px; }
     .account-price .name-account {
       font-size: 26px;
       margin: 3px 0 0;
@@ -2083,7 +2110,7 @@ h2 {
       .account-price .account-body .account-box {
         margin: 0; }
     .account-price .account-footer {
-      display: none; }
+      width: 100%; }
   .new-price {
     font-size: 26px; }
   .old-price {
@@ -2100,10 +2127,7 @@ h2 {
     height: 16px;
     margin: 0 0 0 7px; }
   .tab-price .info-box {
-    margin: 24px 0 0; }
-  .account-standart .account-head .btn {
-    background: #fff;
-    color: #81C728; } }
+    margin: 24px 0 0; } }
 
 @media only screen and (max-width: 575px) {
   .form-login .form-group__line .links-green {
@@ -2197,6 +2221,22 @@ h2 {
     font-size: 24px; }
   .checkbox-slider .checkbox-anim {
     margin: 0 14px; } }
+
+@media only screen and (max-width: 480px) {
+  .account-footer {
+    padding: 10px 0 0; }
+    .account-footer .btn {
+      width: 100%; }
+  .account-price .account-head {
+    padding: 12px 20px; }
+    .account-price .account-head .account-box span {
+      font-size: 13px; }
+  .account-price .account-body {
+    padding: 10px 20px; }
+  .account-price .name-account {
+    margin: 0; }
+  .sale-item {
+    top: 2px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
