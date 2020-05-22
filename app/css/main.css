@@ -343,7 +343,16 @@ header {
       width: 100%; }
   header .logo {
     width: 42px;
-    height: 100%; }
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     header .logo svg path {
       fill: #988FF2; }
   header .links-active {
@@ -1811,6 +1820,79 @@ h2 {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.sale-wrapper {
+  margin: 0 0 30px; }
+  .sale-wrapper .form-title {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sale-wrapper .form-title__icon {
+    width: 60px; }
+  .sale-wrapper .btn {
+    max-width: 280px;
+    margin: 0 auto; }
+
+.timer {
+  text-align: center;
+  margin: 20px auto 0; }
+  .timer p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 10px; }
+
+.countdown {
+  margin: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #22283C; }
+
+.countdown-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 14px; }
+
+.countdown-number__seconds, .countdown-number__days {
+  display: none; }
+
+.countdown-dots {
+  margin: 0 20px;
+  padding: 15px 0 0;
+  font-size: 18px; }
+
+.countdown-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 50px;
+  border: 1px solid rgba(152, 164, 196, 0.5);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 5px; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1250px) {
