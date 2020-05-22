@@ -1822,12 +1822,14 @@ h2 {
       flex-wrap: wrap; }
 
 .sale-wrapper {
-  margin: 0 0 30px; }
+  margin: 0 0 30px;
+  padding: 10px 20px; }
   .sale-wrapper .form-title {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 0; }
   .sale-wrapper .form-title__icon {
     width: 60px; }
   .sale-wrapper .btn {
@@ -1840,11 +1842,11 @@ h2 {
   .timer p {
     font-weight: bold;
     text-align: center;
-    margin: 0 0 10px;
-    font-size: 20px; }
+    margin: 0 0 5px;
+    font-size: 18px; }
 
 .countdown {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1875,7 +1877,7 @@ h2 {
 
 .countdown-dots {
   margin: 0 15px;
-  padding: 15px 0 0;
+  padding: 8px 0 0;
   font-size: 18px; }
 
 .countdown-time {
@@ -1888,13 +1890,12 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
   border: 1px solid rgba(152, 164, 196, 0.5);
     border-radius: 5px;
   font-size: 22px;
-  font-weight: bold;
-  margin: 0 0 5px; }
+  font-weight: bold; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1250px) {
