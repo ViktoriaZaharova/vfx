@@ -1836,11 +1836,12 @@ h2 {
 
 .timer {
   text-align: center;
-  margin: 20px auto 0; }
+  margin: 0 auto; }
   .timer p {
     font-weight: bold;
     text-align: center;
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    font-size: 20px; }
 
 .countdown {
   margin: 0 0 20px;
@@ -1873,7 +1874,7 @@ h2 {
   display: none; }
 
 .countdown-dots {
-  margin: 0 20px;
+  margin: 0 15px;
   padding: 15px 0 0;
   font-size: 18px; }
 
@@ -1890,6 +1891,7 @@ h2 {
   width: 70px;
   height: 50px;
   border: 1px solid rgba(152, 164, 196, 0.5);
+    border-radius: 5px;
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 5px; }
