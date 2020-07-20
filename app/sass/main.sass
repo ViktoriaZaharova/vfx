@@ -67,7 +67,8 @@ body
   position: relative
   line-height: normal
   font-family: $default-font
-  background: #fafafa
+  background: #22283C
+  color: #fff
 
 html, body
   overflow-x: hidden
@@ -91,6 +92,11 @@ a
 
 .color-accent
   color: #1AA3E0
+
+.description
+  font-size: 24px
+  font-weight: 500
+  margin: 14px 0 0
 
 button, .btn
   outline: none
@@ -176,9 +182,34 @@ button, .btn
   justify-content: flex-start
 
 .body
+  background: #fafafa
   color: #424B62
   .container
     max-width: 1310px
+  h1
+    margin: 60px 0
+    color: #22283C
+    font-size: 32px
+    font-weight: 900
+    text-transform: uppercase
+  h2
+    text-transform: uppercase
+    margin: 0 0 40px
+    color: #424B62
+    font-size: 26px
+    font-weight: 600
+  .icon-check
+    width: 24px
+    min-width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 3px
+    border: 2px solid #FC8B8C
+    margin: 0 9px 0 0
+
+
 
 input, textarea, .form-control
   outline: none
@@ -216,6 +247,11 @@ select
     color: #FFFFFF
   &:hover, &:focus
     box-shadow: none
+
+svg
+  display: inline-block
+  width: 100%
+  height: 100%
 
 svg
   display: inline-block
@@ -267,6 +303,34 @@ footer
 .nav-link.active
   color: #fff
 
+//.container
+//  max-width: 1440px
+
+h1
+  font-size: 49px
+  font-weight: 900
+  text-transform: uppercase
+  line-height: 68px
+  width: 100%
+
+h2
+  font-size: 36px
+  font-weight: 900
+  width: 100%
+  text-transform: uppercase
+  line-height: 44px
+
+.main-text__subtitle
+  font-size: 101px
+  font-weight: 900
+  text-shadow: 0 15px 20px rgba(0, 0, 0, 0.5)
+  line-height: 99.4%
+
+.links-accent
+  color: #1AA3E0
+  &:hover
+    color: inherit
+
 //wrapper
 .wrapper
   height: 100%
@@ -294,30 +358,27 @@ header
 
   .support-box
     font-weight: 500
-    margin: 0 40px 0 0
+    margin: 0 15px 0 0
   .dropDown-menu
     top: 80px
     a
       padding: 0
       width: 100%
-  .logo
-    width: 42px
-    height: 100%
-    display: flex
-    align-items: center
-    justify-content: center
-    svg
-      path
-        fill: #988FF2
-  .links-active
-    color: #988FF2
 
-
+.logo
+  width: 146px
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  svg
+    path
+      fill: #988FF2
 
 .support-box
   display: flex
   align-items: center
-  color: #9B9EA8
+  color: #fff
   font-weight: 500
   .header-item__icon
     margin: 0 11px 0 0
@@ -327,11 +388,10 @@ header
     color: #fff
 
 .header-item
-  margin: 0 32px 0 0
   display: flex
   align-items: center
   font-size: 14px
-  color: #9B9EA8
+  color: #fff
   font-weight: 500
 
   &__icon
@@ -363,7 +423,7 @@ header
       text-transform: uppercase
       font-size: 18px
       font-weight: 600
-      padding: 29px 30px
+      padding: 29px 18px
       &:hover
         color: #988FF2
         background: #353C4F
@@ -386,10 +446,16 @@ header
 //footer
 footer
   padding: 45px 0 25px
-  background: #424B62
+  background: #22283C
+  .container
+    max-width: 1310px
   .logo
     text-align: center
     margin: 0 auto 32px
+    height: 40px
+    svg
+      path
+        fill: #98A4C4
 
 
 .list-social
@@ -404,8 +470,6 @@ footer
     a
       width: 18px
       height: 18px
-
-
 
 .copyright
   text-align: center
@@ -563,6 +627,8 @@ footer
   display: none
 //footer
 
+
+//mobile menu
 .mobile-menu, .sorting-mobile
   position: fixed
   display: none
@@ -606,6 +672,7 @@ footer
       a
         padding: 0
 
+
 .line-title__menu
   width: 100%
   display: flex
@@ -629,6 +696,25 @@ footer
   opacity: .7
   transform: matrix(1, 0, 0, -1, 0, 0)
   display: none
+
+
+.dropItem-language
+  padding: 0 0 0 15px
+  &:before
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    content: ''
+    position: absolute
+    width: 1px
+    height: 47px
+    background: #98A4C4
+  >a
+    &:after
+      border-top-color: #98A4C4
+  .header-item
+    margin: 0
+
 
 .btn-close, .btn-close__account
   display: flex
@@ -690,22 +776,6 @@ footer
       border-top-color: #98A4C4
 
 
-.dropItem-language
-  padding: 0 0 0 40px
-  &:before
-    left: 0
-    top: 50%
-    transform: translate(0,-50%)
-    content: ''
-    position: absolute
-    width: 1px
-    height: 47px
-    background: #98A4C4
-  >a
-    &:after
-      border-top-color: #98A4C4
-  .header-item
-    margin: 0
 
 .dropItem-cabinet
   .dropDown-menu
@@ -809,12 +879,7 @@ footer
 .wrapper-main
   background: #fafafa
 
-h1
-  margin: 60px 0
-  color: #22283C
-  font-size: 32px
-  font-weight: 900
-  text-transform: uppercase
+
 
 .account
   width: 100%
@@ -860,20 +925,11 @@ h1
   align-items: flex-end
   font-size: 18px
   color: #424B62
+  visibility: hidden
   strong
     font-weight: bold
 
 
-.icon-check
-  width: 24px
-  min-width: 24px
-  height: 24px
-  display: flex
-  align-items: center
-  justify-content: center
-  padding: 3px
-  border: 2px solid #FC8B8C
-  margin: 0 9px 0 0
 
 .account-head
   background: #988FF2
@@ -922,12 +978,7 @@ h1
           margin: 0 10px 0 0
 
 
-h2
-  text-transform: uppercase
-  margin: 0 0 40px
-  color: #424B62
-  font-size: 26px
-  font-weight: 600
+
 
 .pay-box
   display: flex
@@ -1022,20 +1073,6 @@ h2
     line-height: 160%
     strong
       font-weight: bold
-
-.accordion
-  overflow: hidden
-  width: 100%
-  background: #fff
-  border: 1px solid rgba(152, 164, 196, 0.5)
-    radius: 8px
-
-.accordion-title
-  width: 100%
-  padding: 24px
-  h2
-    margin: 0
-    color: #98A4C4
 
 .card
   border: none
@@ -1204,6 +1241,34 @@ h2
      &:nth-child(odd)
        background: rgba(#98A4C4, .08)
 
+.table-license
+  margin: 47px 0 0
+  font-size: 21px
+  font-weight: bold
+  width: 100%
+  thead
+    color: #1AA3E0
+    font-weight: 500
+    font-size: 24px
+    th
+      padding: 24px 15px
+  td, th
+    text-align: center
+    min-width: 215px
+    vertical-align: middle
+    &:first-child
+      width: 100%
+      text-align: left
+  td
+    padding: 15px
+  tbody
+    tr
+      &:nth-child(odd)
+        background: rgba(#424B62, .3)
+  .icon-check
+    width: 24px
+    height: 17px
+
 .tooltip-wrapper
   position: relative
 
@@ -1212,8 +1277,8 @@ h2
   display: none
   position: absolute
   top: calc(100% + 17px)
-  left: 50%
-  transform: translate(-50%,0)
+  right: -20px
+  //transform: translate(-50%,0)
   z-index: 1
   background: #fff
   box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
@@ -1232,7 +1297,7 @@ h2
     height: 30px
     content: ''
     position: absolute
-    left: 50%
+    right: 0
     transform: translate(-50%,0) rotate(45deg)
     background: #fff
     border: 1px solid rgba(152, 164, 196, 0.5)
@@ -1603,6 +1668,633 @@ h2
   font-size: 22px
   font-weight: bold
 
+
+//.main
+.main
+  padding: 120px 0 30px
+  position: relative
+  background: url("../img/bg.jpeg") no-repeat center
+    size: cover
+  .list-social
+    width: auto
+    justify-content: flex-start
+    margin: 0 150px 0 0
+    li
+      margin: 0 40px 0 0
+      a
+        width: 24px
+        height: 24px
+        .icon
+          path
+            fill: #1AA3E0
+
+  .btn
+    width: 250px
+    height: 61px
+    margin: 40px 0 164px
+    font-size: 21px
+  .line-bottom
+    display: flex
+    align-items: center
+
+.main-text
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  position: relative
+  z-index: 1
+
+.box-scroll
+  display: flex
+  align-items: center
+  flex-direction: column
+  font-size: 14px
+  .text
+    transform: rotate(-90deg)
+  .icon
+    width: 8px
+    height: 27px
+    margin: 33px 0 0 0
+
+.main-image
+  width: 1180px
+  img
+    width: 100%
+
+//section-tools
+.section-tools
+  background: url("../img/bg2-2.svg") no-repeat center bottom
+    size: 100%
+  padding: 77px 0 0
+  color: #fff
+
+
+.section-tools__text
+  max-width: 540px
+
+
+
+.section-tools__image
+  position: relative
+  width: 100%
+  max-width: 1148px
+  margin: -200px auto -50px
+  img
+    margin: 0 0 0 -40px
+    width: 100%
+
+
+.box-tools
+  position: absolute
+  max-width: 209px
+  font-weight: 500
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  line-height: 20px
+  .circle
+    display: none
+  h3
+    color: #1AA3E0
+    font-size: 20px
+    font-weight: bold
+    line-height: 24px
+    display: flex
+    align-items: center
+    position: relative
+    padding: 0 15px 0 0
+    &:after
+      content: ''
+      background: #1AA3E0
+      height: 1px
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate(0,-50%)
+      background: #1AA3E0
+      width: 6px
+      height: 6px
+      border-radius: 50%
+
+
+.box-tools1
+  left: 60px
+  top: 483px
+  h3
+    &:after
+      width: 202px
+      right: -202px
+    &:before
+      right: -202px
+
+.box-tools2
+  top: 388px
+  left: 114px
+  h3
+    &:after
+      width: 596px
+      right: -596px
+    &:before
+      right: -596px
+
+.box-tools3
+  top: 270px
+  left: 324px
+  h3
+    &:after
+      width: 279px
+      right: -279px
+    &:before
+      right: -279px
+
+.box-tools4
+  right: 115px
+  top: 290px
+  h3
+    padding: 0
+    &:after
+      width: 89px
+      left: -89px
+    &:before
+      left: -89px
+
+.box-tools5
+  right: 45px
+  bottom: 415px
+  h3
+    padding: 0
+    &:after
+      width: 22px
+      left: -30px
+    &:before
+      left: -30px
+
+.box-tools6
+  bottom: 350px
+  right: 235px
+  h3
+    padding: 0
+    &:after
+      width: 109px
+      left: -120px
+    &:before
+      left: -120px
+
+.box-tools7
+  bottom: 230px
+  right: 400px
+  h3
+    padding: 0
+    &:after
+      width: 117px
+      left: -125px
+    &:before
+      left: -125px
+
+.box-tools8
+  bottom: 210px
+  left: 55px
+  h3
+    &:after
+      width: 126px
+      right: -125px
+    &:before
+      right: -126px
+
+.fullscreen-video
+  width: 100%
+  height: auto
+  box-shadow: 0 2.65657px 3.81881px rgba(0, 0, 0, 0.11527), 0 6.3841px 9.17714px rgba(0, 0, 0, 0.165596), 0 12.0207px 17.2797px rgba(0, 0, 0, 0.205), 0 21.4429px 30.8241px rgba(0, 0, 0, 0.244404), 0 40.1065px 57.6531px rgba(0, 0, 0, 0.29473), 0px 96px 138px rgba(0, 0, 0, 0.41)
+
+.video-wrapper
+  width: 100%
+  position: relative
+  display: table
+  margin: 65px auto
+  max-width: 892px
+
+
+.playpause
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 124px
+  height: 124px
+  background: url("../img/play.svg") no-repeat center
+    size: contain
+  z-index: 2
+  cursor: pointer
+
+//works
+.works
+  padding: 70px 0 29px
+  background: #fff url("../img/line.svg") no-repeat center
+    size: 100%
+  h2
+    color: #22283C
+  .card-header
+    border-bottom: 1px solid rgba(66, 75, 98, 0.2)
+    .btn-link
+      color: #fff
+  .card-body
+    background: transparent
+
+//works-section
+.works-section
+  background: #FFFFFF
+  padding: 50px 0 55px
+
+.works-slider
+  width: 100%
+  color: #22283C
+  line-height: 24px
+
+.works-slider__box
+  display: flex
+  align-items: center
+
+
+.works-slider__image
+  width: 648px
+  min-width: 648px
+  margin: 0 80px 0 0
+
+.works-slider__text
+  max-width: 648px
+  h3
+    line-height: 100.4%
+    font-size: 40px
+    font-weight: 900
+    margin: 0 0 40px
+
+.works-slider__nav
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: auto
+  bottom: 0
+  margin: 0 16px
+  li.slick-active
+    background: #1AA3E0
+    box-shadow: 0 5px 10px rgba(26, 163, 224, 0.5)
+    border-color: #1AA3E0
+  li
+    border-radius: 50%
+    transition: .3s ease
+    border: 1px solid #9B9EA8
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+
+.slick-arrow
+  position: relative
+  top: 0
+  transform: translate(0)
+  right: 0
+  left: 0
+  width: 8px
+  height: 13px
+  z-index: 1
+  &:before
+    display: none
+
+.slick-next
+  background: url("../img/arrow-right.svg") no-repeat center
+    size: contain
+  order: 1
+  &:hover, &:focus
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: contain
+
+.slick-prev
+  background: url("../img/arrow-left.svg") no-repeat center
+    size: contain
+  &:hover, &:focus
+    background: url("../img/arrow-left.svg") no-repeat center
+      size: contain
+
+.slick-slide
+  outline: none
+
+//stages-work
+.stages-work
+  background: url("../img/bg3.svg") no-repeat center top
+    size: 100%
+  padding: 163px 0 174px
+  .btn
+    width: 222px
+    margin: 0 auto
+    height: 61px
+    font-size: 21px
+  .info-text
+    margin: 45px auto 0
+    text-align: center
+    max-width: 275px
+    line-height: 20px
+    font-weight: bold
+  h2
+    margin: 0 0 24px
+
+.stages-work__box
+  position: relative
+  width: 398px
+  color: #fff
+  margin: 0 0 70px
+  &:last-child
+    &:after
+      display: none
+  &:nth-child(2)
+    &:after
+      right: -95px
+  &:after
+    content: ''
+    width: 206px
+    height: 16px
+    position: absolute
+    top: 170px
+    right: 0
+    background: url("../img/arrow-stages.svg") no-repeat
+      size: contain
+
+  &:before
+    content: ''
+    position: absolute
+    left: 30%
+    top: 50%
+    transform: translate(-50%,-50%)
+    background: url("../img/shadow.svg") no-repeat center
+      size: cover
+    width: 100%
+    height: 350px
+  >*
+    position: relative
+    z-index: 1
+  .number
+    color: #1D2337
+    font-weight: 900
+    line-height: 357px
+    font-size: 300px
+  .icon
+    min-width: 64px
+    width: 64px
+    height: 64px
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+  .text
+    max-width: 221px
+    margin: 0 0 0 8px
+    line-height: 20px
+    font-weight: bold
+  h3
+    font-size: 36px
+    font-weight: 900
+    line-height: 100.4%
+    margin: 0 0 14px
+
+.stages-work__box-content
+  display: flex
+  align-items: flex-start
+  position: absolute
+  z-index: 1
+  left: 0
+  top: 100px
+
+.stages-work__content
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+//about
+.about
+  background: #FFFFFF
+  padding: 50px 0
+  color: #22283C
+  h2
+    color: #22283C
+  .description
+    max-width: 432px
+    color: #1AA3E0
+  .info-text
+    color: #424B62
+    font-size: 14px
+    font-weight: 500
+    line-height: 17px
+    h3
+      font-size: 21px
+      font-weight: bold
+      padding: 0 0 16px
+      position: relative
+      margin: 0 0 16px
+      line-height: 26px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        opacity: .5
+        background: #98A4C4
+        width: 100px
+        height: 1px
+
+.advantages-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 60px 0 0
+
+.advantages-box
+  margin: 0 0 30px
+  position: relative
+  color: #424B62
+  font-size: 12px
+  font-weight: 500
+  &:last-child
+    width: 100%
+  p
+    max-width: 130px
+  &:before
+    content: ''
+    position: absolute
+    height: 16px
+    width: 18px
+    left: -24px
+    top: 30px
+    background: url("../img/arrow-top.svg") no-repeat center
+      size: contain
+  .number
+    line-height: 78px
+    font-size: 64px
+    font-weight: 900
+    color: #1AA3E0
+    display: flex
+    align-items: center
+    span
+      display: inline-block
+      margin: 0 0 0 7px
+      font-size: 16px
+      line-height: 20px
+
+
+.about-box
+  margin: 0 0 28px
+
+.about-img
+  width: 1157px
+  margin: 80px 0 0
+
+
+.about-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 89px 0 0
+
+.about-box
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-weight: bold
+  width: 195px
+
+.about-box__icon
+  width: 60px
+  height: 60px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 16px
+
+//about-license
+.about-license
+  margin: 92px 0 0
+  background: url("../img/bg4.svg") no-repeat center bottom
+    size: 100%
+  .btn-group
+    margin: 0 0 158px
+    justify-content: flex-end
+    width: 100%
+    padding: 0 30px 0 0
+  .btn
+    width: 136px
+    font-size: 16px
+    height: 38px
+    flex: none
+    margin: 0 80px 0 0
+    &:last-child
+      margin: 0
+
+
+
+//main-download
+.main-download
+  padding: 120px 0 100px
+  background: url("../img/bg6.svg") no-repeat center
+    size: 100%
+  .info-text
+    margin: 113px 0 0
+    line-height: 24px
+    font-size: 16px
+    width: 100%
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+  .btn-group
+    flex-direction: column
+    align-items: flex-start
+    margin: 30px 0 0
+  .btn
+    width: 382px
+    margin: 0 0 32px
+    height: 65px
+    &:last-child
+      margin: 0
+    .icon
+      width: 32px
+      height: 32px
+      margin: 0 10px 0 0
+  .main-image
+    width: 1390px
+    position: relative
+    top: 0
+    right: 0
+
+//works-download
+.works-download
+  background: transparent
+  padding: 0
+  .description
+    color: #98A4C4
+  h2
+    color: #fff
+  .btn
+    margin: 21px auto 28px
+    max-width: 382px
+    width: 100%
+    height: 65px
+  .video-wrapper
+    margin: 41px auto 60px
+    background: #22283C
+  .fullscreen-video
+    box-shadow: none
+
+    mix-blend-mode: multiply
+  .playpause
+    background: url("../img/play2.svg") no-repeat center
+      size: contain
+  .video-click
+    background: transparent
+  .info-box
+    margin: 60px 0
+    text-align: center
+    color: #98A4C4
+    font-size: 16px
+    line-height: 160%
+    strong
+      font-weight: bold
+
+.accordion
+  overflow: hidden
+  width: 100%
+  border: 1px solid #424B62
+    radius: 8px
+
+
+.accordion-title
+  width: 100%
+  padding: 24px
+  h2
+    margin: 0
+    color: #98A4C4
+    font-size: 26px
+    font-weight: 600
 
 
 @import "media"
