@@ -149,6 +149,9 @@ button, .btn {
 .btn-red {
   background: #DB635A; }
 
+.btn-violet {
+  background: #988ff2; }
+
 .btn-white {
   border: 1px solid rgba(152, 164, 196, 0.5);
   background: #fff;
@@ -953,6 +956,12 @@ footer {
   padding: 14px;
   margin: 0 auto; }
 
+.form-on-check .form-message__img {
+  background: #dadbfd; }
+
+.form-success .form-message__img {
+  background: #E6F4D4; }
+
 .form-message__title {
   text-align: center;
   margin: 30px auto 10px;
@@ -1678,24 +1687,32 @@ footer {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.account-info__pro {
+.account-info__standart {
   background: #77BF1B url("../img/bg-pro.svg") no-repeat center;
     background-size: cover; }
-  .account-info__pro .btn-white {
+  .account-info__standart .btn-white {
     color: #81C728; }
 
-.account-alert {
+.account-info__premium {
   background: #988FF2 url("../img/bg-alert.svg") no-repeat center;
     background-size: cover;
   padding-bottom: 40px; }
-  .account-alert .btn-white {
+  .account-info__premium .btn-white {
     width: 101px;
     color: #988FF2; }
 
-.account-info__free {
+.account-info__basic {
   background: #98A4C3 url("../img/bg-free.svg") no-repeat center;
     background-size: cover; }
-  .account-info__free .btn-white {
+  .account-info__basic .btn-white {
+    color: #98A4C3;
+    margin: 0 0 22px auto; }
+
+.account-info__unlimited {
+  background: #FC8B8C url("../img/bg-alert.svg") no-repeat center;
+    background-size: cover;
+  padding-bottom: 40px; }
+  .account-info__unlimited .btn-white {
     color: #98A4C3;
     margin: 0 0 22px auto; }
 
@@ -2790,10 +2807,10 @@ footer {
 @media only screen and (max-width: 1199px) {
   .header-menu li a {
     font-size: 14px; }
-  .account-info__pro .account-info__item {
+  .account-info__standart .account-info__item {
     width: 100%;
     margin: 0 0 16px; }
-    .account-info__pro .account-info__item:last-child {
+    .account-info__standart .account-info__item:last-child {
       margin: 0;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2804,7 +2821,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .account-info__pro .account-info__item:last-child .btn {
+      .account-info__standart .account-info__item:last-child .btn {
         margin: 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
