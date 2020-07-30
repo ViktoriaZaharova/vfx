@@ -26,6 +26,10 @@ $('.works-slider').slick({
     nextArrow: '<button type="button" class="slick-next"></button>'
 });
 
+$('.main-history__content').click(function () {
+    $(this).toggleClass('open').find('.main-history__info').slideToggle();
+});
+
 
 $('.playpause').click(function () {
     $('.video-wrapper').toggleClass('video-click');

@@ -510,4 +510,10 @@
             <path d="M14 17H0V27L14 28.75V17Z" fill="white"/>
         </g>
     </symbol>
+
+    <symbol id="line" viewBox="0 0 16 1">
+        <g>
+                <rect width="16" height="1" fill="#D5472F"/>
+        </g>
+    </symbol>
 </svg>
