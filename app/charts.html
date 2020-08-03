@@ -96,7 +96,7 @@ how to trade binary options">
 </div>
 
 
-<header>
+<header class="header-tools">
 
     <div class="container">
         <div class="row">
@@ -168,7 +168,28 @@ how to trade binary options">
 
             <div class="col-12">
                 <div class="tools-image">
-                    <img src="img/charts-img.png" alt="">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_7e101"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                            new TradingView.widget(
+                                {
+                                    "autosize": true,
+                                    "symbol": "NASDAQ:AAPL",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "dark",
+                                    "style": "1",
+                                    "locale": "ru",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                }
+                            );
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
                 </div>
             </div>
         </div>
@@ -187,10 +208,14 @@ how to trade binary options">
                     <p>Advanced graph widget is a powerful free tool that allows you to easily embed a graph into any
                         website. Just select the appropriate settings and click Apply for preview, then copy the code to
                         insert into your site.</p>
-                        <p>You can customize your chart by changing the default tool or list of quotes, add tools for
+                    <p>You can customize your chart by changing the default tool or list of quotes, add tools for
                         technical analysis, and much more. Moreover, you can add data about market leaders and an
                         economic calendar, making the widget a full-fledged analytical platform.</p>
-                    <p>On the online-chart you may observe the movements of currencies in real time. It shows the most accurate and up-to-date information on the currency pair you are working with. When the market volatility is high, it is very important to continuously monitor the movement of the exchange rate and to notice the trends tamely, as well as sell or buy the assets. Use the online-chart to create or to correct your trading strategy.      </p>
+                    <p>On the online-chart you may observe the movements of currencies in real time. It shows the most
+                        accurate and up-to-date information on the currency pair you are working with. When the market
+                        volatility is high, it is very important to continuously monitor the movement of the exchange
+                        rate and to notice the trends tamely, as well as sell or buy the assets. Use the online-chart to
+                        create or to correct your trading strategy. </p>
 
                     <a href="#" class="btn btn-accent">Start trading</a>
                 </div>

@@ -920,7 +920,9 @@ footer {
 
 .btn-burger {
   display: none;
-  width: 24px; }
+  width: 24px;
+  height: 24px;
+  margin: auto 0; }
   .btn-burger span {
     width: 100%;
     height: 2px;
@@ -930,6 +932,9 @@ footer {
     border-radius: 3px; }
     .btn-burger span:last-child {
       margin: 0; }
+  .btn-burger svg {
+    width: 100%;
+    height: 100%; }
 
 .recaptcha {
   margin: 0 auto 24px;
@@ -2033,6 +2038,9 @@ footer {
   .main-image img {
     width: 100%; }
 
+.header-tools .container {
+  max-width: 1730px; }
+
 .section-tools {
   background: url("../img/bg2-2.svg") no-repeat center bottom;
     background-size: 100%;
@@ -2682,13 +2690,18 @@ footer {
     font-size: 40px; }
 
 .tools-image {
-  width: 100%; }
+  width: 100%;
+  height: 526px; }
   .tools-image img {
     width: 100%; }
+
+.tradingview-widget-container {
+  height: 100%; }
 
 .tools__content {
   padding: 20px 85px;
   font-weight: bold;
+  line-height: 180%;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2); }
   .tools__content p {
@@ -2772,14 +2785,16 @@ footer {
     height: 11px; }
   .table-history td {
     padding: 18px 10px; }
-  .table-history tbody tr {
-    min-height: 53px; }
-    .table-history tbody tr:nth-child(odd) {
-      background: rgba(66, 75, 98, 0.3); }
-    .table-history tbody tr td:first-child {
-      padding: 18px 10px 18px 20px; }
-    .table-history tbody tr td:last-child {
-      padding: 18px 20px 18px 10px; }
+  .table-history tbody {
+    font-size: 14px; }
+    .table-history tbody tr {
+      min-height: 53px; }
+      .table-history tbody tr:nth-child(odd) {
+        background: rgba(66, 75, 98, 0.3); }
+      .table-history tbody tr td:first-child {
+        padding: 18px 10px 18px 20px; }
+      .table-history tbody tr td:last-child {
+        padding: 18px 20px 18px 10px; }
   .table-history thead {
     color: #1AA3E0;
     font-size: 24px;
@@ -3313,7 +3328,8 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 7px; }
+    width: 7px;
+    height: 20px; }
   .header-item {
     font-size: 14px;
     margin: 0 17px 0 0; }
@@ -3772,7 +3788,9 @@ footer {
   .tools-section__history .tools__content {
     padding: 0; }
   .tools-section h2 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .tools-image {
+    height: 580px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer {
@@ -3836,7 +3854,8 @@ footer {
   .checkbox__text {
     font-size: 18px; }
   .btn-burger {
-    width: 4px; } }
+    width: 4px;
+    height: 16px; } }
 
 @media only screen and (max-width: 340px) {
   .nav-tabs .nav-item {
