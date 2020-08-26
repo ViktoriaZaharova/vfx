@@ -46,6 +46,20 @@ $('.playpause').click(function () {
 
 });
 
+// service
+$('.service-content').each(function () {
+    if ($(this).height() > 2430) {
+        $(this).addClass('hidden');
+        $(this).parents('.service-content__wrapper').append('<div class="btn-load"><span>Read more</span></div>');
+    }
+});
+
+$('.btn-load').click(function () {
+    $('.service-content').removeClass('hidden');
+    $(this).fadeOut();
+});
+
+
 var target = $('.benefits__inner');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
@@ -76,6 +90,8 @@ $(window).scroll(function(){
         });
     }
 });
+
+
 
 
 // timer

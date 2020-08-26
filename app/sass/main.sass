@@ -2496,7 +2496,182 @@ footer
   font-size: 18px
   font-weight: bold
 
+//service
+.service
+  background: #22283C
+  width: 100%
+  padding: 140px 0 120px
+  color: #fff
+  h1
+    color: #fff
+    text-align: center
+    text-transform: uppercase
+    font-size: 40px
+    font-weight: 900
+  h3
+    color: #fff
+    font-size: 30px
+    font-weight: 500
+    text-transform: uppercase
+    margin: 70px auto 40px
+    width: fit-content
+    line-height: 150%
 
+.service-menu
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 19px 0 30px
+  li
+    margin: 0 40px 0 0
+
+    &:last-child
+      margin: 0
+    a
+      text-transform: uppercase
+      color: #fff
+      font-size: 14px
+    .active
+      color: #909090
+
+.service-content.hidden
+  max-height: 2430px
+  overflow-y: hidden
+
+.service-content
+  padding: 0 58px
+  max-width: 880px
+  width: 100%
+  margin: 0 auto
+  line-height: 150%
+  font-size: 18px
+
+  border:
+    left: 1px solid rgba(255, 255, 255, 0.2)
+    right: 1px solid rgba(255, 255, 255, 0.2)
+  ul
+    counter-reset: item
+    h3
+      position: relative
+      &:before
+        content: counters(item, ".") ". "
+        counter-increment: item
+        display: inline-block
+        margin: 0 5px 0 0
+    li
+      margin: 0 0 30px
+      position: relative
+      ul
+        margin: 30px 0
+
+      &:last-child
+        margin: 0
+      p
+        display: block
+        margin: 30px 0
+        &:last-child
+          margin: 0
+
+.list-service
+  display: block
+  margin: 30px 0
+  counter-reset: item
+  li
+    position: relative
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: 500
+
+
+.list-text
+  counter-reset: listStyle
+  margin: 30px 0
+  li
+    counter-increment: listStyle
+    &:before
+      content: counter(listStyle, lower-alpha) ". "
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: 500
+
+.list-text2
+  counter-reset: listStyle
+  margin: 30px 0
+  li
+    counter-increment: listStyle
+    &:before
+      content: counter(listStyle, lower-alpha) ") "
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: 500
+
+.list-line
+  margin: 30px 0
+  counter-reset: line
+  li
+    position: relative
+    &:before
+      content: '—'
+      counter-increment: line
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: 500
+
+.list-num
+  display: block
+  margin: 30px 0
+  counter-reset: list
+  li
+    position: relative
+    counter-increment: list
+    &:before
+      content: counter(list) ") "
+      display: inline-block
+      margin: 0 5px 0 0
+      font-weight: 500
+
+.btn-load
+  position: relative
+  width: 100%
+  max-width: 880px
+  padding: 0 58px
+  margin: 66px auto 0
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: calc(100% - 116px)
+    height: 1px
+    background: rgba(255, 255, 255, 0.2)
+  span
+    position: relative
+    display: inline-block
+    padding: 0 50px
+    font-weight: 500
+    font-size: 18px
+    background: #22283C
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      width: 29px
+      height: 14px
+      bottom: -24px
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: contain
+      transform: translate(-50%,0)
 
 @import "media"
 // Всегда в конце
