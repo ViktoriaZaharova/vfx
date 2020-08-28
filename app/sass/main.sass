@@ -310,7 +310,7 @@ footer
 //  max-width: 1440px
 
 h1
-  font-size: 49px
+  font-size: 37px
   font-weight: 900
   text-transform: uppercase
   line-height: 68px
@@ -324,7 +324,7 @@ h2
   line-height: 44px
 
 .main-text__subtitle
-  font-size: 101px
+  font-size: 77px
   font-weight: 900
   text-shadow: 0 15px 20px rgba(0, 0, 0, 0.5)
   line-height: 99.4%
@@ -1239,6 +1239,7 @@ footer
   line-height: 145%
   font-weight: bold
   width: 100%
+
   thead
     color: #98A4C4
     font-weight: 500
@@ -1261,31 +1262,268 @@ footer
 
 .table-license
   margin: 47px 0 0
-  font-size: 21px
-  font-weight: bold
   width: 100%
+  overflow: hidden
+  border-radius: 0 0 10px 10px
+
   thead
+    background: #22283C
     color: #1AA3E0
     font-weight: 500
     font-size: 24px
     th
-      padding: 24px 15px
+      padding: 10px 15px
+      position: relative
+    .th-title
+      color: #FFFFFF
+      font-size: 30px
+      font-weight: 900
+      text-transform: uppercase
+      padding: 10px 30px
   td, th
     text-align: center
     min-width: 215px
     vertical-align: middle
     &:first-child
-      width: 100%
       text-align: left
   td
     padding: 15px
+    text-align: center
+    border: none
+      right: 1px solid rgba(#22283C, .2)
+    p
+      text-align: center
+    &:first-child
+      font-weight: 600
+      color: #22283C
+      font-size: 18px
+    &:last-child
+      border: none
   tbody
+    font-size: 22px
+    font-weight: bold
+    color: rgba(#22283C, .6)
+    background: #fff
     tr
-      &:nth-child(odd)
-        background: rgba(#424B62, .3)
+      &:nth-child(even)
+        background: #eee
+      &:first-child
+        td
+          padding: 20px 15px
+      &:last-child
+        background: #fff
+        td
+          border: none
+          padding: 20px 10px 35px
+          position: relative
+          &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+            &:before
+              content: ''
+              position: absolute
+              left: 50%
+              top: 0
+              transform: translate(-50%,0)
+              opacity: .2
+              background: #22283C
+              height: 1px
+              width: calc(100% - 30px)
+
   .icon-check
     width: 24px
-    height: 17px
+    height: 20px
+
+.th-box__icon
+  width: 32px
+  height: 33px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 5px
+  z-index: 1
+  position: relative
+
+.th-box__price
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  text-align: center
+  font-weight: bold
+  font-size: 32px
+  .currency
+    font-size: 20px
+    margin: 0 0 5px
+
+.th-box__name
+  text-align: center
+  font-weight: 900
+  font-size: 20px
+  text-transform: uppercase
+
+.th-box
+  color: #FFFFFF
+  position: relative
+  >*
+    position: relative
+    z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 129px
+    background: url("../img/table-bg1.svg") no-repeat center top
+      size: 100%
+  &:nth-child(3)
+    &:before
+      background: url("../img/table-bg2.svg") no-repeat center top
+        size: 100%
+  &:nth-child(4)
+    &:before
+      background: url("../img/table-bg3.svg") no-repeat center top
+        size: 100%
+  &:nth-child(5)
+    &:before
+      background: url("../img/table-bg4.svg") no-repeat center top
+        size: 100%
+
+.th-box__bg
+  width: 100%
+  height: 166px
+  position: absolute
+  left: 0
+  top: 0
+
+
+.table-license__description
+  margin: 60px auto 0
+  text-align: center
+  font-size: 30px
+  font-weight: 500
+  width: 100%
+
+.bg-grey
+  background: #98A4C3
+
+.bg-green
+  background: #81C728
+
+.bg-violet
+  background: #988FF2
+
+.bg-pink
+  background: #FC8B8C
+
+.license-box
+  margin: 0 0 45px
+  .btn
+    margin: 20px auto 0
+    max-width: none
+    height: 48px
+    width: 100%
+    font-size: 14px
+  .icon-check
+    width: 21px
+    height: 16px
+    margin: 0 13px 0 0
+  .th-box__icon
+    margin: 0 11px 0 0
+    width: 34px
+    height: 34px
+  .th-box__price
+    font-size: 48px
+    .currency
+      font-size: 30px
+      margin: 0 0 5px
+  &:nth-child(2)
+    .th-box__icon
+      width: 41px
+      height: 41px
+  &:nth-child(3)
+    .th-box__icon
+      width: 44px
+      height: 44px
+  &:nth-child(4)
+    .th-box__icon
+      width: 44px
+      height: 45px
+  &:last-child
+    margin: 0
+
+.list-check
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 12px
+  font-weight: 600
+  li
+    display: flex
+    align-items: center
+    width: 50%
+    margin: 0 0 25px
+
+.license-box-body, .license-box-footer
+  border-radius: 10px
+  overflow: hidden
+
+.license-box-body
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  padding: 17px 50px 60px 25px
+  position: relative
+  z-index: 1
+
+.license-box-footer
+  padding: 33px 17px 29px 20px
+  margin: -15px 0 0
+  display: none
+
+.license-box__name
+  display: flex
+  align-items: center
+  margin: 0 0 15px
+  h3
+    font-size: 23px
+    font-weight: 900
+    text-transform: uppercase
+
+.license-box__line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+.license-box__line-item
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  font-size: 18px
+  font-weight: 600
+  margin: 0 0 15px
+  &:last-child
+    margin: 0
+  span
+    font-weight: bold
+    font-size: 25px
+    opacity: .6
+
+.btn-dropList
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #FFFFFF
+    radius: 50%
+  width: 30px
+  height: 30px
+  padding: 7px
+  transition: .3s ease
+
+.btn-dropList.click
+  transform: rotate(180deg)
+
+
 
 .tooltip-wrapper
   position: relative
@@ -1780,7 +2018,7 @@ footer
 
 .box-tools
   position: absolute
-  max-width: 209px
+  max-width: 302px
   font-weight: 500
   z-index: 1
   display: flex
@@ -1819,8 +2057,9 @@ footer
 
 
 .box-tools1
-  left: 60px
-  top: 483px
+  left: 49px
+  top: 465px
+  max-width: 256px
   h3
     &:after
       width: 202px
@@ -1829,8 +2068,9 @@ footer
       right: -202px
 
 .box-tools2
-  top: 388px
-  left: 114px
+  top: 376px
+  left: 88px
+  max-width: 220px
   h3
     &:after
       width: 596px
@@ -1839,8 +2079,9 @@ footer
       right: -596px
 
 .box-tools3
-  top: 270px
-  left: 324px
+  top: 260px
+  left: 300px
+  max-width: 233px
   h3
     &:after
       width: 279px
@@ -1850,7 +2091,8 @@ footer
 
 .box-tools4
   right: 115px
-  top: 290px
+  top: 278px
+  max-width: 210px
   h3
     padding: 0
     &:after
@@ -1860,8 +2102,9 @@ footer
       left: -89px
 
 .box-tools5
-  right: 45px
-  bottom: 415px
+  right: 10px
+  bottom: 387px
+  max-width: 253px
   h3
     padding: 0
     &:after
@@ -1871,8 +2114,9 @@ footer
       left: -30px
 
 .box-tools6
-  bottom: 350px
-  right: 235px
+  bottom: 338px
+  right: 190px
+  max-width: 240px
   h3
     padding: 0
     &:after
@@ -1882,8 +2126,9 @@ footer
       left: -120px
 
 .box-tools7
-  bottom: 230px
-  right: 400px
+  bottom: 238px
+  right: 295px
+  max-width: 295px
   h3
     padding: 0
     &:after
@@ -1893,7 +2138,7 @@ footer
       left: -125px
 
 .box-tools8
-  bottom: 210px
+  bottom: 240px
   left: 55px
   h3
     &:after
@@ -2049,7 +2294,7 @@ footer
 
 .stages-work__box
   position: relative
-  width: 398px
+  width: 315px
   color: #fff
   margin: 0 0 70px
   &:last-child
@@ -2060,7 +2305,7 @@ footer
       right: -95px
   &:after
     content: ''
-    width: 206px
+    width: 170px
     height: 16px
     position: absolute
     top: 170px
@@ -2239,9 +2484,8 @@ footer
     font-size: 16px
     height: 38px
     flex: none
-    margin: 0 80px 0 0
-    &:last-child
-      margin: 0
+    margin: 0 auto
+
 
 
 
@@ -2672,6 +2916,55 @@ footer
       background: url("../img/arrow-bottom.svg") no-repeat center
         size: contain
       transform: translate(-50%,0)
+
+//main-pricing
+.main-pricing
+  padding: 50px 0 160px
+
+//additional-bonuses
+.additional-bonuses
+  padding: 0 0 45px
+  h2
+    font-weight: 600
+    margin: 0 0 66px
+  .btn
+    max-width: 222px
+    margin: 20px auto 0
+    width: 100%
+    height: 61px
+    font-size: 21px
+
+.additional-bonuses__box
+  font-size: 18px
+  font-weight: 500
+  margin: 0 0 80px
+  line-height: 150%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  a
+    display: inline
+    color: #fff
+    font-weight: 600
+  h3
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: 600
+
+.additional-bonuses__box-top
+  display: flex
+  align-items: center
+  margin: 0 0 18px
+
+.additional-bonuses__box-icon
+  width: 80px
+  min-width: 80px
+  height: 80px
+  margin: 0 50px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
 
 @import "media"
 // Всегда в конце

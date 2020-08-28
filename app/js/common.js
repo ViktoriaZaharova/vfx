@@ -59,6 +59,11 @@ $('.btn-load').click(function () {
     $(this).fadeOut();
 });
 
+$('.btn-dropList').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click').parents('.license-box').find('.license-box-footer').slideToggle();
+});
+
 
 var target = $('.benefits__inner');
 var targetPos = target.offset().top;

@@ -151,7 +151,7 @@
     margin: 30px 0 0
 
   .table-license
-    margin: 10px 0 34px
+    margin: 30px 0 34px
     td
       padding: 13px
 
@@ -201,6 +201,38 @@
   header .dropDown-menu
     top: 76px
 
+  .table-license td, .table-license th
+    min-width: 186px
+
+  .table-license thead .th-title
+    font-size: 26px
+
+  .th-box__price
+    font-size: 24px
+    .currency
+      font-size: 16px
+      margin: 0 0 3px
+
+  .th-box:before
+    height: 110px
+
+  .table-license
+    font-size: 16px
+    td
+      &:first-child
+        font-size: 16px
+    tbody
+      font-size: 20px
+
+  .th-box__name
+    font-size: 18px
+
+  .th-box__price
+    font-size: 20px
+
+  .table-license__description
+    font-size: 22px
+    margin: 40px 0 0
 
 @media only screen and (max-width : 991px)
   .header-item
@@ -274,8 +306,8 @@
 
   .box-tools1
     display: block
-    top: 186px
-    left: 89px
+    top: 148px
+    left: 135px
     font-size: 12px
     line-height: 15px
     width: 160px
@@ -525,6 +557,30 @@
     span
       padding: 0 10px
 
+@media only screen and (max-width : 940px)
+  .table-license td, .table-license th
+    min-width: 145px
+
+  .th-box:before, .th-box:nth-child(3):before, .th-box:nth-child(4):before, .th-box:nth-child(5):before
+    -webkit-background-size: cover
+    background-size: cover
+
+  .table-license td:first-child
+    font-size: 14px
+
+  .table-license tbody
+    font-size: 18px
+
+  .th-box__name
+    font-size: 16px
+
+  .table-license thead .th-title
+    font-size: 22px
+
+  .about-license .btn
+    width: 120px
+
+
 @media only screen and (max-width : 860px)
   .about-box
     width: 100%
@@ -556,6 +612,19 @@
 
   .form-history button.btn:last-child
     margin: 8px 0 0
+
+  .additional-bonuses__box h3
+    font-size: 24px
+
+  .additional-bonuses__box-icon
+    width: 60px
+    height: 60px
+    min-width: 60px
+    margin: 0 30px 0 0
+
+  .additional-bonuses__box
+    font-size: 16px
+    margin: 0 0 40px
 
 
 @media only screen and (max-width : 767px)
@@ -839,6 +908,30 @@
       &:last-child
         margin: 0 0 10px
 
+  .about-license
+    .btn
+      width: 100%
+      margin: 20px auto 0
+      height: 48px
+      font-size: 14px
+    h2
+      margin: 0 0 27px
+
+  .additional-bonuses__box h3
+    br
+      display: none
+
+  .additional-bonuses .btn
+    height: 48px
+    font-size: 18px
+    margin: 0 auto
+
+  .main-pricing
+    padding: 50px 0 70px
+
+  .additional-bonuses h2
+    margin: 0 0 40px
+
 
 @media only screen and (max-width : 700px)
   .table-history
@@ -1101,6 +1194,9 @@
 
   .service-content ul h3
     font-size: 22px
+
+  .additional-bonuses__box h3
+    font-size: 20px
 
 @media only screen and (max-width : 480px)
   .account-footer
