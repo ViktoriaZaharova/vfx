@@ -1272,8 +1272,21 @@ footer
     font-weight: 500
     font-size: 24px
     th
-      padding: 10px 15px
+      padding: 15px 15px 28px
       position: relative
+      &:nth-child(2)
+        .th-box__icon
+          width: 34px
+          height: 32px
+      &:nth-child(3)
+        .th-box__icon
+          width: 40px
+          height: 40px
+      &:nth-child(4)
+        .th-box__icon
+          width: 44px
+          height: 44px
+
     .th-title
       color: #FFFFFF
       font-size: 30px
@@ -1282,7 +1295,7 @@ footer
       padding: 10px 30px
   td, th
     text-align: center
-    min-width: 215px
+    min-width: 278px
     vertical-align: middle
     &:first-child
       text-align: left
@@ -1371,7 +1384,7 @@ footer
     left: 0
     top: 0
     width: 100%
-    height: 129px
+    height: 166px
     background: url("../img/table-bg1.svg") no-repeat center top
       size: 100%
   &:nth-child(3)
@@ -1426,6 +1439,8 @@ footer
     width: 21px
     height: 16px
     margin: 0 13px 0 0
+    path
+      fill: #fff
   .th-box__icon
     margin: 0 11px 0 0
     width: 34px
@@ -2012,7 +2027,7 @@ footer
   max-width: 1148px
   margin: -200px auto -50px
   img
-    margin: 0 0 0 -40px
+    margin: 0
     width: 100%
 
 
@@ -2063,9 +2078,9 @@ footer
   h3
     &:after
       width: 202px
-      right: -202px
+      right: -240px
     &:before
-      right: -202px
+      right: -240px
 
 .box-tools2
   top: 376px
@@ -2074,68 +2089,68 @@ footer
   h3
     &:after
       width: 596px
-      right: -596px
+      right: -632px
     &:before
-      right: -596px
+      right: -632px
 
 .box-tools3
   top: 260px
-  left: 300px
+  left: 272px
   max-width: 233px
   h3
     &:after
       width: 279px
-      right: -279px
+      right: -347px
     &:before
-      right: -279px
+      right: -347px
 
 .box-tools4
-  right: 115px
-  top: 278px
+  right: 79px
+  top: 280px
   max-width: 210px
   h3
     padding: 0
     &:after
       width: 89px
-      left: -89px
+      left: -101px
     &:before
-      left: -89px
+      left: -101px
 
 .box-tools5
-  right: 10px
-  bottom: 387px
+  right: -40px
+  bottom: 400px
   max-width: 253px
   h3
     padding: 0
     &:after
       width: 22px
-      left: -30px
+      left: -23px
     &:before
-      left: -30px
+      left: -23px
 
 .box-tools6
   bottom: 338px
-  right: 190px
+  right: 150px
   max-width: 240px
   h3
     padding: 0
     &:after
       width: 109px
-      left: -120px
+      left: -124px
     &:before
-      left: -120px
+      left: -124px
 
 .box-tools7
   bottom: 238px
-  right: 295px
+  right: 165px
   max-width: 295px
   h3
     padding: 0
     &:after
-      width: 117px
-      left: -125px
+      width: 200px
+      left: -215px
     &:before
-      left: -125px
+      left: -215px
 
 .box-tools8
   bottom: 240px
@@ -2143,9 +2158,9 @@ footer
   h3
     &:after
       width: 126px
-      right: -125px
+      right: -159px
     &:before
-      right: -126px
+      right: -159px
 
 .fullscreen-video
   width: 100%
@@ -2472,8 +2487,11 @@ footer
 //about-license
 .about-license
   margin: 92px 0 0
+  padding: 0 0 270px
   background: url("../img/bg4.svg") no-repeat center bottom
     size: 100%
+  .container
+    max-width: 1440px
   .btn-group
     margin: 0 0 158px
     justify-content: flex-end
@@ -2920,6 +2938,8 @@ footer
 //main-pricing
 .main-pricing
   padding: 50px 0 160px
+  .container
+    max-width: 1440px
 
 //additional-bonuses
 .additional-bonuses
@@ -2965,6 +2985,77 @@ footer
   display: flex
   align-items: center
   justify-content: center
+
+//page-wrapper
+.page-wrapper
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+
+.main-page-making
+  h1
+    font-size: 60.5px
+  .btn
+    max-width: 187px
+  .main-bottom
+    margin: 240px 0 0
+
+
+  .main-page__img
+    position: absolute
+    width: 800px
+    top: -40%
+    right: -25%
+
+.video-making
+  padding: 190px 0 130px
+
+  .video-wrapper
+    position: relative
+    video
+      width: 100%
+      height: auto
+      position: relative
+      z-index: 1
+    &:before
+      width: 710px
+      height: 395px
+      border-radius: 10px
+      box-shadow: 0 0 46px 0 rgba(0, 0, 0, 0.17)
+      background-color: #4b7dff
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: -10px
+
+  .video-button
+    position: absolute
+    top: 50%
+    left: 63%
+    transform: translate(-50%,-50%)
+    z-index: 3
+    display: flex
+    align-items: flex-end
+    .text
+      letter-spacing: 0.4px
+      font-family: 'norms', sans-serif
+      font-size: 16px
+      font-weight: bold
+      margin: 0 0 -20px 13px
+      span
+        font-weight: 300
+
+  .playpause-making
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 84px
+    width: 84px
+    height: 84px
+    background-color: #4b7dff
+    border-radius: 50%
+    cursor: pointer
+
 
 @import "media"
 // Всегда в конце
