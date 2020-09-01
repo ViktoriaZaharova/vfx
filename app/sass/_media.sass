@@ -136,6 +136,12 @@
   .about-img
     width: 900px
 
+  .about-img1
+    width: 67px
+
+  .about-img2
+    width: 739px
+
   .advantages-box
     .number
       font-size: 45px
@@ -243,6 +249,63 @@
   .table-license__description
     font-size: 22px
     margin: 40px 0 0
+
+
+
+  .main-page-making
+    padding: 220px 0 0
+    .main-page__img
+      width: 700px
+      top: -20%
+
+  .main-page .main-bottom
+    margin: 200px 0 0
+
+  .video-making .video-wrapper:before
+    width: 90%
+    height: 100%
+
+  .about-img2
+    width: 539px
+
+  .easy-wrapper:before
+    width: 550px
+
+  .easy-box:before
+    left: 238px
+
+  .easy-box:nth-child(2):before
+    left: 248px
+
+  .easy-box .icon-wrap
+    margin: 0 0 30px
+
+  .easy-wrapper
+    margin: 40px 0
+
+  .easy .easy-text
+    font-size: 16px
+
+  .easy-box__content
+    font-size: 26px
+
+  .list-contacts
+    margin: 40px 0 0
+    li
+      a
+        width: 100px
+        height: 60px
+        padding: 0
+        align-items: center
+
+  .main-making-home
+    padding: 220px 0 0
+    .main-bottom
+      margin: -40px 0 0
+    .image1
+      max-width: 70px
+    .image2
+      max-width: 500px
 
 @media only screen and (max-width : 991px)
   .header-item
@@ -570,6 +633,50 @@
   .table-license thead th
     padding: 4px 15px
 
+  .about-img2, .about-img1
+    position: relative
+    top: 0
+    left: 0
+    right: 0
+
+  .about-img-wrap
+    justify-content: flex-start
+
+  .about-making h2
+    margin: 0 auto 40px
+
+  .advantages-making
+    .advantages-wrapper
+      padding: 0
+      flex-direction: row
+      justify-content: space-around
+      align-items: flex-start
+      flex-wrap: wrap
+      margin: 50px 0 0
+
+  .advantages-making .advantages-box
+    width: 33.3%
+    margin: 0 0 40px
+
+  .easy-box
+    margin: 0 0 50px
+
+  .easy-wrapper:before, .easy-box:before
+    display: none
+
+  .easy-wrapper
+    justify-content: space-around
+    margin: 40px 0 0
+
+  .advantages-making
+    padding: 60px 0
+
+  .vfx-alert__image
+    margin: 30px auto 0
+
+  .contacts
+    padding: 50px 0
+
 @media only screen and (max-width : 940px)
   .table-license td, .table-license th
     min-width: 145px
@@ -642,6 +749,12 @@
   .additional-bonuses__box
     font-size: 16px
     margin: 0 0 40px
+
+
+  .about-making
+    .about-box
+      flex-direction: column
+      align-items: flex-start
 
 
 @media only screen and (max-width : 767px)
@@ -950,6 +1063,94 @@
   .additional-bonuses h2
     margin: 0 0 40px
 
+  .main-page-making .main-page__img
+    top: 0
+    right: 0
+    position: relative
+    width: 100%
+
+  .main-page-making
+    .main-bottom
+      margin: 130px 0 -100px
+
+  .page-wrapper, .home-wrapper
+    h2, h1
+      font-size: 59px
+    .description
+      font-size: 24px
+
+
+  .video-making
+    padding: 100px 0
+    .playpause
+      width: 45px
+      height: 45px
+      min-width: 45px
+      img
+        width: 17px
+
+    .video-button
+      flex-direction: column
+      align-items: center
+      left: 50%
+      .text
+        font-size: 14px
+        margin: 10px auto 0
+        text-align: center
+
+    .video-wrapper
+      margin: 30px 0 0
+      &:before
+        height: 100px
+
+  .about-img-wrap
+    justify-content: center
+
+  .list-contacts
+    justify-content: space-around
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0 0 20px
+      a
+        width: 60px
+        height: 45px
+
+  .contacts .image-bg
+    display: none
+
+  .vfx-alert h2
+    margin: 0 0 40px
+
+  .signals-image .img-logo
+    width: 200px
+    height: 220px
+
+  .list-contacts
+    justify-content: space-between
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0 0 20px
+      a
+        width: 60px
+        height: 45px
+
+  .contacts .image-bg
+    display: none
+
+  .main-making-home
+    .image1
+      margin: 0 30px
+    .main-bottom
+      margin: 30px 0
+
+  .reasons-box
+    text-align: center
+    align-items: center
+
+  .home-wrapper input
+    padding: 0 20px
 
 @media only screen and (max-width : 700px)
   .table-history
@@ -1216,6 +1417,21 @@
   .additional-bonuses__box h3
     font-size: 20px
 
+  .page-wrapper, .home-wrapper
+    h2, h1
+      line-height: normal
+
+  .about-making .about-box
+    margin: 0 0 30px
+
+  .about-img2, .about-img1
+    background: transparent
+    width: auto
+    height: auto
+    margin: 0
+    img
+      display: block
+
 @media only screen and (max-width : 480px)
   .account-footer
     padding: 10px 0 0
@@ -1239,6 +1455,15 @@
   .main-image
     margin: 0 0 0 -30px
     width: 466px
+
+  .page-wrapper, .home-wrapper
+    h2, h1
+      font-size: 48px
+
+  .main-page-making
+    padding: 140px 0 0
+
+
 
 @media only screen and (max-width : 420px)
   .download-info
@@ -1292,6 +1517,20 @@
   .accordion
     margin: 0 0 40px
 
+  .advantages-making .advantages-box
+    width: 100%
+
+  .home-wrapper form
+    padding: 20px
+    width: 100%
+
+  .signals-image .img-logo
+    right: 0
+    width: 170px
+    height: 200px
+
+  .main-making-home
+    padding: 140px 0 0
 
 @media only screen and (max-width : 380px)
   .checkbox__text
