@@ -4285,7 +4285,9 @@ footer {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: transparent;
+  outline: none; }
 
 .main-brokers__box-content {
   width: 100%;
