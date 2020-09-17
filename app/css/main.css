@@ -4525,7 +4525,9 @@ footer {
     height: 21px;
     min-width: 21px;
     position: relative;
-    opacity: 1; }
+    opacity: 1;
+    border: none;
+    outline: none; }
     .modal-header .close:before, .modal-header .close:after {
       content: '';
       position: absolute;
@@ -4564,14 +4566,18 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 18px 0 32px;
   font-size: 20px;
   font-weight: 500; }
   .auto-location a {
     display: inline;
     text-decoration: underline; }
+
+.auto-location-icon {
+  margin: 0 13px 0 0;
+  width: 28px;
+  height: 28px;
+  min-width: 28px; }
 
 .form-search-location {
   width: 100%;
@@ -4872,7 +4878,30 @@ footer {
     .main-making-home .image2 {
       max-width: 500px; }
   .main-brokers__box {
-    padding: 40px; } }
+    padding: 40px; }
+  .main-brokers__logo img {
+    max-width: 100%; }
+  .main-brokers__line {
+    padding: 0;
+    margin: 0 0 60px; }
+  .main-brokers h1 {
+    font-size: 70px; }
+  .brokers-links {
+    font-size: 16px; }
+  .brokers-list-links {
+    max-width: 370px; }
+  .main-brokers {
+    padding: 90px 0; }
+  .brokers-location__text {
+    font-size: 18px; }
+  .main-brokers-right {
+    width: 35%; }
+  .main-brokers-center {
+    width: 30%; }
+  .brokers-info-money__box {
+    margin: 0 30px 0 0; }
+    .brokers-info-money__box p {
+      font-size: 30px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -5209,7 +5238,16 @@ footer {
   .vfx-alert__image {
     margin: 30px auto 0; }
   .contacts {
-    padding: 50px 0; } }
+    padding: 50px 0; }
+  .main-brokers__logo img {
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%); }
+  .main-brokers__box .btn {
+    margin: 20px 0 0;
+    height: 50px;
+    font-size: 16px; }
+  .broker-total-text {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -5227,7 +5265,9 @@ footer {
   .table-license thead .th-title {
     font-size: 22px; }
   .about-license .btn {
-    width: 120px; } }
+    width: 120px; }
+  .main-brokers h1 {
+    font-size: 60px; } }
 
 @media only screen and (max-width: 860px) {
   .about-box {
@@ -5279,7 +5319,25 @@ footer {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; } }
+            align-items: flex-start; }
+  .main-brokers-left, .main-brokers-center {
+    width: 50%; }
+  .main-brokers-right {
+    width: 100%;
+    margin: 40px 0 0; }
+  .main-brokers__box .btn {
+    margin: 20px auto 0; }
+  .brokers-list-links {
+    width: 100%;
+    max-width: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 20px auto 0;
+    padding: 0;
+    border: none; }
+  .brokers-location {
+    margin: 0 0 0 auto; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -5658,7 +5716,11 @@ footer {
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
-    display: none; } }
+    display: none; }
+  .modal-content {
+    padding: 40px 20px 30px; }
+  .modal-body h2 {
+    font-size: 30px; } }
 
 @media only screen and (max-width: 575px) {
   .main {
@@ -5882,7 +5944,38 @@ footer {
     height: auto;
     margin: 0; }
     .about-img2 img, .about-img1 img {
-      display: block; } }
+      display: block; }
+  .main-brokers__box {
+    margin: 0 0 30px;
+    padding: 30px; }
+  .main-brokers__box-content {
+    margin: 0 0 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .main-brokers__logo {
+    margin: 0 0 20px;
+    height: 40px; }
+  .rating-wrapper {
+    margin: 20px 0 0; }
+  .main-brokers-left, .main-brokers-center {
+    width: 100%; }
+  .main-brokers-left {
+    margin: 0 0 30px; }
+  .main-brokers h1 {
+    font-size: 34px;
+    line-height: normal; }
+  .variable-location__links {
+    font-size: 14px;
+    margin: 0 0 10px; }
+  .auto-location {
+    font-size: 16px;
+    margin: 15px 0 20px; }
+  .modal-body h2 {
+    line-height: normal;
+    font-size: 24px; }
+  .logo-modal {
+    max-width: 140px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer {
