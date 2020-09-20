@@ -26,6 +26,20 @@ $('.works-slider').slick({
     nextArrow: '<button type="button" class="slick-next"></button>'
 });
 
+$('.signal-algorithms__slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    fade: true
+});
+
+$('.indicators-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    fade: true
+});
+
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
 });
