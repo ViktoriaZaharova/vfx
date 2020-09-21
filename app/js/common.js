@@ -28,16 +28,24 @@ $('.works-slider').slick({
 
 $('.signal-algorithms__slider').slick({
     slidesToShow: 1,
-    arrows: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     dots: true,
-    fade: true
+    fade: true,
+    appendArrows: '.signal-algorithms__slider-nav',
+    appendDots: '.signal-algorithms__slider-nav',
 });
 
 $('.indicators-slider').slick({
     slidesToShow: 1,
-    arrows: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     dots: true,
-    fade: true
+    fade: true,
+    appendArrows: '.indicators-slider-nav',
+    appendDots: '.indicators-slider-nav',
 });
 
 $('.main-history__content').click(function () {
@@ -78,7 +86,17 @@ $('.btn-dropList').click(function (e) {
     $(this).toggleClass('click').parents('.license-box').find('.license-box-footer').slideToggle();
 });
 
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
 
+// animate number
 var target = $('.benefits__inner');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
