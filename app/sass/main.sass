@@ -1274,7 +1274,7 @@ footer
     font-weight: 500
     font-size: 24px
     th
-      padding: 15px 15px 28px
+      padding: 15px 15px 26px
       position: relative
       &:nth-child(2)
         .th-box__icon
@@ -1282,12 +1282,20 @@ footer
           height: 32px
       &:nth-child(3)
         .th-box__icon
+          width: 26px
+          height: 36px
+      &:nth-child(4)
+        .th-box__icon
           width: 40px
           height: 40px
-      &:nth-child(4)
+      &:nth-child(5)
         .th-box__icon
           width: 44px
           height: 44px
+      &:nth-child(6)
+        .th-box__icon
+          width: 44px
+          height: 45px
 
     .th-title
       color: #FFFFFF
@@ -1297,7 +1305,7 @@ footer
       padding: 10px 30px
   td, th
     text-align: center
-    min-width: 278px
+    min-width: 224px
     vertical-align: middle
     &:first-child
       text-align: left
@@ -1327,11 +1335,12 @@ footer
           padding: 20px 15px
       &:last-child
         background: #fff
+        margin: 30px 0 0
         td
           border: none
           padding: 20px 10px 35px
           position: relative
-          &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+          &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
             &:before
               content: ''
               position: absolute
@@ -1344,8 +1353,8 @@ footer
               width: calc(100% - 30px)
 
   .icon-check
-    width: 24px
-    height: 20px
+    width: 30px
+    height: 23px
 
 .th-box__icon
   width: 32px
@@ -1387,17 +1396,21 @@ footer
     top: 0
     width: 100%
     height: 166px
-    background: url("../img/table-bg1.svg") no-repeat center top
+    background: url("../img/table-bg0.svg") no-repeat center top
       size: 100%
   &:nth-child(3)
     &:before
-      background: url("../img/table-bg2.svg") no-repeat center top
+      background: url("../img/table-bg1.svg") no-repeat center top
         size: 100%
   &:nth-child(4)
     &:before
-      background: url("../img/table-bg3.svg") no-repeat center top
+      background: url("../img/table-bg2.svg") no-repeat center top
         size: 100%
   &:nth-child(5)
+    &:before
+      background: url("../img/table-bg3.svg") no-repeat center top
+        size: 100%
+  &:nth-child(6)
     &:before
       background: url("../img/table-bg4.svg") no-repeat center top
         size: 100%
@@ -1428,6 +1441,9 @@ footer
 
 .bg-pink
   background: #FC8B8C
+
+.bg-light-blue
+  background: #A6CEE3
 
 .license-box
   margin: 0 0 45px
@@ -1495,6 +1511,18 @@ footer
   padding: 33px 17px 29px 20px
   margin: -15px 0 0
   display: none
+  .line-dash
+    width: 20px
+    height: 1px
+    margin: 0 14px 0 0
+
+
+.line-dash-text
+  font-size: 14px
+  font-weight: bold
+  min-width: 20px
+  margin: 0 14px 0 0
+  color: #000
 
 .license-box__name
   display: flex
@@ -2413,6 +2441,8 @@ footer
         width: 100px
         height: 1px
 
+
+
 .advantages-wrapper
   width: 100%
   display: flex
@@ -2493,7 +2523,7 @@ footer
   background: url("../img/bg4.svg") no-repeat center bottom
     size: 100%
   .container
-    max-width: 1440px
+    max-width: 1430px
   .btn-group
     margin: 0 0 158px
     justify-content: flex-end
@@ -2505,8 +2535,14 @@ footer
     height: 38px
     flex: none
     margin: 0 auto
+  .btn-registration
+    max-width: 184px
 
-
+.line-dash
+  width: 31px
+  height: 2px
+  background: #000000
+  display: inline-block
 
 
 //main-download
@@ -3130,6 +3166,24 @@ footer
     margin: 0
     font-family: $norms
     font-weight: normal
+  .about-img-wrap
+    display: flex
+    align-items: center
+
+  .about-img
+    position: absolute
+
+  .about-img1
+    width: 67px
+    top: 60%
+    left: 0
+    margin: 0
+
+  .about-img2
+    width: 739px
+    right: -40%
+    top: -40%
+    margin: 0
 
 .about-text
   font-family: 'norms', sans-serif
@@ -3184,24 +3238,7 @@ footer
       &:before
         height: 34px
 
-.about-img-wrap
-  display: flex
-  align-items: center
 
-.about-img
-  position: absolute
-
-.about-img1
-  width: 67px
-  top: 60%
-  left: 0
-  margin: 0
-
-.about-img2
-  width: 739px
-  right: -40%
-  top: -40%
-  margin: 0
 
 //advantages
 .advantages-making
@@ -3219,36 +3256,33 @@ footer
       display: none
     p
       max-width: none
-
-
-.advantages-wrapper
-  margin: 76px 0 0
-  display: flex
-  align-items: flex-start
-  justify-content: space-between
-  width: 100%
-  flex-wrap: wrap
-
-.advantages-box
-  display: flex
-  flex-direction: column
-  align-items: center
-  text-align: center
-  margin: 0 0 120px
-  width: 186px
-  line-height: 1.67
-  letter-spacing: 0.38px
-  font-family: 'norms', sans-serif
-  color: #ffffff
-  .icon
+  .advantages-wrapper
+    margin: 76px 0 0
     display: flex
+    align-items: flex-start
+    justify-content: space-between
+    width: 100%
+    flex-wrap: wrap
+
+  .advantages-box
+    display: flex
+    flex-direction: column
     align-items: center
-    justify-content: center
-    margin: 0 auto 30px
-    width: 118px
-    height: 118px
-    border: solid 2px #4b7dff
-      radius: 50%
+    text-align: center
+    margin: 0 0 120px
+    width: 186px
+    line-height: 1.67
+    letter-spacing: 0.38px
+    color: #ffffff
+    .icon
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 auto 30px
+      width: 118px
+      height: 118px
+      border: solid 2px #4b7dff
+        radius: 50%
 
 //easy
 .easy

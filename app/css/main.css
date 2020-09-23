@@ -1494,17 +1494,23 @@ footer {
     font-weight: 500;
     font-size: 24px; }
     .table-license thead th {
-      padding: 15px 15px 28px;
+      padding: 15px 15px 26px;
       position: relative; }
       .table-license thead th:nth-child(2) .th-box__icon {
         width: 34px;
         height: 32px; }
       .table-license thead th:nth-child(3) .th-box__icon {
+        width: 26px;
+        height: 36px; }
+      .table-license thead th:nth-child(4) .th-box__icon {
         width: 40px;
         height: 40px; }
-      .table-license thead th:nth-child(4) .th-box__icon {
+      .table-license thead th:nth-child(5) .th-box__icon {
         width: 44px;
         height: 44px; }
+      .table-license thead th:nth-child(6) .th-box__icon {
+        width: 44px;
+        height: 45px; }
     .table-license thead .th-title {
       color: #FFFFFF;
       font-size: 30px;
@@ -1513,7 +1519,7 @@ footer {
       padding: 10px 30px; }
   .table-license td, .table-license th {
     text-align: center;
-    min-width: 278px;
+    min-width: 224px;
     vertical-align: middle; }
     .table-license td:first-child, .table-license th:first-child {
       text-align: left; }
@@ -1540,12 +1546,13 @@ footer {
     .table-license tbody tr:first-child td {
       padding: 20px 15px; }
     .table-license tbody tr:last-child {
-      background: #fff; }
+      background: #fff;
+      margin: 30px 0 0; }
       .table-license tbody tr:last-child td {
         border: none;
         padding: 20px 10px 35px;
         position: relative; }
-        .table-license tbody tr:last-child td:nth-child(2):before, .table-license tbody tr:last-child td:nth-child(3):before, .table-license tbody tr:last-child td:nth-child(4):before, .table-license tbody tr:last-child td:nth-child(5):before {
+        .table-license tbody tr:last-child td:nth-child(2):before, .table-license tbody tr:last-child td:nth-child(3):before, .table-license tbody tr:last-child td:nth-child(4):before, .table-license tbody tr:last-child td:nth-child(5):before, .table-license tbody tr:last-child td:nth-child(6):before {
           content: '';
           position: absolute;
           left: 50%;
@@ -1557,8 +1564,8 @@ footer {
           height: 1px;
           width: calc(100% - 30px); }
   .table-license .icon-check {
-    width: 24px;
-    height: 20px; }
+    width: 30px;
+    height: 23px; }
 
 .th-box__icon {
   width: 32px;
@@ -1612,15 +1619,18 @@ footer {
     top: 0;
     width: 100%;
     height: 166px;
-    background: url("../img/table-bg1.svg") no-repeat center top;
+    background: url("../img/table-bg0.svg") no-repeat center top;
       background-size: 100%; }
   .th-box:nth-child(3):before {
-    background: url("../img/table-bg2.svg") no-repeat center top;
+    background: url("../img/table-bg1.svg") no-repeat center top;
       background-size: 100%; }
   .th-box:nth-child(4):before {
-    background: url("../img/table-bg3.svg") no-repeat center top;
+    background: url("../img/table-bg2.svg") no-repeat center top;
       background-size: 100%; }
   .th-box:nth-child(5):before {
+    background: url("../img/table-bg3.svg") no-repeat center top;
+      background-size: 100%; }
+  .th-box:nth-child(6):before {
     background: url("../img/table-bg4.svg") no-repeat center top;
       background-size: 100%; }
 
@@ -1649,6 +1659,9 @@ footer {
 
 .bg-pink {
   background: #FC8B8C; }
+
+.bg-light-blue {
+  background: #A6CEE3; }
 
 .license-box {
   margin: 0 0 45px; }
@@ -1725,6 +1738,17 @@ footer {
   padding: 33px 17px 29px 20px;
   margin: -15px 0 0;
   display: none; }
+  .license-box-footer .line-dash {
+    width: 20px;
+    height: 1px;
+    margin: 0 14px 0 0; }
+
+.line-dash-text {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 20px;
+  margin: 0 14px 0 0;
+  color: #000; }
 
 .license-box__name {
   display: -webkit-box;
@@ -2914,7 +2938,7 @@ footer {
   background: url("../img/bg4.svg") no-repeat center bottom;
     background-size: 100%; }
   .about-license .container {
-    max-width: 1440px; }
+    max-width: 1430px; }
   .about-license .btn-group {
     margin: 0 0 158px;
     -webkit-box-pack: end;
@@ -2930,6 +2954,14 @@ footer {
         -ms-flex: none;
             flex: none;
     margin: 0 auto; }
+  .about-license .btn-registration {
+    max-width: 184px; }
+
+.line-dash {
+  width: 31px;
+  height: 2px;
+  background: #000000;
+  display: inline-block; }
 
 .main-download {
   padding: 120px 0 100px;
@@ -3597,6 +3629,25 @@ footer {
     margin: 0;
     font-family: "norms", sans-serif;
     font-weight: normal; }
+  .about-making .about-img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .about-making .about-img {
+    position: absolute; }
+  .about-making .about-img1 {
+    width: 67px;
+    top: 60%;
+    left: 0;
+    margin: 0; }
+  .about-making .about-img2 {
+    width: 739px;
+    right: -40%;
+    top: -40%;
+    margin: 0; }
 
 .about-text {
   font-family: 'norms', sans-serif; }
@@ -3665,29 +3716,6 @@ footer {
   .about-box:last-child .number:before {
     height: 34px; }
 
-.about-img-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.about-img {
-  position: absolute; }
-
-.about-img1 {
-  width: 67px;
-  top: 60%;
-  left: 0;
-  margin: 0; }
-
-.about-img2 {
-  width: 739px;
-  right: -40%;
-  top: -40%;
-  margin: 0; }
-
 .advantages-making {
   padding: 88px 0;
   color: #fff; }
@@ -3703,55 +3731,52 @@ footer {
       display: none; }
     .advantages-making .advantages-box p {
       max-width: none; }
-
-.advantages-wrapper {
-  margin: 76px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.advantages-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 0 0 120px;
-  width: 186px;
-  line-height: 1.67;
-  letter-spacing: 0.38px;
-  font-family: 'norms', sans-serif;
-  color: #ffffff; }
-  .advantages-box .icon {
+  .advantages-making .advantages-wrapper {
+    margin: 76px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .advantages-making .advantages-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto 30px;
-    width: 118px;
-    height: 118px;
-    border: solid 2px #4b7dff;
-      border-radius: 50%; }
+    text-align: center;
+    margin: 0 0 120px;
+    width: 186px;
+    line-height: 1.67;
+    letter-spacing: 0.38px;
+    color: #ffffff; }
+    .advantages-making .advantages-box .icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0 auto 30px;
+      width: 118px;
+      height: 118px;
+      border: solid 2px #4b7dff;
+        border-radius: 50%; }
 
 .easy {
   padding: 0 0 76px; }
@@ -5288,7 +5313,7 @@ footer {
 
 @media only screen and (max-width: 1420px) {
   .table-license td, .table-license th {
-    min-width: 215px; }
+    min-width: 192px; }
   .table-license thead th {
     padding: 10px 15px; }
   .indicators-slider {
@@ -5340,7 +5365,7 @@ footer {
   header .dropDown-menu {
     top: 76px; }
   .table-license td, .table-license th {
-    min-width: 186px; }
+    min-width: 165px; }
   .table-license thead .th-title {
     font-size: 26px; }
   .th-box__price {
@@ -5349,7 +5374,7 @@ footer {
       font-size: 16px;
       margin: 0 0 3px; }
   .th-box:before {
-    height: 127px; }
+    height: 146px; }
   .table-license {
     font-size: 16px; }
     .table-license td:first-child {
@@ -5875,15 +5900,17 @@ footer {
     width: 49%;
     max-width: none; }
   .signal-algorithms__slider-nav {
-    bottom: 350px; } }
+    bottom: 350px; }
+  .table-license td, .table-license th {
+    min-width: 140px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
-    min-width: 145px; }
-  .th-box:before, .th-box:nth-child(3):before, .th-box:nth-child(4):before, .th-box:nth-child(5):before {
+    min-width: 125px; }
+  .th-box:before, .th-box:nth-child(3):before, .th-box:nth-child(4):before, .th-box:nth-child(5):before, .th-box:nth-child(6):before {
     background-size: cover; }
   .th-box:before {
-    height: 107px; }
+    height: 108px; }
   .table-license td:first-child {
     font-size: 14px; }
   .table-license tbody {
@@ -5893,9 +5920,15 @@ footer {
   .table-license thead .th-title {
     font-size: 22px; }
   .about-license .btn {
-    width: 120px; }
+    width: auto;
+    padding: 0 5px;
+    font-size: 14px;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .main-brokers h1 {
-    font-size: 60px; } }
+    font-size: 60px; }
+  .table-license .icon-check {
+    width: 23px; } }
 
 @media only screen and (max-width: 860px) {
   .about-box {
@@ -5965,7 +5998,11 @@ footer {
     padding: 0;
     border: none; }
   .brokers-location {
-    margin: 0 0 0 auto; } }
+    margin: 0 0 0 auto; }
+  .th-box__name {
+    font-size: 14px; }
+  .table-license td, .table-license th {
+    min-width: 120px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
