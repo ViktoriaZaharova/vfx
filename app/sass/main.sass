@@ -4120,7 +4120,7 @@ footer
 
 
 .indicators
-  padding: 63px 0 158px
+  padding: 63px 0
   background: url("../img/line.svg") no-repeat center #fff
     size: 100%
 
@@ -4141,9 +4141,9 @@ footer
 .indicators-slider
   border-radius: 10px
   background: #F5F5F7
-  padding: 63px 200px 0
+  padding: 63px 180px 0
   .slick-slide
-    padding: 0 0 57px
+    padding: 0 0 15px
 
 
 .indicators-slider-nav
@@ -4194,7 +4194,7 @@ footer
 .indicators-box__top
   width: 100%
   display: flex
-  align-items: center
+  align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
 
@@ -4202,14 +4202,25 @@ footer
   font-size: 45px
   font-weight: 600
   text-transform: uppercase
-  max-width: 380px
 
 .indicators-box__content
-  width: calc(100% - 380px)
-  padding: 0 0 0 65px
   font-weight: 500
   color: #1D1D1F
   line-height: 150%
+  max-width: 1000px
+  width: 100%
+  margin: 0 auto
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.indicators-box__list
+  font-weight: 500
+  li
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
 
 //about-signals
 .about-signals

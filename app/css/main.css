@@ -4802,7 +4802,7 @@ footer {
   background: #fff; }
 
 .indicators {
-  padding: 63px 0 158px;
+  padding: 63px 0;
   background: url("../img/line.svg") no-repeat center #fff;
     background-size: 100%; }
   .indicators h2 {
@@ -4822,9 +4822,9 @@ footer {
 .indicators-slider {
   border-radius: 10px;
   background: #F5F5F7;
-  padding: 63px 200px 0; }
+  padding: 63px 180px 0; }
   .indicators-slider .slick-slide {
-    padding: 0 0 57px; }
+    padding: 0 0 15px; }
 
 .indicators-slider-nav {
   position: absolute;
@@ -4896,9 +4896,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -4908,15 +4908,26 @@ footer {
 .indicators-box__title {
   font-size: 45px;
   font-weight: 600;
-  text-transform: uppercase;
-  max-width: 380px; }
+  text-transform: uppercase; }
 
 .indicators-box__content {
-  width: calc(100% - 380px);
-  padding: 0 0 0 65px;
   font-weight: 500;
   color: #1D1D1F;
-  line-height: 150%; }
+  line-height: 150%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; }
+  .indicators-box__content p {
+    margin: 0 0 30px; }
+    .indicators-box__content p:last-child {
+      margin: 0; }
+
+.indicators-box__list {
+  font-weight: 500; }
+  .indicators-box__list li {
+    margin: 0 0 30px; }
+    .indicators-box__list li:last-child {
+      margin: 0; }
 
 .about-signals {
   padding: 204px 0 160px;
@@ -5318,7 +5329,7 @@ footer {
   .table-license thead th {
     padding: 10px 15px; }
   .indicators-slider {
-    padding: 60px 100px 0; }
+    padding: 60px 90px 0; }
   .about-signals h1 {
     max-width: 820px;
     font-size: 70px; }
@@ -5458,7 +5469,13 @@ footer {
     .brokers-info-money__box p {
       font-size: 30px; }
   .indicators-slider {
-    padding: 40px 70px 0; }
+    padding: 40px 50px 0; }
+  .indicators-box__list {
+    font-size: 14px; }
+    .indicators-box__list li {
+      margin: 0 0 15px; }
+  .indicators-box__content p {
+    margin: 0 0 20px; }
   .indicators-box__title {
     font-size: 35px; }
   .indicators-box__img {
@@ -6433,7 +6450,11 @@ footer {
     font-size: 16px;
     margin: 0 auto 40px; }
   .signal-structure h2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .indicators-box__img {
+    margin: 30px auto -10px; }
+  .indicators-box__content {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
