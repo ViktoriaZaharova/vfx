@@ -1139,6 +1139,9 @@ footer
   padding: 24px 23px 50px
   line-height: 160%
   font-weight: 500
+  .links-accent
+    text-decoration: underline
+    display: inline-block
 
 //tabs
 .tabs-wrapper
@@ -4001,16 +4004,22 @@ footer
 
 //signal-algorithms
 .signal-algorithms
-  padding: 108px 0 116px
+  padding: 119px 0 102px
   h2
     font-size: 60px
     font-weight: 600
-    margin: 0 0 62px
+    margin: 0 auto
   .btn
     max-width: 222px
-    margin: 100px auto 0
+    margin: -40px auto 0
     height: 61px
     font-size: 21px
+
+  .box-text
+    max-width: 600px
+
+.accordion-also
+  padding: 0 0 37px
   .card-body
     background: transparent
   .card-header
@@ -4022,8 +4031,6 @@ footer
   .accordion-title h2
     font-size: 30px
     margin: 0
-  .box-text
-    max-width: 600px
 
 .box-text
   font-weight: 500
@@ -4033,43 +4040,40 @@ footer
     &:last-child
       margin: 0
 
+
+
 .signal-algorithms__slider
   margin: 0 -130px
   width: calc(100% + 260px)
   .slide
-    padding: 68px 130px 183px
+    padding: 86px 130px 183px
 
 .signal-algorithms__slider-nav
   display: flex
-  flex-direction: column
   align-items: center
   justify-content: center
   position: absolute
   z-index: 1
-  right: 46px
-  bottom: 238px
+  right: 15px
+  bottom: 240px
+  max-width: 607px
+  width: 100%
   .slick-dots
-    flex-direction: column
     align-items: center
     width: auto
-    margin: 10px auto
+    margin: 0 10px
     li
       background: #C4C4C4
       width: 12px
       height: 12px
       border: 2px solid transparent
       box-shadow: none
-      margin: 0 0 10px
+      margin: 0 10px 0 0
       &:last-child
         margin: 0
     .slick-active
       border: 2px solid #C4C4C4
       background: transparent
-  .slick-prev
-    transform: rotate(90deg)
-  .slick-next
-    transform: rotate(90deg)
-    order: 1
   .slick-arrow
     width: 8px
     height: 16px
@@ -4086,9 +4090,10 @@ footer
 
 
 .signal-algorithms-content
-  padding: 113px 84px 113px 30px
+  padding: 67px 80px 79px 30px
   font-size: 20px
   line-height: 150%
+  height: 397px
   strong
     font-weight: 600
   p
@@ -4099,10 +4104,12 @@ footer
 .signal-algorithms-img
   background: url('../img/hiw-bg1.svg') no-repeat left top #22283C
     size: cover
-
+  padding: 67px 57px
+  display: flex
+  align-items: center
+  justify-content: center
   img
-    min-width: 1115px
-    float: right
+    margin: 0 auto
     border-radius: 5px
     box-shadow: 0px 96px 138px rgba(0, 0, 0, 0.41), 0px 40.1065px 57.6531px rgba(0, 0, 0, 0.29473), 0px 21.4429px 30.8241px rgba(0, 0, 0, 0.244404), 0px 12.0207px 17.2797px rgba(0, 0, 0, 0.205), 0px 6.3841px 9.17714px rgba(0, 0, 0, 0.165596), 0px 2.65657px 3.81881px rgba(0, 0, 0, 0.11527)
 

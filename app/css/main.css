@@ -1344,6 +1344,9 @@ footer {
   padding: 24px 23px 50px;
   line-height: 160%;
   font-weight: 500; }
+  .card-body .links-accent {
+    text-decoration: underline;
+    display: inline-block; }
 
 .tabs-wrapper {
   -webkit-box-shadow: 0 1.27294px 1.88173px rgba(0, 0, 0, 0.137761);
@@ -4672,29 +4675,32 @@ footer {
   max-width: 1310px; }
 
 .signal-algorithms {
-  padding: 108px 0 116px; }
+  padding: 119px 0 102px; }
   .signal-algorithms h2 {
     font-size: 60px;
     font-weight: 600;
-    margin: 0 0 62px; }
+    margin: 0 auto; }
   .signal-algorithms .btn {
     max-width: 222px;
-    margin: 100px auto 0;
+    margin: -40px auto 0;
     height: 61px;
     font-size: 21px; }
-  .signal-algorithms .card-body {
-    background: transparent; }
-  .signal-algorithms .card-header {
-    border: none; }
-    .signal-algorithms .card-header .btn-link {
-      color: #fff; }
-  .signal-algorithms .card {
-    border-top: 1px solid rgba(66, 75, 98, 0.8); }
-  .signal-algorithms .accordion-title h2 {
-    font-size: 30px;
-    margin: 0; }
   .signal-algorithms .box-text {
     max-width: 600px; }
+
+.accordion-also {
+  padding: 0 0 37px; }
+  .accordion-also .card-body {
+    background: transparent; }
+  .accordion-also .card-header {
+    border: none; }
+    .accordion-also .card-header .btn-link {
+      color: #fff; }
+  .accordion-also .card {
+    border-top: 1px solid rgba(66, 75, 98, 0.8); }
+  .accordion-also .accordion-title h2 {
+    font-size: 30px;
+    margin: 0; }
 
 .box-text {
   font-weight: 500;
@@ -4708,16 +4714,12 @@ footer {
   margin: 0 -130px;
   width: calc(100% + 260px); }
   .signal-algorithms__slider .slide {
-    padding: 68px 130px 183px; }
+    padding: 86px 130px 183px; }
 
 .signal-algorithms__slider-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4726,18 +4728,16 @@ footer {
           justify-content: center;
   position: absolute;
   z-index: 1;
-  right: 46px;
-  bottom: 238px; }
+  right: 15px;
+  bottom: 240px;
+  max-width: 607px;
+  width: 100%; }
   .signal-algorithms__slider-nav .slick-dots {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: auto;
-    margin: 10px auto; }
+    margin: 0 10px; }
     .signal-algorithms__slider-nav .slick-dots li {
       background: #C4C4C4;
       width: 12px;
@@ -4745,21 +4745,12 @@ footer {
       border: 2px solid transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
-      margin: 0 0 10px; }
+      margin: 0 10px 0 0; }
       .signal-algorithms__slider-nav .slick-dots li:last-child {
         margin: 0; }
     .signal-algorithms__slider-nav .slick-dots .slick-active {
       border: 2px solid #C4C4C4;
       background: transparent; }
-  .signal-algorithms__slider-nav .slick-prev {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .signal-algorithms__slider-nav .slick-next {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
   .signal-algorithms__slider-nav .slick-arrow {
     width: 8px;
     height: 16px; }
@@ -4776,9 +4767,10 @@ footer {
   font-weight: 500; }
 
 .signal-algorithms-content {
-  padding: 113px 84px 113px 30px;
+  padding: 67px 80px 79px 30px;
   font-size: 20px;
-  line-height: 150%; }
+  line-height: 150%;
+  height: 397px; }
   .signal-algorithms-content strong {
     font-weight: 600; }
   .signal-algorithms-content p {
@@ -4788,10 +4780,19 @@ footer {
 
 .signal-algorithms-img {
   background: url("../img/hiw-bg1.svg") no-repeat left top #22283C;
-    background-size: cover; }
+    background-size: cover;
+  padding: 67px 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .signal-algorithms-img img {
-    min-width: 1115px;
-    float: right;
+    margin: 0 auto;
     border-radius: 5px;
     -webkit-box-shadow: 0px 96px 138px rgba(0, 0, 0, 0.41), 0px 40.1065px 57.6531px rgba(0, 0, 0, 0.29473), 0px 21.4429px 30.8241px rgba(0, 0, 0, 0.244404), 0px 12.0207px 17.2797px rgba(0, 0, 0, 0.205), 0px 6.3841px 9.17714px rgba(0, 0, 0, 0.165596), 0px 2.65657px 3.81881px rgba(0, 0, 0, 0.11527);
             box-shadow: 0px 96px 138px rgba(0, 0, 0, 0.41), 0px 40.1065px 57.6531px rgba(0, 0, 0, 0.29473), 0px 21.4429px 30.8241px rgba(0, 0, 0, 0.244404), 0px 12.0207px 17.2797px rgba(0, 0, 0, 0.205), 0px 6.3841px 9.17714px rgba(0, 0, 0, 0.165596), 0px 2.65657px 3.81881px rgba(0, 0, 0, 0.11527); }
@@ -5476,7 +5477,9 @@ footer {
     line-height: normal;
     max-width: 600px; }
   .about-signals__menu li {
-    margin: 0 0 10px; } }
+    margin: 0 0 10px; }
+  .signal-algorithms-content {
+    height: 443px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -5849,11 +5852,9 @@ footer {
     font-size: 16px; }
   .broker-total-text {
     font-size: 16px; }
-  .signal-algorithms-img img {
-    min-width: 700px; }
   .signal-algorithms-box {
     height: auto;
-    padding: 40px 30px 40px 0; }
+    padding: 40px 30px; }
   .signal-algorithms-content {
     margin: 0 0 40px;
     padding: 60px 30px 60px; }
@@ -5900,7 +5901,10 @@ footer {
     width: 49%;
     max-width: none; }
   .signal-algorithms__slider-nav {
-    bottom: 350px; }
+    bottom: 200px;
+    max-width: none;
+    right: 0;
+    width: 100%; }
   .table-license td, .table-license th {
     min-width: 140px; } }
 
@@ -6387,7 +6391,7 @@ footer {
   .signal-algorithms-content {
     font-size: 16px;
     line-height: normal; }
-  .signal-algorithms .accordion-title h2 {
+  .accordion-also .accordion-title h2 {
     font-size: 24px; }
   .indicators h2 {
     font-size: 40px; }
@@ -6712,8 +6716,7 @@ footer {
   .signal-algorithms__slider .slide {
     padding-bottom: 30px; }
   .signal-algorithms__slider-nav {
-    bottom: 100px;
-    right: 20px; } }
+    bottom: 60px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer {
