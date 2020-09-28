@@ -6545,7 +6545,7 @@ footer {
     padding: 24px 12px;
     font-size: 12px; }
   .works-download .btn {
-    display: none; }
+    height: 56px; }
   .about-img {
     margin: 46px auto 0;
     max-width: 330px;
