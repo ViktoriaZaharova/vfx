@@ -5537,7 +5537,9 @@ footer {
   .about-signals h1 {
     margin: 0 auto 40px;
     font-size: 50px;
-    max-width: none; } }
+    max-width: none; }
+  .indicators-box__list {
+    max-width: 420px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
