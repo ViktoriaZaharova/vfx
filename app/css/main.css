@@ -4714,7 +4714,11 @@ footer {
   margin: 0 -130px;
   width: calc(100% + 260px); }
   .signal-algorithms__slider .slide {
-    padding: 86px 130px 183px; }
+    padding: 86px 130px 183px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text; }
 
 .signal-algorithms__slider-nav {
   display: -webkit-box;
