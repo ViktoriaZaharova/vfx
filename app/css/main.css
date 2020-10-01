@@ -5363,7 +5363,7 @@ footer {
 
 @media only screen and (max-width: 1320px) {
   .signal-algorithms__slider .row {
-    width: calc(100% - 40px);
+    width: calc(100% - 15px);
     margin: 0 auto; } }
 
 @media only screen and (max-width: 1250px) {
@@ -5526,7 +5526,8 @@ footer {
   .about-signals__menu li {
     margin: 0 0 10px; }
   .signal-algorithms-content {
-    height: 443px; } }
+    height: 443px;
+    padding: 67px 20px 79px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -5906,7 +5907,11 @@ footer {
     padding: 20px 30px 40px; }
   .signal-algorithms-content {
     margin: 0 0 40px;
-    padding: 60px 30px 60px; }
+    padding: 12px 15px; }
+    .signal-algorithms-content p {
+      margin: 0 0 12px; }
+  .signal-algorithms-img {
+    padding: 0 15px 68px; }
   .signal-algorithms {
     padding: 70px 0; }
     .signal-algorithms h2 {
@@ -5950,10 +5955,7 @@ footer {
     width: 49%;
     max-width: none; }
   .signal-algorithms__slider-nav {
-    bottom: 200px;
-    max-width: none;
-    right: 0;
-    width: 100%; }
+    bottom: 230px; }
   .table-license td, .table-license th {
     min-width: 140px; } }
 
@@ -6766,10 +6768,21 @@ footer {
     margin: 20px auto 30px; }
   .signal-structure__box-wrapper {
     margin: 0; }
-  .signal-algorithms__slider .slide {
-    padding-bottom: 30px; }
+  .signal-algorithms .btn {
+    margin: -100px auto 0; }
   .signal-algorithms__slider-nav {
-    bottom: 60px; } }
+    bottom: 230px; }
+  .signal-algorithms__slider .row {
+    background: url("../img/hiw-bg-mobile.svg") no-repeat center bottom;
+      background-size: 100%; }
+  .signal-algorithms-content {
+    margin: 0;
+    min-height: 275px;
+    font-size: 15px;
+    line-height: 150%;
+    padding: 12px 0; }
+  .signal-algorithms-img {
+    min-height: auto; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer {
@@ -6862,9 +6875,7 @@ footer {
   .main-making-home {
     padding: 140px 0 0; }
   .indicators-slider {
-    padding: 30px 30px 0; }
-  .signal-algorithms-box {
-    padding: 0 0 20px; } }
+    padding: 30px 30px 0; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
