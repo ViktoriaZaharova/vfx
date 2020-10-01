@@ -433,6 +433,22 @@
   .indicators-box__list
     max-width: 420px
 
+  .sale-box-price
+    width: 62px
+    height: 26px
+    padding: 0 7px 0 15px
+
+  .sale-box-price__val
+    font-size: 18px
+    line-height: 22px
+
+  .sale-box-price__percent
+    font-size: 8px
+    line-height: 10px
+    p
+      line-height: 13px
+      font-size: 11px
+
 @media only screen and (max-width : 991px)
   .header-item
     font-size: 11px
@@ -1214,10 +1230,12 @@
       justify-content: space-between
       display: flex
       font-size: 13px
-      .account-box
+      .box
+        min-width: 140px
+      .account-box, .sale-box-price
         display: flex
       .account-box
-        margin: 0
+        margin: 0 auto 0 11px
         width: auto
         flex-direction: column
         align-items: flex-start
@@ -1230,7 +1248,15 @@
           color: #fff
           font-size: 26px
           line-height: normal
-
+        .old-price
+          margin: 0 10px 0 0
+          font-size: 20px
+        .new-price
+          font-size: 26px
+      .sale-box-price
+        position: relative
+        transform: none
+        top: 0
     .name-account
       font-size: 26px
       margin: 3px 0 0
@@ -1241,12 +1267,15 @@
       justify-content: space-between
       padding: 16px 20px
       font-size: 15px
-      .account-box__cost
+      .account-box__cost, .sale-box-price
         display: none
       .account-box
         margin: 0
+        width: auto
     .account-footer
-      width: 100%
+      padding: 0
+      border: none
+      width: auto
 
   .new-price
     font-size: 26px
@@ -1256,17 +1285,20 @@
     margin: 0 4px 0 0
 
   .sale-item
-    top: 6px
-    right: 16px
+    position: relative
+    right: 0
+    top: 0
+    order: 1
+    margin: auto 0
 
   .sale
     width: 46px
     height: 15px
 
   .icon-star
-    width: 16px
-    height: 16px
-    margin: 0 0 0 7px
+    width: 18px
+    height: 18px
+    margin: 0
 
   .tab-price
     .info-box
@@ -1846,20 +1878,39 @@
 
 @media only screen and (max-width : 480px)
   .account-footer
-    padding: 10px 0 0
     .btn
-      width: 100%
+      width: 64px
+      height: 30px
+      font-size: 16px
+
+  .account-body strong
+    font-size: 16px
+    line-height: 20px
+
+  .account-head
+    font-size: 12px
+    .name-account
+      font-size: 20px
 
   .account-price
     .account-head
-      padding: 12px 20px
-      .account-box span
-        font-size: 13px
+      padding: 8px 16px
+      .box
+        min-width: 130px
+      .account-box
+        margin: 0 auto 0 4px
+        span
+          font-size: 12px
+        .new-price
+          font-size: 20px
     .account-body
-      padding: 10px 20px
+      padding: 8px 16px
+      font-size: 12px
     .name-account
       margin: 0
 
+  .account-price .account-head .account-box strong
+    font-size: 20px
 
   .sale-item
     top: 2px
@@ -1991,5 +2042,8 @@
 
 
   .account-price .name-account, .new-price, .account-price .account-head .account-box strong, .account-body strong
-    font-size: 20px
+    font-size: 16px
     line-height: normal
+
+  .account-price .account-head .box
+    min-width: 100px

@@ -2103,7 +2103,7 @@ footer {
     width: 100%;
     padding: 42px 24px 32px;
     position: relative; }
-    .account-price .account-head .btn, .account-price .account-head .account-box {
+    .account-price .account-head .btn, .account-price .account-head .account-box, .account-price .account-head .sale-box-price {
       display: none; }
   .account-price .account-body {
     width: 100%;
@@ -2119,7 +2119,12 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start; }
   .account-price .account-box {
-    margin: 0 0 12px; }
+    margin: 0 0 12px;
+    width: 100%;
+    position: relative; }
+    .account-price .account-box .old-price {
+      opacity: .4;
+      margin: 0 auto 0 0; }
   .account-price .account-box__cost {
     margin: 0 0 32px; }
   .account-price .btn {
@@ -2128,6 +2133,49 @@ footer {
     margin: 0 auto; }
   .account-price strong {
     font-weight: bold; }
+
+.sale-box-price {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/sale.svg") no-repeat left center;
+    background-size: 100%;
+  width: 91.5px;
+  height: 38.5px;
+  padding: 0 4px 0 20px; }
+
+.sale-box-price__val {
+  line-height: 41px;
+  font-size: 34px;
+  font-weight: bold; }
+
+.sale-box-price__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 13px;
+  font-size: 11px;
+  font-weight: 600; }
+  .sale-box-price__percent p {
+    line-height: 23px;
+    font-size: 19px;
+    margin: 0 0 -4px; }
 
 .price-wrapper {
   display: -webkit-box;
@@ -2141,7 +2189,7 @@ footer {
 .old-price {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: normal;
   margin: 0 12px 0 0; }
 
@@ -5555,7 +5603,20 @@ footer {
     font-size: 50px;
     max-width: none; }
   .indicators-box__list {
-    max-width: 420px; } }
+    max-width: 420px; }
+  .sale-box-price {
+    width: 62px;
+    height: 26px;
+    padding: 0 7px 0 15px; }
+  .sale-box-price__val {
+    font-size: 18px;
+    line-height: 22px; }
+  .sale-box-price__percent {
+    font-size: 8px;
+    line-height: 10px; }
+    .sale-box-price__percent p {
+      line-height: 13px;
+      font-size: 11px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -6264,12 +6325,14 @@ footer {
       display: -ms-flexbox;
       display: flex;
       font-size: 13px; }
-      .account-price .account-head .account-box {
+      .account-price .account-head .box {
+        min-width: 140px; }
+      .account-price .account-head .account-box, .account-price .account-head .sale-box-price {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
       .account-price .account-head .account-box {
-        margin: 0;
+        margin: 0 auto 0 11px;
         width: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -6287,6 +6350,16 @@ footer {
           color: #fff;
           font-size: 26px;
           line-height: normal; }
+        .account-price .account-head .account-box .old-price {
+          margin: 0 10px 0 0;
+          font-size: 20px; }
+        .account-price .account-head .account-box .new-price {
+          font-size: 26px; }
+      .account-price .account-head .sale-box-price {
+        position: relative;
+        -webkit-transform: none;
+                transform: none;
+        top: 0; }
     .account-price .name-account {
       font-size: 26px;
       margin: 3px 0 0;
@@ -6304,27 +6377,35 @@ footer {
               justify-content: space-between;
       padding: 16px 20px;
       font-size: 15px; }
-      .account-price .account-body .account-box__cost {
+      .account-price .account-body .account-box__cost, .account-price .account-body .sale-box-price {
         display: none; }
       .account-price .account-body .account-box {
-        margin: 0; }
+        margin: 0;
+        width: auto; }
     .account-price .account-footer {
-      width: 100%; }
+      padding: 0;
+      border: none;
+      width: auto; }
   .new-price {
     font-size: 26px; }
   .old-price {
     font-size: 18px;
     margin: 0 4px 0 0; }
   .sale-item {
-    top: 6px;
-    right: 16px; }
+    position: relative;
+    right: 0;
+    top: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: auto 0; }
   .sale {
     width: 46px;
     height: 15px; }
   .icon-star {
-    width: 16px;
-    height: 16px;
-    margin: 0 0 0 7px; }
+    width: 18px;
+    height: 18px;
+    margin: 0; }
   .tab-price .info-box {
     margin: 24px 0 0; }
   .service-menu {
@@ -6785,18 +6866,34 @@ footer {
     min-height: auto; } }
 
 @media only screen and (max-width: 480px) {
-  .account-footer {
-    padding: 10px 0 0; }
-    .account-footer .btn {
-      width: 100%; }
+  .account-footer .btn {
+    width: 64px;
+    height: 30px;
+    font-size: 16px; }
+  .account-body strong {
+    font-size: 16px;
+    line-height: 20px; }
+  .account-head {
+    font-size: 12px; }
+    .account-head .name-account {
+      font-size: 20px; }
   .account-price .account-head {
-    padding: 12px 20px; }
-    .account-price .account-head .account-box span {
-      font-size: 13px; }
+    padding: 8px 16px; }
+    .account-price .account-head .box {
+      min-width: 130px; }
+    .account-price .account-head .account-box {
+      margin: 0 auto 0 4px; }
+      .account-price .account-head .account-box span {
+        font-size: 12px; }
+      .account-price .account-head .account-box .new-price {
+        font-size: 20px; }
   .account-price .account-body {
-    padding: 10px 20px; }
+    padding: 8px 16px;
+    font-size: 12px; }
   .account-price .name-account {
     margin: 0; }
+  .account-price .account-head .account-box strong {
+    font-size: 20px; }
   .sale-item {
     top: 2px; }
   .main-image {
@@ -6892,5 +6989,7 @@ footer {
   .form input {
     font-size: 14px; }
   .account-price .name-account, .new-price, .account-price .account-head .account-box strong, .account-body strong {
-    font-size: 20px;
-    line-height: normal; } }
+    font-size: 16px;
+    line-height: normal; }
+  .account-price .account-head .box {
+    min-width: 100px; } }
