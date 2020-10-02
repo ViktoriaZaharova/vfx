@@ -2639,6 +2639,12 @@ footer {
       color: #fff; }
   .works .card-body {
     background: transparent; }
+    .works .card-body p {
+      margin: 0 0 20px; }
+      .works .card-body p:last-child {
+        margin: 0; }
+    .works .card-body strong {
+      font-weight: 600; }
 
 .works-section {
   background: #FFFFFF;
@@ -3015,7 +3021,7 @@ footer {
   display: inline-block; }
 
 .main-download {
-  padding: 120px 0 100px;
+  padding: 120px 0 113px;
   background: url("../img/bg6.svg") no-repeat center;
     background-size: 100%; }
   .main-download .info-text {
@@ -3027,21 +3033,25 @@ footer {
       margin: 0 0 20px; }
       .main-download .info-text p:last-child {
         margin: 0; }
+    .main-download .info-text .btn {
+      margin: 113px auto 0; }
   .main-download .btn-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin: 30px 0 0; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 30px 0 0;
+    max-width: 800px;
+    width: 100%; }
   .main-download .btn {
-    width: 382px;
-    margin: 0 0 32px;
+    width: 100%;
+    max-width: 382px;
+    margin: 0 0 30px;
     height: 65px; }
-    .main-download .btn:last-child {
-      margin: 0; }
     .main-download .btn .icon {
       width: 32px;
       height: 32px;
@@ -5618,7 +5628,9 @@ footer {
     line-height: 10px; }
     .sale-box-price__percent p {
       line-height: 13px;
-      font-size: 11px; } }
+      font-size: 11px; }
+  .main-download .btn {
+    max-width: 48%; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -5824,22 +5836,22 @@ footer {
       width: 100%;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      margin: 15px 0 0; }
     .main-download .btn {
       width: 100%;
-      max-width: 330px;
       height: 56px;
       margin: 0 0 15px;
       font-size: 14px; }
       .main-download .btn .icon {
         width: 24px;
         height: 24px; }
-      .main-download .btn:last-child {
-        margin: 0; }
     .main-download .info-text {
       font-size: 12px;
       line-height: 18px;
       margin: 25px 0 0; }
+      .main-download .info-text .btn, .main-download .info-text .btn:last-child {
+        margin: 30px auto 0; }
   .works-download .video-wrapper {
     margin: 26px 0 38px; }
   .main-image {
@@ -6888,7 +6900,9 @@ footer {
   .statistical-data__wrapper-indicators .statistical-data__box img {
     max-width: 37px; }
   .statistical-data .description {
-    margin: 0 auto 50px; } }
+    margin: 0 auto 50px; }
+  .main-download .btn {
+    max-width: none; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
