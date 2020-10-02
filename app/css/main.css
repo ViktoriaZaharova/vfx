@@ -5251,9 +5251,7 @@ footer {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+          justify-content: space-between; }
 
 .statistical-data__box {
   margin: 0 0 70px;
@@ -5424,7 +5422,9 @@ footer {
   .name-account {
     font-size: 32px; }
   .license {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .statistical-data__box {
+    width: 16%; } }
 
 @media only screen and (max-width: 1199px) {
   .header-menu li a {
@@ -6002,7 +6002,7 @@ footer {
   .links-click {
     padding: 0; }
   .indicators-slider-nav {
-    right: 15px; }
+    right: 30px; }
   .indicators h2 {
     font-size: 50px; }
   .signal-structure__box-description {
@@ -6018,7 +6018,10 @@ footer {
   .signal-algorithms__slider-nav {
     bottom: 230px; }
   .table-license td, .table-license th {
-    min-width: 140px; } }
+    min-width: 140px; }
+  .indicators-box__list {
+    max-width: none;
+    width: 100%; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -6324,7 +6327,8 @@ footer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: 13px; }
+      font-size: 12px;
+      line-height: 15px; }
       .account-price .account-head .box {
         min-width: 140px; }
       .account-price .account-head .account-box, .account-price .account-head .sale-box-price {
@@ -6342,14 +6346,16 @@ footer {
             -ms-flex-align: start;
                 align-items: flex-start; }
         .account-price .account-head .account-box span {
-          font-size: 15px;
-          opacity: .6; }
+          font-size: 12px;
+          opacity: .6;
+          line-height: 15px; }
         .account-price .account-head .account-box .price-wrapper {
+          line-height: 24px;
           color: #fff; }
         .account-price .account-head .account-box strong {
           color: #fff;
-          font-size: 26px;
-          line-height: normal; }
+          font-size: 20px;
+          line-height: 24px; }
         .account-price .account-head .account-box .old-price {
           margin: 0 10px 0 0;
           font-size: 20px; }
@@ -6362,7 +6368,7 @@ footer {
         top: 0; }
     .account-price .name-account {
       font-size: 26px;
-      margin: 3px 0 0;
+      margin: 0;
       letter-spacing: -0.08em; }
     .account-price .account-body {
       -webkit-box-orient: horizontal;
@@ -6569,7 +6575,10 @@ footer {
   .indicators-box__img {
     margin: 30px auto -10px; }
   .indicators-box__content {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .statistical-data__box {
+    width: 15%;
+    margin: 0 0 17px; } }
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
@@ -6863,7 +6872,11 @@ footer {
     line-height: 150%;
     padding: 12px 0; }
   .signal-algorithms-img {
-    min-height: auto; } }
+    min-height: auto; }
+  .statistical-data__wrapper-indicators .statistical-data__box img {
+    max-width: 37px; }
+  .statistical-data .description {
+    margin: 0 auto 50px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
@@ -6887,11 +6900,22 @@ footer {
         font-size: 12px; }
       .account-price .account-head .account-box .new-price {
         font-size: 20px; }
+      .account-price .account-head .account-box .price-wrapper {
+        line-height: 1;
+        min-height: 24px; }
   .account-price .account-body {
     padding: 8px 16px;
     font-size: 12px; }
   .account-price .name-account {
-    margin: 0; }
+    margin: 0;
+    line-height: 1;
+    min-height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .account-price .account-head .account-box strong {
     font-size: 20px; }
   .sale-item {

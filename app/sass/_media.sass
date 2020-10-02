@@ -212,6 +212,9 @@
   .license
     font-size: 15px
 
+  .statistical-data__box
+    width: 16%
+
 @media only screen and (max-width: 1199px)
   .header-menu li a
     font-size: 14px
@@ -407,6 +410,9 @@
   .signal-algorithms-content
     height: 443px
     padding: 67px 20px 79px
+
+
+
 
 @media only screen and (max-width : 1100px)
   .statistical-data__wrapper
@@ -876,7 +882,7 @@
     padding: 0
 
   .indicators-slider-nav
-    right: 15px
+    right: 30px
 
   .indicators h2
     font-size: 50px
@@ -898,6 +904,10 @@
 
   .table-license td, .table-license th
     min-width: 140px
+
+  .indicators-box__list
+    max-width: none
+    width: 100%
 
 @media only screen and (max-width : 940px)
   .table-license td, .table-license th
@@ -1229,7 +1239,8 @@
       align-items: flex-end
       justify-content: space-between
       display: flex
-      font-size: 13px
+      font-size: 12px
+      line-height: 15px
       .box
         min-width: 140px
       .account-box, .sale-box-price
@@ -1240,14 +1251,16 @@
         flex-direction: column
         align-items: flex-start
         span
-          font-size: 15px
+          font-size: 12px
           opacity: .6
+          line-height: 15px
         .price-wrapper
+          line-height: 24px
           color: #fff
         strong
           color: #fff
-          font-size: 26px
-          line-height: normal
+          font-size: 20px
+          line-height: 24px
         .old-price
           margin: 0 10px 0 0
           font-size: 20px
@@ -1259,7 +1272,7 @@
         top: 0
     .name-account
       font-size: 26px
-      margin: 3px 0 0
+      margin: 0
       letter-spacing: -0.08em
     .account-body
       flex-direction: row
@@ -1505,6 +1518,10 @@
 
   .indicators-box__content
     font-size: 14px
+
+  .statistical-data__box
+    width: 15%
+    margin: 0 0 17px
 
 @media only screen and (max-width : 700px)
   .table-history
@@ -1876,6 +1893,14 @@
   .signal-algorithms-img
     min-height: auto
 
+  .statistical-data__wrapper-indicators
+    .statistical-data__box
+      img
+        max-width: 37px
+
+  .statistical-data .description
+    margin: 0 auto 50px
+
 @media only screen and (max-width : 480px)
   .account-footer
     .btn
@@ -1895,6 +1920,7 @@
   .account-price
     .account-head
       padding: 8px 16px
+
       .box
         min-width: 130px
       .account-box
@@ -1903,11 +1929,18 @@
           font-size: 12px
         .new-price
           font-size: 20px
+        .price-wrapper
+          line-height: 1
+          min-height: 24px
     .account-body
       padding: 8px 16px
       font-size: 12px
     .name-account
       margin: 0
+      line-height: 1
+      min-height: 24px
+      display: flex
+      align-items: center
 
   .account-price .account-head .account-box strong
     font-size: 20px
@@ -2020,6 +2053,9 @@
 
   .indicators-slider
     padding: 30px 30px 0
+
+
+
 
 
 @media only screen and (max-width : 380px)
