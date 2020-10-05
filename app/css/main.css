@@ -5837,7 +5837,8 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 15px 0 0; }
+      margin: 15px 0 0;
+      max-width: none; }
     .main-download .btn {
       width: 100%;
       height: 56px;
