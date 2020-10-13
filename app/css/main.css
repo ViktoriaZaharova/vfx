@@ -4514,14 +4514,10 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 0 0 59px;
-  width: 100%; }
+  width: 100%;
+  max-width: 370px; }
   .main-brokers__logo img {
-    max-width: none;
-    position: absolute;
-    left: 0;
-    top: 20%;
-    -webkit-transform: translate(-25%, -50%);
-            transform: translate(-25%, -50%); }
+    width: 100%; }
 
 .main-brokers__logo.l-0 img {
   -webkit-transform: translate(0, -50%);
@@ -5535,8 +5531,6 @@ footer {
       max-width: 500px; }
   .main-brokers__box {
     padding: 40px; }
-  .main-brokers__logo img {
-    max-width: 100%; }
   .main-brokers__line {
     padding: 0;
     margin: 0 0 60px; }
@@ -5969,9 +5963,6 @@ footer {
     margin: 30px auto 0; }
   .contacts {
     padding: 50px 0; }
-  .main-brokers__logo img {
-    -webkit-transform: translate(-20%, -50%);
-            transform: translate(-20%, -50%); }
   .main-brokers__box .btn {
     margin: 20px 0 0;
     height: 50px;
@@ -6850,8 +6841,8 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start; }
   .main-brokers__logo {
-    margin: 0 0 20px;
-    height: 40px; }
+    margin: 0 auto 20px 0;
+    max-width: 170px; }
   .rating-wrapper {
     margin: 20px 0 0; }
   .main-brokers-left, .main-brokers-center {
