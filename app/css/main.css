@@ -6127,7 +6127,11 @@ footer {
   .th-box__name {
     font-size: 14px; }
   .table-license td, .table-license th {
-    min-width: 120px; } }
+    min-width: 120px; }
+  .logo {
+    width: 100px; }
+  .main-brokers__logo {
+    max-width: 300px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -6594,7 +6598,9 @@ footer {
     font-size: 14px; }
   .statistical-data__box {
     width: 15%;
-    margin: 0 0 17px; } }
+    margin: 0 0 17px; }
+  .main-brokers__logo {
+    max-width: 250px; } }
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
