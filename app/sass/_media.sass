@@ -456,6 +456,37 @@
   .main-download .btn
     max-width: 48%
 
+  .telegram-box
+    max-width: 49%
+    padding: 12px 4px 15px 9px
+    min-height: auto
+    margin: 0 0 24px
+    h3
+      color: #909090
+      font-size: 14px
+      padding: 0
+      border: none
+      margin: 0 0 24px
+    .checkbox
+      width: 33.3%
+      .label
+        font-size: 12px
+        font-weight: 500
+      .checkbox-inp:checked + .checkbox-custom:before
+        background: url("../img/check3.svg") no-repeat center
+          size: cover
+    .w-50
+      width: 50%
+
+
+  .telegram-box__body
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+
+  .telegram-box__wrapper
+    margin: 0
+
 @media only screen and (max-width : 991px)
   .header-item
     font-size: 11px
@@ -1924,6 +1955,16 @@
   .main-download .btn
     max-width: none
 
+  .telegram-box
+    max-width: none
+
+  .video-links
+    display: none
+
+  .token-line
+    margin: 33px 0 0
+
+
 @media only screen and (max-width : 480px)
   .account-footer
     .btn
@@ -2124,3 +2165,7 @@
   .signal-structure__box .number8
     height: 47px
     bottom: -12px
+
+  .token-line
+    p
+      font-size: 15px

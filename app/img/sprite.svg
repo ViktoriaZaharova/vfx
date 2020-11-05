@@ -509,6 +509,12 @@
         </g>
     </symbol>
 
+    <symbol id="copy2" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 7H21V21H7V15" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M15 1H1V15H15V1Z" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+
+
     <symbol id="subscribe" viewBox="0 0 108 125">
         <g>
             <g opacity="0.3">
@@ -792,5 +798,70 @@
 
         </g>
     </symbol>
+
+    <symbol id="telegram" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+            <path d="M7.41467 19.196L13.2837 22.121C13.5107 22.233 13.7787 22.225 13.9957 22.098L19.2197 19.061L16.0577 21.863C15.8967 22.006 15.8047 22.21 15.8047 22.425V29.25C15.8047 29.97 16.7237 30.273 17.1547 29.701L19.6917 26.328L25.9657 29.901C26.4057 30.154 26.9697 29.9 27.0717 29.397L30.9847 9.89701C31.1017 9.31101 30.5187 8.83301 29.9767 9.05101L7.47667 17.826C6.87267 18.062 6.83367 18.907 7.41467 19.196ZM29.2447 10.947L25.8057 28.084L19.8607 24.698C19.5367 24.513 19.1197 24.595 18.8897 24.899L17.3047 27.006V22.762L25.8557 15.186C26.5327 14.587 25.7547 13.522 24.9817 13.976L13.5917 20.598L9.59967 18.609L29.2447 10.947Z"
+                  fill="#81C728"/>
+        </g>
+        <circle cx="20" cy="20" r="20" fill="#81C728" fill-opacity="0.2"/>
+        <defs>
+            <clipPath id="clip0">
+                <rect width="24" height="24" fill="white" transform="translate(7 8)"/>
+            </clipPath>
+        </defs>
+    </symbol>
+
+    <symbol id="play-icon" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.25 1.13878L14 8.5L1.25 15.8612L1.25 1.13878Z" stroke="#1AA3E0"/>
+    </symbol>
+
+    <symbol id="signal1" viewBox="0 0 32 13">
+        <rect opacity="0.2" x="0.5" y="8.5" width="3" height="4" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="7.5" y="6.5" width="3" height="6" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="14.5" y="4.5" width="3" height="8" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
+    </symbol>
+
+    <symbol id="signal2" viewBox="0 0 32 13">
+        <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
+        <rect opacity="0.2" x="7.5" y="6.5" width="3" height="6" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="14.5" y="4.5" width="3" height="8" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
+    </symbol>
+
+    <svg id="signal3" viewBox="0 0 32 13">
+        <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
+        <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
+        <rect opacity="0.2" x="14.5" y="4.5" width="3" height="8" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
+    </svg>
+
+    <svg id="signal4" viewBox="0 0 32 13">
+        <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
+        <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
+        <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
+        <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
+        <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
+    </svg>
+
+    <svg id="signal5" viewBox="0 0 32 13">
+        <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
+        <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
+        <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
+        <rect x="21" y="2" width="4" height="11" rx="2" fill="#424B62"/>
+        <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
+    </svg>
+
+    <svg id="signal6" viewBox="0 0 32 13">
+        <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
+        <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
+        <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
+        <rect x="21" y="2" width="4" height="11" rx="2" fill="#424B62"/>
+        <rect x="28" width="4" height="13" rx="2" fill="#424B62"/>
+    </svg>
 
 </svg>
