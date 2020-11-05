@@ -4609,6 +4609,8 @@ footer
 
 .token-telegram-wrapper
   margin: 0 0 24px
+  .btn
+    margin: 22px auto 0
 
 .telegram-box__row
   width: 100%
@@ -4630,9 +4632,17 @@ footer
   margin: 0 0 120px
   .button-group
     width: 100%
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
     .btn
       width: fit-content
       padding: 0 40px
+      margin: 0 36px 0 0
+      &:last-child
+        margin: 0
+      .icon
+        margin: 0 8px 0 0
 
 .telegram-box
   max-width: 265px
@@ -4641,6 +4651,12 @@ footer
 
 .telegram-box-max
   max-width: 411px
+
+.btn-border-green
+  border: 1px solid #81C728
+  color: #81C728
+  &:hover
+    background: #81C728
 
 @import "media"
 // Всегда в конце
