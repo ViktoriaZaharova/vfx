@@ -5339,6 +5339,8 @@ footer {
     font-weight: bold;
     border-bottom: 1px solid #424B62;
     margin: 0 0 14px; }
+  .telegram-box .w-50 {
+    width: 100% !important; }
   .telegram-box .checkbox {
     width: 100%;
     margin: 0 0 12px; }
@@ -5819,7 +5821,7 @@ footer {
         background: url("../img/check3.svg") no-repeat center;
           background-size: cover; }
     .telegram-box .w-50 {
-      width: 50%; }
+      width: 50% !important; }
   .telegram-box__body {
     display: -webkit-box;
     display: -ms-flexbox;
