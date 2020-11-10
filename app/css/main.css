@@ -5533,10 +5533,6 @@ footer {
   font-size: 20px;
   font-weight: 600; }
 
-.table-responsive {
-  width: 100%;
-  overflow-x: auto; }
-
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1550px) {
   .section-tools__image {
@@ -7293,7 +7289,11 @@ footer {
   .about-signals {
     padding: 70px 0 120px; }
     .about-signals h1 {
-      font-size: 35px; } }
+      font-size: 35px; }
+  .thead {
+    font-size: 16px; }
+  .tbody {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
@@ -7350,8 +7350,23 @@ footer {
     width: 14px;
     height: 14px;
     margin: 0 5px 0 0; }
-  .table-current {
-    min-width: 420px; } }
+  .thead {
+    font-size: 12px; }
+  .tbody {
+    font-size: 10px; }
+    .tbody .table-row {
+      margin: 0 0 5px; }
+  .table-row {
+    height: 23px;
+    margin: 0 0 8px; }
+  .table-current img {
+    max-width: 19px; }
+  .main-current .select {
+    height: 40px;
+    font-size: 14px;
+    background-size: 18px; }
+  .th:first-child, .td:first-child {
+    padding: 0 0 0 4px; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
