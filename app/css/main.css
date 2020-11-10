@@ -7216,6 +7216,8 @@ footer {
     margin: 0 10px 0 0; }
   .table-current {
     margin: 30px 0 0; }
+    .table-current img {
+      max-width: 24px; }
   .th:first-child, .td:first-child {
     padding: 0 0 0 10px; }
   .thead {
@@ -7359,14 +7361,14 @@ footer {
   .table-row {
     height: 23px;
     margin: 0 0 8px; }
-  .table-current img {
-    max-width: 19px; }
   .main-current .select {
     height: 40px;
     font-size: 14px;
     background-size: 18px; }
   .th:first-child, .td:first-child {
-    padding: 0 0 0 4px; } }
+    padding: 0 0 0 4px; }
+  .table-current img {
+    max-width: 19px; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
