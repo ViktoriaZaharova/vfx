@@ -409,7 +409,15 @@
     height: 443px
     padding: 67px 20px 79px
 
+  .form-sing-result
+    .form-body
+      flex-direction: column
+      align-items: center
 
+
+  .form-result-text
+    margin: 0 auto 45px
+    text-align: center
 
 
 @media only screen and (max-width : 1100px)
@@ -1062,6 +1070,34 @@
   .main-brokers__logo
     max-width: 300px
 
+  .form-sing
+    padding: 54px 87px 51px
+    .form-group-check, .form-group
+      max-width: none
+    .form-group-check
+      padding: 0
+      &:after
+        right: 7px
+    .form-group
+      margin: 0 0 25px
+    button
+      max-width: none
+      margin: 40px auto 0
+    .form-body
+      margin: 63px 0 0
+
+  .form-subtitle
+    display: block
+
+  .form-footer
+    order: initial
+    margin: 0
+    flex-direction: row-reverse
+
+  .logo-form
+    width: 125px
+    height: 51px
+
 @media only screen and (max-width : 767px)
   .btn-burger
     display: flex
@@ -1585,6 +1621,23 @@
       font-size: 16px
       height: 50px
 
+  .form-sing-result
+    padding: 80px 87px 118px
+    h3
+      display: none
+    .btn
+      max-width: none
+    .logo-form
+      margin: 0 auto
+      width: 151px
+      height: 62px
+    .form-body
+      margin: 30px 0 0
+
+  .form-result-text
+    max-width: 315px
+    width: 100%
+
 
 @media only screen and (max-width : 700px)
   .table-history
@@ -2018,6 +2071,13 @@
   .tbody
     font-size: 16px
 
+  .form-sing
+    padding: 54px 38px 51px
+    .form-body
+      margin: 39px 0 0
+    button
+      font-size: 15px
+
 @media only screen and (max-width : 480px)
   .account-footer
     .btn
@@ -2216,7 +2276,26 @@
     img
       max-width: 17px
 
+  .form-footer
+    flex-direction: column
+    align-items: flex-start
 
+  .form-sing
+    padding: 45px 20px
+    .radio
+      margin: 10px 0 0
+    h3
+      font-size: 32px
+    .logo-form
+      width: 100px
+      height: 40px
+
+  .form-subtitle
+    font-size: 14px
+
+  .form-sing-result .logo-form
+    width: 150px
+    height: 60px
 
 @media only screen and (max-width : 380px)
   .checkbox__text

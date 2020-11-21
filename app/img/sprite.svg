@@ -509,7 +509,7 @@
         </g>
     </symbol>
 
-    <symbol id="copy2" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="copy2" viewBox="0 0 22 22" fill="none">
         <path d="M15 7H21V21H7V15" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
         <path d="M15 1H1V15H15V1Z" stroke="#1AA3E0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
     </symbol>
@@ -832,36 +832,36 @@
         <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
     </symbol>
 
-    <svg id="signal3" viewBox="0 0 32 13">
+    <symbol id="signal3" viewBox="0 0 32 13">
         <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
         <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
         <rect opacity="0.2" x="14.5" y="4.5" width="3" height="8" rx="1.5" stroke="#424B62"/>
         <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
         <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
-    </svg>
+    </symbol>
 
-    <svg id="signal4" viewBox="0 0 32 13">
+    <symbol id="signal4" viewBox="0 0 32 13">
         <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
         <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
         <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
         <rect opacity="0.2" x="21.5" y="2.5" width="3" height="10" rx="1.5" stroke="#424B62"/>
         <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
-    </svg>
+    </symbol>
 
-    <svg id="signal5" viewBox="0 0 32 13">
+    <symbol id="signal5" viewBox="0 0 32 13">
         <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
         <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
         <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
         <rect x="21" y="2" width="4" height="11" rx="2" fill="#424B62"/>
         <rect opacity="0.2" x="28.5" y="0.5" width="3" height="12" rx="1.5" stroke="#424B62"/>
-    </svg>
+    </symbol>
 
-    <svg id="signal6" viewBox="0 0 32 13">
+    <symbol id="signal6" viewBox="0 0 32 13">
         <rect y="8" width="4" height="5" rx="2" fill="#424B62"/>
         <rect x="7" y="6" width="4" height="7" rx="2" fill="#424B62"/>
         <rect x="14" y="4" width="4" height="9" rx="2" fill="#424B62"/>
         <rect x="21" y="2" width="4" height="11" rx="2" fill="#424B62"/>
         <rect x="28" width="4" height="13" rx="2" fill="#424B62"/>
-    </svg>
+    </symbol>
 
 </svg>

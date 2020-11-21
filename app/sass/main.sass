@@ -4765,6 +4765,198 @@ footer
     height: 65px
     margin: 0 auto
 
+//form-sing
+.form-sing
+  max-width: 1100px
+  width: 100%
+  margin: 100px auto
+  padding: 28px 44px 54px
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.15)
+  border-radius: 20px
+  background: rgba(#fff, .98)
+  font-family: 'Manrope', sans-serif
+  .form-title
+    margin: 0 0 4px
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  h3
+    color: #282C40
+    font-size: 36px
+    font-weight: bold
+  .form-group
+    margin: 0
+    max-width: 31%
+    width: 100%
+  .form-body
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 34px 0 0
+  .form-group__line
+    margin: 0 0 11px
+  label
+    width: 100%
+  input
+    background: transparent
+    width: 100%
+    height: auto
+    font-family: 'Manrope', sans-serif
+    border: none
+      radius: 0
+      bottom: 2px solid #EBEBEB
+    padding: 0 0 11px
+    color: #373C56
+    font-size: 14px
+    font-weight: 600
+    &::placeholder
+      color: rgba(130, 134, 154, 0.5)
+      font-weight: 500
+    &:required:valid
+      color: #373C56
+  .form-group-check
+    position: relative
+    max-width: 34%
+    padding: 0 31px 0 0
+    &:after
+      content: ''
+      display: inline-block
+      width: 19px
+      height: 12px
+      right: 0
+      bottom: 17px
+      background: url("../img/check4.svg") no-repeat center
+        size: cover
+      position: absolute
+    input
+      border-bottom-color: #2DD348
+  .form-group__title
+    color: #82869A
+    font-weight: 500
+    font-size: 12px
+  .radio
+    width: auto
+
+.btn-orange
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15))
+  height: 55px
+  max-width: 244px
+  width: 100%
+  background: linear-gradient(180deg, #FFB648 0%, #FDC064 100%)
+  border-radius: 10px
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15)
+  font-size: 15px
+  font-weight: 600
+
+.logo-form
+  width: 106px
+  height: 43px
+  background: url("../img/logo-black.svg") no-repeat center
+    size: contain
+
+.form-footer
+  margin: 39px 0 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  order: 1
+  .links-orange
+    font-size: 12px
+    font-weight: 500
+
+.links-orange
+  color: #F0AE4B
+
+.radio
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  color: rgba(130, 134, 154, 0.6)
+  font-size: 11px
+  font-weight: 500
+  width: auto
+  .radio-inp
+    display: none
+  .radio-custom
+    position: relative
+    min-width: 20px
+    width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #D8D8D8
+      radius: 50%
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 10px 0 0
+    background: #EBEBEB
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+
+  .radio-inp:checked + .radio-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 10px
+      border-radius: 50%
+      height: 10px
+      background: #1AA3E0
+  a
+    display: inline
+
+.form-subtitle
+  color: rgba(40, 44, 64, 0.6)
+  font-size: 16px
+  font-weight: 300
+  font-family: 'Manrope', sans-serif
+  display: none
+
+.form-sing-black
+  background: #2A2E42
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.15)
+  color: #fff
+  h3
+    color: #fff
+  .logo-form
+    background: url("../img/logo-white.svg") no-repeat center
+      size: contain
+  input:required:valid
+    color: #fff
+  input
+    color: #fff
+    &::placeholder
+      color: rgba(130, 134, 154, 0.5)
+  .btn-orange
+    color: #2D3145
+  .form-subtitle
+    color: rgba(255, 255, 255, 0.6)
+
+
+.form-result-text
+  color: #282C40
+  font-size: 32px
+  font-weight: bold
+  a
+    display: inline
+
+.form-sing-result
+  .form-body
+    align-items: center
+    margin: 63px 0 0
+
+.form-sing-result.form-sing-black
+  .form-result-text
+    color: #fff
 
 @import "media"
 // Всегда в конце
