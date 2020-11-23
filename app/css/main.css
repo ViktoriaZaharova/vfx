@@ -5767,8 +5767,8 @@ footer {
 
 .form-sing-black {
   background: #2A2E42;
-  -webkit-box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
   color: #fff; }
   .form-sing-black h3 {
     color: #fff; }
@@ -5807,6 +5807,48 @@ footer {
 
 .form-sing-result.form-sing-black .form-result-text {
   color: #fff; }
+
+.form-sing-black .form-footer .links-orange:hover {
+  color: #fff; }
+
+.form-sing-vertical {
+  max-width: 550px;
+  padding: 54px 87px 51px; }
+  .form-sing-vertical .form-subtitle {
+    display: block; }
+  .form-sing-vertical .form-group {
+    max-width: none;
+    margin: 0 0 25px; }
+  .form-sing-vertical .form-group-check {
+    padding: 0; }
+  .form-sing-vertical .form-footer {
+    -webkit-box-ordinal-group: inherit;
+        -ms-flex-order: inherit;
+            order: inherit;
+    margin: 0; }
+  .form-sing-vertical button {
+    margin: 40px auto 0;
+    max-width: none; }
+
+.form-sing-result-vertical {
+  max-width: 550px;
+  padding: 80px 87px 118px; }
+  .form-sing-result-vertical .form-title {
+    margin: 0; }
+  .form-sing-result-vertical .form-body {
+    margin: 30px auto 0; }
+  .form-sing-result-vertical .logo-form {
+    width: 151px;
+    height: 62px;
+    margin: 0 auto; }
+  .form-sing-result-vertical .form-result-text {
+    text-align: center;
+    max-width: 315px;
+    margin: 0 auto;
+    width: 100%; }
+  .form-sing-result-vertical .btn {
+    max-width: none;
+    margin: 45px auto 0; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1550px) {
@@ -6737,7 +6779,14 @@ footer {
             flex-direction: row-reverse; }
   .logo-form {
     width: 125px;
-    height: 51px; } }
+    height: 51px; }
+  .form-sing-vertical .form-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .form-sing-vertical .form-body {
+    margin: 36px 0 0; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -7746,7 +7795,14 @@ footer {
     font-size: 14px; }
   .form-sing-result .logo-form {
     width: 150px;
-    height: 60px; } }
+    height: 60px; }
+  .form-sing-vertical .form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .form-sing-vertical .form-footer .radio {
+      margin: 0 0 10px; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
