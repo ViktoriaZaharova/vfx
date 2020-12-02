@@ -559,28 +559,63 @@
   .section-tools__image
     width: 410px
     margin: -71px auto 0
+    display: none
     img
       margin: 0 auto
 
-  .box-tools
-    display: none
-
-  .box-tools1
+  .tools-slider
     display: block
-    top: 148px
-    left: 135px
+    width: 338px
+    margin: -71px auto 0
+
+  .tools-slider.slick-dotted.slick-slider
+    margin-bottom: 0
+
+  .tools-slider__box
+    img
+      margin: 0 auto
+
+  //.box-tools
+  //  display: none
+
+  .tools-slider-nav
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: -14px auto 16px
+    .slick-dots
+      margin: 0 5px
+      li
+        width: 6px
+        height: 6px
+        margin: 0 5px 0 0
+        border: 0.5px solid #FFFFFF
+        &:last-child
+          margin: 0
+      .slick-active
+        background: #fff
+    .slick-arrow
+      width: 3.5px
+      height: 7px
+
+  .box-tools
+    display: block
     font-size: 12px
     line-height: 15px
-    width: 160px
-    height: 55px
+    height: auto
+    max-width: none
+    width: 100%
+    //width: 160px
+    //height: 55px
     background: rgba(15, 16, 20, 0.8)
-    padding: 8px 8px 8px 12px
-    position: relative
+    padding: 4px 3px 7px 12px
+    //position: relative
     &:before
       content: ''
       position: absolute
       left: 0
-      height: 69px
+      height: calc(100% + 20px)
       width: 1px
       background: #1AA3E0
       top: 0
@@ -621,6 +656,81 @@
       font-size: 16px
       &:before, &:after
         display: none
+
+  .box-tools1
+    top: 75px
+    left: 103px
+    max-width: 160px
+
+  .box-tools8
+    left: 93px
+    top: 88px
+    bottom: auto
+    max-width: 226px
+
+  .box-tools7
+    bottom: 103px
+    left: 106px
+    width: auto
+    right: auto
+    max-width: 226px
+
+  .box-tools6
+    max-width: 129px
+    bottom: 140px
+    right: 175px
+    &:before
+      left: auto
+      right: 0
+    .circle
+      left: auto
+      right: -12px
+
+  .box-tools2
+    max-width: 129px
+    top: 41px
+    left: 118px
+    &:before
+      left: auto
+      right: 0
+    .circle
+      left: auto
+      right: -12px
+
+  .box-tools4
+    max-width: 129px
+    top: 115px
+    right: 88px
+    &:before
+      left: auto
+      right: 0
+      top: auto
+      bottom: 0
+    .circle
+      left: auto
+      right: -12px
+      bottom: auto
+      top: -34px
+
+  .box-tools3
+    max-width: 129px
+    top: 106px
+    left: 90px
+    &:before
+      left: auto
+      right: 0
+      top: auto
+      bottom: 0
+    .circle
+      left: auto
+      right: -12px
+      bottom: auto
+      top: -34px
+
+  .box-tools5
+    max-width: 211px
+    bottom: 81px
+    right: 10px
 
   h2
     font-size: 24px
@@ -2358,3 +2468,6 @@
   .token-line
     p
       font-size: 15px
+
+  .tools-slider
+    max-width: 320px

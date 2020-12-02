@@ -48,6 +48,17 @@ $('.indicators-slider').slick({
     appendDots: '.indicators-slider-nav',
 });
 
+$('.tools-slider').slick({
+    slidesToShow: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    dots: true,
+    fade: true,
+    appendArrows: '.tools-slider-nav',
+    appendDots: '.tools-slider-nav',
+})
+
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
 });
