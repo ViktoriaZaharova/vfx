@@ -57,7 +57,7 @@ $('.tools-slider').slick({
     fade: true,
     appendArrows: '.tools-slider-nav',
     appendDots: '.tools-slider-nav',
-})
+});
 
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
