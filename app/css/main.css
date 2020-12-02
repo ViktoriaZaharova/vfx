@@ -2633,7 +2633,7 @@ footer {
   .tools-slider__box img {
     width: 100%; }
 
-.tools-slider {
+.tools-slide, .tools-slider-nav {
   display: none; }
 
 .works {
