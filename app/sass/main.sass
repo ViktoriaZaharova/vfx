@@ -5010,6 +5010,183 @@ footer
     max-width: none
     margin: 45px auto 0
 
+#modalDownload
+  .modal-dialog
+    max-width: 100%
+    margin: 0
+    height: 100%
+  .modal-content
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25))
+    border: 1px solid #202020
+    border-radius: 20px
+    max-width: 805px
+    margin: auto
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25)
+    background: #FFFFFF
+    padding: 0
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    flex-direction: row
+  .close
+    right: 54px
+    top: 92px
+    position: absolute
+    width: 30px
+    height: 30px
+    opacity: .6
+    cursor: pointer
+    z-index: 1
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 15px
+      width: 2px
+      height: 100%
+      background: #fff
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-content__left
+  padding: 41px 49px 35px
+  width: calc(100% - 331px)
+  height: 100%
+  color: #202020
+  .modal-title
+    width: 100%
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto 25px
+    color: #202020
+    font-size: 22px
+    font-weight: 600
+  .dropItem
+    margin: 0 0 46px
+    width: 100%
+  .dropDown-menu
+    left: 0
+    background: #f0f1f2
+    top: 100%
+
+.broker
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: rgba(155, 158, 168, 0.15)
+  height: 48px
+  padding: 0 17px 0 0
+  &:after
+    content: ''
+    width: 16px
+    height: 8px
+    background: url("../img/arrow-select.svg") no-repeat center
+      size: contain
+
+
+.modal-content__right
+  max-width: 331px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 auto
+
+.modal-dialog__wrapper
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-modal
+  width: 100%
+  label
+    margin: 0 0 12px
+    width: 100%
+  input
+    height: 42px
+    width: 100%
+    border: 1px solid #202020
+      radius: 0
+  .checkbox
+    .label
+      font-size: 11px
+      font-weight: 600
+      color: #202020
+  button
+    width: 100%
+    border-radius: 0
+    max-width: none
+    background: #FD5B46
+    height: 42px
+    font-size: 12px
+    font-weight: 600
+  .checkbox-custom
+    border: 1px solid #202020
+
+.input-title
+  text-transform: uppercase
+  color: #202020
+  font-size: 12px
+  font-weight: 600
+
+.warning-form
+  margin: 19px auto 0
+  text-align: center
+  font-size: 8px
+  font-weight: 600
+  h4
+    text-align: center
+    width: 100%
+    font-size: 10px
+
+.navigation-box
+  position: absolute
+  display: flex
+  align-items: center
+  color: #fff
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 600
+  p
+    max-width: 232px
+    width: 100%
+    text-align: right
+
+.navigation-box1
+  top: 58px
+  right: 218px
+  align-items: flex-end
+  img
+    margin: 0 0 20px 17px
+
+.navigation-box3
+  display: none
+  align-items: flex-start
+  justify-content: flex-start
+  text-align: left
+  left: 82px
+  bottom: 74px
+  p
+    max-width: 229px
+    width: 100%
+    text-align: left
+  img
+    margin: 0 24px 0 0
+
+.navigation-box2
+  left: -231px
+  top: 80px
+  flex-direction: column
+  align-items: center
+  img
+    margin: 0 -120px 0 0
+
+
+
 
 @import "media"
 // Всегда в конце

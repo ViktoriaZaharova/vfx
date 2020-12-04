@@ -107,6 +107,33 @@ $('.go_to').click(function () {
     return false;
 });
 
+function get_name_browser(){
+    // получаем данные userAgent
+    var ua = navigator.userAgent;
+    // с помощью регулярок проверяем наличие текста,
+    // соответствующие тому или иному браузеру
+    if (ua.search(/Chrome/) > 0) {
+        $('.navigation-box3').css('display', 'flex');
+        $('.navigation-box1').css('display', 'none');
+    }
+    // if (ua.search(/Firefox/) > 0) return 'Firefox';
+    // if (ua.search(/Opera/) > 0) {
+    //     $('.navigation-box3').css('display', 'none');
+    //     $('.navigation-box1').css('display', 'flex');
+    // }
+    // if (ua.search(/Safari/) > 0) return 'Safari';
+    // if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
+    // условий может быть и больше.
+    // сейчас сделаны проверки только
+    // для популярных браузеров
+    // return 'Не определен';
+}
+
+// пример использования
+get_name_browser();
+// alert(browser);
+
+
 // animate number
 var target = $('.benefits__inner');
 var targetPos = target.offset().top;
@@ -184,4 +211,7 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
+
+
+
 

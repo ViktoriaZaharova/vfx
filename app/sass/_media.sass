@@ -2,6 +2,10 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width: 1640px)
+  #modalDownload .modal-content
+    max-width: 705px
+
 @media only screen and (max-width: 1550px)
   .section-tools__image
     max-width: 790px
@@ -173,6 +177,15 @@
   .about-signals__box-content
     padding: 0 40px 0 0
 
+  .navigation-box3
+    bottom: 0
+
+  .navigation-box
+    font-size: 16px
+
+  .navigation-box1
+    top: 10px
+
 
 @media only screen and (max-width: 1420px)
   .table-license td, .table-license th
@@ -252,8 +265,6 @@
     .currency
       font-size: 16px
       margin: 0 0 3px
-
-
 
   .th-box:before
     height: 146px
@@ -419,6 +430,11 @@
     margin: 0 auto 45px
     text-align: center
 
+  .navigation-box2
+    left: -152px
+
+
+
 
 @media only screen and (max-width : 1100px)
   .statistical-data__wrapper
@@ -494,6 +510,19 @@
 
   .telegram-box__wrapper
     margin: 0
+
+  .modal-content__right
+    max-width: 231px
+
+  .modal-content__left
+    width: calc(100% - 231px)
+    padding: 30px
+    .dropItem
+      margin: 0 0 30px
+
+  #modalDownload .modal-content
+    max-width: 605px
+
 
 @media only screen and (max-width : 991px)
   .header-item
@@ -1059,6 +1088,20 @@
     max-width: none
     width: 100%
 
+  .navigation-box2
+    left: -100px
+    p
+      max-width: 80px
+
+  .navigation-box3
+    img
+      max-width: 120px
+      margin: 0 10px 0 0
+
+  .navigation-box1
+    img
+      max-width: 80px
+
 @media only screen and (max-width : 940px)
   .table-license td, .table-license th
     min-width: 125px
@@ -1213,6 +1256,12 @@
       flex-direction: row
     .form-body
       margin: 36px 0 0
+
+  .navigation-box
+    display: none !important
+
+  #modalDownload .close
+    display: none
 
 @media only screen and (max-width : 767px)
   .btn-burger
@@ -2283,7 +2332,13 @@
     font-size: 14px
 
 
+  .modal-content__right
+    max-width: none
+    width: 100%
+    margin: 20px auto
 
+  .modal-content__left
+    width: 100%
 
 
 @media only screen and (max-width : 420px)
