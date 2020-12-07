@@ -150,7 +150,7 @@ if (navigator.userAgent.search(/OPR/) > 0) {
 
 if (navigator.userAgent.search(/Firefox/) > 0) {
     $('.navigation-box1').css({
-        right: '185px'
+        right: '190px'
     });
 }
 
