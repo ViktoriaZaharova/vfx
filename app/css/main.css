@@ -6040,7 +6040,7 @@ footer {
 
 .navigation-box1 {
   top: 58px;
-  right: 218px;
+  right: 118px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
@@ -6062,8 +6062,6 @@ footer {
     max-width: 229px;
     width: 100%;
     text-align: left; }
-  .navigation-box3 img {
-    margin: 0 24px 0 0; }
 
 .navigation-box2 {
   left: -231px;
@@ -6210,11 +6208,15 @@ footer {
   .about-signals__box-content {
     padding: 0 40px 0 0; }
   .navigation-box3 {
-    bottom: 0; }
+    bottom: -15px; }
+    .navigation-box3 img {
+      max-width: 120px; }
   .navigation-box {
     font-size: 16px; }
   .navigation-box1 {
-    top: 10px; } }
+    top: 10px; }
+    .navigation-box1 img {
+      max-width: 80px; } }
 
 @media only screen and (max-width: 1420px) {
   .table-license td, .table-license th {
@@ -6408,7 +6410,7 @@ footer {
     margin: 0 auto 45px;
     text-align: center; }
   .navigation-box2 {
-    left: -152px; } }
+    left: -160px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
