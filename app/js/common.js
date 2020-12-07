@@ -140,7 +140,7 @@ if (navigator.userAgent.search(/OPR/) > 0) {
     $('.navigation-box3').css('display', 'none');
     $('.navigation-box1').css({
         display: 'flex',
-        right: '41px'
+        right: '35px'
     });
     $('#modalDownload .close').css({
         right: 'auto',
