@@ -138,7 +138,16 @@ if (navigator.userAgent.search(/Chrome/) > 0) {
 
 if (navigator.userAgent.search(/OPR/) > 0) {
     $('.navigation-box3').css('display', 'none');
-    $('.navigation-box1').css('display', 'flex');
+    $('.navigation-box1').css({
+        display: 'flex',
+        right: '41px'
+    });
+}
+
+if (navigator.userAgent.search(/Firefox/) > 0) {
+    $('.navigation-box1').css({
+        right: '155px'
+    });
 }
 
 
