@@ -107,31 +107,39 @@ $('.go_to').click(function () {
     return false;
 });
 
-function get_name_browser(){
-    // получаем данные userAgent
-    var ua = navigator.userAgent;
-    // с помощью регулярок проверяем наличие текста,
-    // соответствующие тому или иному браузеру
-    if (ua.search(/Chrome/) > 0) {
-        $('.navigation-box3').css('display', 'flex');
-        $('.navigation-box1').css('display', 'none');
-    }
-    // if (ua.search(/Firefox/) > 0) return 'Firefox';
-    // if (ua.search(/Opera/) > 0) {
-    //     $('.navigation-box3').css('display', 'none');
-    //     $('.navigation-box1').css('display', 'flex');
-    // }
-    // if (ua.search(/Safari/) > 0) return 'Safari';
-    // if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
-    // условий может быть и больше.
-    // сейчас сделаны проверки только
-    // для популярных браузеров
-    // return 'Не определен';
+// function get_name_browser(){
+//     // получаем данные userAgent
+//     var ua = navigator.userAgent;
+//     // с помощью регулярок проверяем наличие текста,
+//     // соответствующие тому или иному браузеру
+//     if (ua.search(/Chrome/) > 0) {
+//         $('.navigation-box3').css('display', 'flex');
+//         $('.navigation-box1').css('display', 'none');
+//     }
+//     // if (ua.search(/Firefox/) > 0) return 'Firefox';
+//     if (ua.search(/Opera/) > 0) {
+//         $('.navigation-box3').css('display', 'none');
+//         $('.navigation-box1').css('display', 'flex');
+//     }
+//     // if (ua.search(/Safari/) > 0) return 'Safari';
+//     // if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
+//     // условий может быть и больше.
+//     // сейчас сделаны проверки только
+//     // для популярных браузеров
+//     // return 'Не определен';
+// }
+//
+// get_name_browser();
+
+if (navigator.userAgent.search(/Chrome/) > 0) {
+    $('.navigation-box3').css('display', 'flex');
+    $('.navigation-box1').css('display', 'none');
 }
 
-// пример использования
-get_name_browser();
-// alert(browser);
+if (navigator.userAgent.search(/OPR/) > 0) {
+    $('.navigation-box3').css('display', 'none');
+    $('.navigation-box1').css('display', 'flex');
+}
 
 
 // animate number
