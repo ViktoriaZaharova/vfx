@@ -142,11 +142,15 @@ if (navigator.userAgent.search(/OPR/) > 0) {
         display: 'flex',
         right: '41px'
     });
+    $('#modalDownload .close').css({
+        right: 'auto',
+        left: '54px'
+    })
 }
 
 if (navigator.userAgent.search(/Firefox/) > 0) {
     $('.navigation-box1').css({
-        right: '155px'
+        right: '125px'
     });
 }
 
