@@ -1015,6 +1015,7 @@ footer
   color: rgba(#424B62, .6)
   cursor: pointer
   margin: 0 0 40px
+  position: relative
   &:hover
     box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16)
   &__icon
@@ -5184,8 +5185,53 @@ footer
   img
     margin: 0 -120px 0 0
 
+//payment 2
+.pay-box__sale
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  position: absolute
+  font-weight: 500
+  font-size: 13px
+  top: 20px
+  right: 20px
+  width: 35px
+  height: 35px
 
+.bg-red
+  background: #D64730
 
+.pay-box__sale-min
+  width: 24px
+  height: 24px
+  top: 5px
+  right: 5px
+  font-size: 9px
+
+.pay-box-min
+  height: 108px
+  padding: 18px 0
+  font-size: 9px
+  margin: 0 0 11px
+  width: 48%
+  .pay-box__icon
+    margin: 0 auto 19px
+  &:hover
+    color: rgba(66, 75, 98, 0.6)
+    box-shadow: 0px 9.47756px 14.2163px rgba(68, 68, 68, 0.16)
+  &:focus
+    box-shadow: 0 9.47756px 14.2163px rgba(152, 143, 242, 0.5)
+    outline: none
+    color: rgba(66, 75, 98, 0.6)
+
+.row-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
 
 @import "media"
 // Всегда в конце

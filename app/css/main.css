@@ -1178,7 +1178,8 @@ footer {
   text-align: center;
   color: rgba(66, 75, 98, 0.6);
   cursor: pointer;
-  margin: 0 0 40px; }
+  margin: 0 0 40px;
+  position: relative; }
   .pay-box:hover {
     -webkit-box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16);
             box-shadow: 0 20px 30px rgba(68, 68, 68, 0.16); }
@@ -6076,6 +6077,68 @@ footer {
   .navigation-box2 img {
     margin: 0 -120px 0 0; }
 
+.pay-box__sale {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px; }
+
+.bg-red {
+  background: #D64730; }
+
+.pay-box__sale-min {
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  right: 5px;
+  font-size: 9px; }
+
+.pay-box-min {
+  height: 108px;
+  padding: 18px 0;
+  font-size: 9px;
+  margin: 0 0 11px;
+  width: 48%; }
+  .pay-box-min .pay-box__icon {
+    margin: 0 auto 19px; }
+  .pay-box-min:hover {
+    color: rgba(66, 75, 98, 0.6);
+    -webkit-box-shadow: 0px 9.47756px 14.2163px rgba(68, 68, 68, 0.16);
+            box-shadow: 0px 9.47756px 14.2163px rgba(68, 68, 68, 0.16); }
+  .pay-box-min:focus {
+    -webkit-box-shadow: 0 9.47756px 14.2163px rgba(152, 143, 242, 0.5);
+            box-shadow: 0 9.47756px 14.2163px rgba(152, 143, 242, 0.5);
+    outline: none;
+    color: rgba(66, 75, 98, 0.6); }
+
+.row-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
   .navigation-box3 img {
@@ -7999,7 +8062,15 @@ footer {
     .form-sing .form-body {
       margin: 39px 0 0; }
     .form-sing button {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .pay-box__sale {
+    top: 10px;
+    right: 10px; }
+  .pay-box__sale-min {
+    top: 5px;
+    right: 5px; }
+  .pay-box-min {
+    font-size: 9px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
