@@ -583,6 +583,16 @@ footer {
   color: #98A4C4;
   font-size: 12px;
   line-height: 15px; }
+  .copyright a {
+    display: inline; }
+
+.text-name {
+  margin: 24px auto 0;
+  font-weight: 600;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  color: #fff; }
 
 .footer-menu__wrapper {
   width: 100%;
@@ -7076,7 +7086,9 @@ footer {
     max-width: 120px;
     margin: 0 10px 0 0; }
   .navigation-box1 img {
-    max-width: 80px; } }
+    max-width: 80px; }
+  .text-name {
+    margin: 0 auto 15px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
