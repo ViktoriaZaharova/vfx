@@ -442,6 +442,7 @@ header {
   color: #fff; }
   header .support-box {
     font-weight: 500;
+    font-size: 14px;
     margin: 0 15px 0 0; }
   header .dropDown-menu {
     top: 80px; }
@@ -450,7 +451,8 @@ header {
       width: 100%; }
 
 .logo {
-  width: 146px;
+  width: 100%;
+  max-width: 146px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,9 +532,9 @@ header {
     .header-menu li a {
       color: #fff;
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
-      padding: 29px 18px; }
+      padding: 29px 12px; }
       .header-menu li a:hover {
         color: #988FF2;
         background: #353C4F; }
@@ -546,6 +548,9 @@ header {
     .header-menu li .active {
       color: #988FF2;
       background: #353C4F; }
+
+.dropItem .support-box {
+  margin: 0; }
 
 footer {
   padding: 45px 0 25px;
@@ -6322,7 +6327,7 @@ footer {
 
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
-    padding: 29px 15px; }
+    padding: 29px 10px; }
   .table .td-purchase {
     width: auto; }
   .account-info {
@@ -6335,8 +6340,8 @@ footer {
     width: 16%; } }
 
 @media only screen and (max-width: 1199px) {
-  .header-menu li a {
-    font-size: 14px; }
+  .header-menu li a, header .support-box {
+    font-size: 12px; }
   .account-info__standart .account-info__item {
     width: 100%;
     margin: 0 0 16px; }
@@ -6596,10 +6601,11 @@ footer {
   .dropItem-language {
     padding: 0 0 0 10px; }
   header .support-box {
-    margin: 0 12px 0 0; }
+    margin: 0 10px 0 0;
+    font-size: 10px; }
   .header-menu li a {
-    font-size: 12px;
-    padding: 22px 8px; }
+    font-size: 10px;
+    padding: 22px 6px; }
   .list-social {
     margin: 0 0 33px; }
     .list-social li {
@@ -7251,8 +7257,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 7px;
-    height: 20px; }
+    width: 24px;
+    height: 20px;
+    margin: 15px 10px 0 auto; }
   .header-item {
     font-size: 14px;
     margin: 0 17px 0 0; }
@@ -8270,7 +8277,6 @@ footer {
   .checkbox__text {
     font-size: 18px; }
   .btn-burger {
-    width: 4px;
     height: 16px; } }
 
 @media only screen and (max-width: 340px) {
