@@ -442,17 +442,17 @@ header {
   color: #fff; }
   header .support-box {
     font-weight: 500;
-    font-size: 14px;
-    margin: 0 15px 0 0; }
+    font-size: 16px;
+    margin: 0 20px 0 0; }
   header .dropDown-menu {
-    top: 80px; }
+    top: 70px; }
     header .dropDown-menu a {
       padding: 0;
       width: 100%; }
 
 .logo {
   width: 100%;
-  max-width: 146px;
+  max-width: 118px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,9 +532,9 @@ header {
     .header-menu li a {
       color: #fff;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 600;
-      padding: 29px 12px; }
+      padding: 25.5px 25px; }
       .header-menu li a:hover {
         color: #988FF2;
         background: #353C4F; }
@@ -856,7 +856,7 @@ footer {
   display: none; }
 
 .dropItem-language {
-  padding: 0 0 0 15px; }
+  padding: 0 0 0 40px; }
   .dropItem-language:before {
     left: 0;
     top: 50%;
@@ -871,6 +871,9 @@ footer {
     border-top-color: #98A4C4; }
   .dropItem-language .header-item {
     margin: 0; }
+  .dropItem-language .dropDown-menu {
+    left: auto;
+    right: 0; }
 
 .btn-close, .btn-close__account {
   display: -webkit-box;
@@ -950,9 +953,9 @@ footer {
 .dropDown-menu {
   position: absolute;
   display: none;
-  left: -20px;
+  left: 0;
   background: #2F3545;
-  padding: 16px 63px 28px 22px;
+  padding: 20px 47px;
   z-index: 2;
   top: 52px;
   min-width: 100%; }
@@ -6366,7 +6369,7 @@ footer {
   .account-head .name-account, .account-body strong {
     font-size: 26px; }
   header .dropDown-menu {
-    top: 76px; }
+    top: 73px; }
   .table-license td, .table-license th {
     min-width: 165px; }
   .table-license thead .th-title {
@@ -6616,10 +6619,7 @@ footer {
         width: 33px;
         height: 33px; }
   header .dropDown-menu {
-    top: 58px; }
-  .dropDown-menu {
-    left: auto;
-    right: -15px; }
+    top: 62px; }
   .list-social {
     margin: 0 0 33px; }
     .list-social li {
@@ -7240,7 +7240,9 @@ footer {
   .navigation-box {
     display: none !important; }
   #modalDownload .close {
-    display: none; } }
+    display: none; }
+  header .dropDown-menu {
+    top: 57px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
