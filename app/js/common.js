@@ -12,6 +12,14 @@ $('.dropItem').click(function () {
     $(this).find('.dropDown-menu').fadeToggle();
 });
 
+$(document).mouseup(function (e) { // событие клика по веб-документу
+    let div = $(".dropItem"); // тут указываем ID элемента
+    if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.find('.dropDown-menu').fadeOut(); // скрываем его
+    }
+});
+
+
 $('.tooltip-wrapper').hover(function () {
    $(this).find('.tooltip-hidden').fadeToggle();
 });
