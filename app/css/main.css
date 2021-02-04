@@ -440,6 +440,8 @@ h2 {
 header {
   background: #424B62;
   color: #fff; }
+  header .container {
+    max-width: 1310px; }
   header .support-box {
     font-weight: 500;
     font-size: 16px;
@@ -944,11 +946,12 @@ footer {
   .dropItem .language-box:after {
     border-top-color: #98A4C4; }
 
-.dropItem-cabinet .dropDown-menu .header-item__icon svg path {
-  stroke: #9B9EA8; }
-
-.dropItem-cabinet .dropDown-menu .logout-item svg path {
-  stroke: transparent; }
+.dropItem-cabinet {
+  margin: 0 10px 0 0; }
+  .dropItem-cabinet .dropDown-menu .header-item__icon svg path {
+    stroke: #9B9EA8; }
+  .dropItem-cabinet .dropDown-menu .logout-item svg path {
+    stroke: transparent; }
 
 .dropDown-menu {
   position: absolute;
