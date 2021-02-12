@@ -444,8 +444,8 @@ header {
     max-width: 1310px; }
   header .support-box {
     font-weight: 500;
-    font-size: 16px;
-    margin: 0 20px 0 0; }
+    font-size: 12px;
+    margin: 0 10px 0 0; }
   header .dropDown-menu {
     top: 70px; }
     header .dropDown-menu a {
@@ -534,9 +534,9 @@ header {
     .header-menu li a {
       color: #fff;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 600;
-      padding: 25.5px 25px; }
+      padding: 25.5px 5px; }
       .header-menu li a:hover {
         color: #988FF2;
         background: #353C4F; }
@@ -858,7 +858,7 @@ footer {
   display: none; }
 
 .dropItem-language {
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 10px; }
   .dropItem-language:before {
     left: 0;
     top: 50%;
@@ -6333,7 +6333,8 @@ footer {
 
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
-    padding: 29px 10px; }
+    padding: 29px 5px;
+    font-size: 11px; }
   .table .td-purchase {
     width: auto; }
   .account-info {
@@ -6347,7 +6348,11 @@ footer {
 
 @media only screen and (max-width: 1199px) {
   .header-menu li a, header .support-box {
+    font-size: 11px; }
+  .header-item {
     font-size: 12px; }
+  .dropItem-cabinet {
+    margin: 0; }
   .account-info__standart .account-info__item {
     width: 100%;
     margin: 0 0 16px; }
@@ -6610,8 +6615,10 @@ footer {
     margin: 0 10px 0 0;
     font-size: 10px; }
   .header-menu li a {
-    font-size: 10px;
-    padding: 22px 6px; }
+    font-size: 8px;
+    padding: 22px 4px; }
+  header .support-box {
+    font-size: 8px; }
   .list-social {
     margin: 0 0 33px; }
     .list-social li {
