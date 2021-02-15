@@ -534,9 +534,9 @@ header {
     .header-menu li a {
       color: #fff;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 600;
-      padding: 25.5px 5px; }
+      padding: 25.5px 15px; }
       .header-menu li a:hover {
         color: #988FF2;
         background: #353C4F; }
@@ -553,6 +553,14 @@ header {
 
 .dropItem .support-box {
   margin: 0; }
+
+.header-rus .header-menu li a {
+  font-size: 13px;
+  padding: 25.5px 14px; }
+
+.header-fr .header-menu li a {
+  font-size: 12px;
+  padding: 25.5px 12px; }
 
 footer {
   padding: 45px 0 25px;
@@ -2539,14 +2547,14 @@ footer {
       border-radius: 50%; }
 
 .box-tools1 {
-  left: 49px;
+  left: -37px;
   top: 465px;
-  max-width: 256px; }
+  max-width: 190px; }
   .box-tools1 h3:after {
-    width: 202px;
-    right: -240px; }
+    width: 332px;
+    right: -332px; }
   .box-tools1 h3:before {
-    right: -240px; }
+    right: -332px; }
 
 .box-tools2 {
   top: 376px;
@@ -2561,69 +2569,70 @@ footer {
 .box-tools3 {
   top: 260px;
   left: 272px;
-  max-width: 233px; }
+  max-width: 155px; }
   .box-tools3 h3:after {
-    width: 279px;
+    width: 350px;
     right: -347px; }
   .box-tools3 h3:before {
     right: -347px; }
 
 .box-tools4 {
-  right: 79px;
+  right: -30px;
   top: 280px;
   max-width: 210px; }
   .box-tools4 h3 {
     padding: 0; }
     .box-tools4 h3:after {
-      width: 89px;
-      left: -101px; }
+      width: 228px;
+      left: -238px; }
     .box-tools4 h3:before {
-      left: -101px; }
+      left: -238px; }
 
 .box-tools5 {
-  right: -40px;
-  bottom: 400px;
-  max-width: 253px; }
+  right: -130px;
+  bottom: 390px;
+  max-width: 190px; }
   .box-tools5 h3 {
     padding: 0; }
     .box-tools5 h3:after {
-      width: 22px;
-      left: -23px; }
+      width: 156px;
+      left: -166px; }
     .box-tools5 h3:before {
-      left: -23px; }
+      left: -166px; }
 
 .box-tools6 {
   bottom: 338px;
-  right: 150px;
-  max-width: 240px; }
+  right: 60px;
+  max-width: 155px; }
   .box-tools6 h3 {
     padding: 0; }
     .box-tools6 h3:after {
-      width: 109px;
-      left: -124px; }
+      width: 294px;
+      left: -304px; }
     .box-tools6 h3:before {
-      left: -124px; }
+      left: -304px; }
 
 .box-tools7 {
-  bottom: 238px;
-  right: 165px;
-  max-width: 295px; }
+  bottom: 220px;
+  right: 145px;
+  max-width: 209px; }
   .box-tools7 h3 {
     padding: 0; }
     .box-tools7 h3:after {
-      width: 200px;
-      left: -215px; }
+      width: 318px;
+      left: -328px; }
     .box-tools7 h3:before {
-      left: -215px; }
+      left: -328px; }
 
 .box-tools8 {
-  bottom: 240px;
-  left: 55px; }
+  bottom: 200px;
+  left: -15px;
+  max-width: 190px; }
   .box-tools8 h3:after {
-    width: 126px;
-    right: -159px; }
+    width: 240px;
+    right: -250px; }
   .box-tools8 h3:before {
-    right: -159px; }
+    right: -250px; }
 
 .fullscreen-video {
   width: 100%;
@@ -6180,21 +6189,21 @@ footer {
     bottom: 115px;
     left: -25px; }
   .box-tools8 h3:after {
-    right: -120px;
-    width: 120px; }
+    right: -150px;
+    width: 140px; }
   .box-tools8 h3:before {
-    right: -120px; }
+    right: -150px; }
   .box-tools7 {
     right: 140px;
-    bottom: 129px; }
+    bottom: 120px; }
   .box-tools7 h3:after {
-    width: 60px;
-    left: -60px; }
+    width: 130px;
+    left: -140px; }
   .box-tools7 h3:before {
-    left: -60px; }
+    left: -140px; }
   .box-tools6 {
     right: 68px;
-    bottom: 220px;
+    bottom: 230px;
     max-width: 200px; }
   .box-tools6 h3:after {
     width: 100px;
@@ -6205,10 +6214,10 @@ footer {
     bottom: 250px;
     right: -125px; }
   .box-tools5 h3:after {
-    width: 40px;
-    left: -40px; }
+    width: 80px;
+    left: -90px; }
   .box-tools5 h3:before {
-    left: -40px; }
+    left: -90px; }
   .box-tools4 {
     top: 194px;
     right: -35px; }
@@ -6235,13 +6244,13 @@ footer {
     .box-tools2 h3:before {
       right: -350px; }
   .box-tools1 {
-    top: 328px;
-    left: 40px; }
+    top: 355px;
+    left: -30px; }
     .box-tools1 h3:after {
-      width: 150px;
-      right: -150px; }
+      width: 170px;
+      right: -180px; }
     .box-tools1 h3:before {
-      right: -150px; }
+      right: -180px; }
   .works-slider__image {
     width: 400px;
     min-width: 400px; }
@@ -6348,7 +6357,7 @@ footer {
 
 @media only screen and (max-width: 1199px) {
   .header-menu li a, header .support-box {
-    font-size: 11px; }
+    font-size: 14px; }
   .header-item {
     font-size: 12px; }
   .dropItem-cabinet {
@@ -6510,7 +6519,15 @@ footer {
     margin: 0 auto 45px;
     text-align: center; }
   .navigation-box2 {
-    left: -160px; } }
+    left: -160px; }
+  .header-rus .header-menu li a {
+    font-size: 11px;
+    padding: 25.5px 6px; }
+  .header-fr .header-menu li a {
+    font-size: 11px;
+    padding: 25.5px 6px; }
+  .header-fr .support-box {
+    font-size: 10px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -6615,10 +6632,10 @@ footer {
     margin: 0 10px 0 0;
     font-size: 10px; }
   .header-menu li a {
-    font-size: 8px;
-    padding: 22px 4px; }
+    font-size: 12px;
+    padding: 22px 10px; }
   header .support-box {
-    font-size: 8px; }
+    font-size: 10px; }
   .list-social {
     margin: 0 0 33px; }
     .list-social li {
@@ -7106,7 +7123,14 @@ footer {
   .navigation-box1 img {
     max-width: 80px; }
   .text-name {
-    margin: 0 auto 15px; } }
+    margin: 0 auto 15px; }
+  .header-rus .header-menu li a {
+    font-size: 9px; }
+  .header-fr .header-menu li a {
+    font-size: 9px;
+    padding: 25.5px 4px; }
+  .header-fr .support-box {
+    font-size: 9px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -7252,7 +7276,19 @@ footer {
   #modalDownload .close {
     display: none; }
   header .dropDown-menu {
-    top: 57px; } }
+    top: 57px; }
+  .header-menu li a {
+    font-size: 11px;
+    padding: 22px 6px; }
+  .header-rus .header-menu li a {
+    font-size: 8px; }
+  .header-rus .support-box {
+    font-size: 9px; }
+  .header-fr .header-menu li a {
+    font-size: 8px;
+    padding: 25.5px 4px; }
+  .header-fr .support-box {
+    font-size: 8px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
