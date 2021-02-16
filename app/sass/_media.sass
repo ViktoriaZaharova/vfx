@@ -274,7 +274,7 @@
     font-size: 26px
 
   header .dropDown-menu
-    top: 73px
+    top: 65px
 
   .table-license td, .table-license th
     min-width: 165px
@@ -308,8 +308,6 @@
   .table-license__description
     font-size: 22px
     margin: 40px 0 0
-
-
 
   .main-page-making
     padding: 220px 0 0
@@ -439,7 +437,7 @@
       margin: 0 0 10px
 
   .signal-algorithms-content
-    height: 443px
+    min-height: 443px
     padding: 67px 20px 79px
 
   .form-sing-result
@@ -455,16 +453,19 @@
   .navigation-box2
     left: -160px
 
-  .header-rus .header-menu li a
-    font-size: 11px
-    padding: 25.5px 6px
+  .header-rus
+    .header-menu li > a
+      font-size: 11px
+      padding: 25.5px 6px
 
-  .header-fr
-    .header-menu li a
+
+  .header-fr, .header-fl
+    .header-menu li > a
       font-size: 11px
       padding: 25.5px 6px
     .support-box
       font-size: 10px
+
 
 @media only screen and (max-width : 1100px)
   .statistical-data__wrapper
@@ -551,6 +552,11 @@
 
   #modalDownload .modal-content
     max-width: 605px
+
+  .header-fl
+    .header-menu
+      li > a
+        font-size: 10px
 
 
 @media only screen and (max-width : 991px)
@@ -1131,12 +1137,14 @@
   .header-rus .header-menu li a
     font-size: 9px
 
-  .header-fr
-    .header-menu li a
+  .header-fr, .header-fl
+    .header-menu li > a
       font-size: 9px
       padding: 25.5px 4px
     .support-box
       font-size: 9px
+    .header-menu li .dropDown-menu a
+      font-size: 12px
 
 @media only screen and (max-width : 940px)
   .table-license td, .table-license th
@@ -1300,7 +1308,7 @@
     display: none
 
   header .dropDown-menu
-    top: 57px
+    top: 61px
 
   .header-menu li a
     font-size: 11px
@@ -1318,6 +1326,14 @@
       padding: 25.5px 4px
     .support-box
       font-size: 8px
+
+  .header-fl
+    .header-menu
+      li > a
+        font-size: 8px
+    .support-box
+      font-size: 7px
+
 
 @media only screen and (max-width : 767px)
   .btn-burger

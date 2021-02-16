@@ -447,7 +447,7 @@ header {
     font-size: 12px;
     margin: 0 10px 0 0; }
   header .dropDown-menu {
-    top: 70px; }
+    top: 67px; }
     header .dropDown-menu a {
       padding: 0;
       width: 100%; }
@@ -513,6 +513,14 @@ header {
   .header-item:hover {
     color: #fff; }
 
+.header-rus .header-menu li > a {
+  font-size: 13px;
+  padding: 25.5px 14px; }
+
+.header-fr .header-menu li > a, .header-fl .header-menu li > a {
+  font-size: 12px;
+  padding: 25.5px 12px; }
+
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,14 +561,6 @@ header {
 
 .dropItem .support-box {
   margin: 0; }
-
-.header-rus .header-menu li a {
-  font-size: 13px;
-  padding: 25.5px 14px; }
-
-.header-fr .header-menu li a {
-  font-size: 12px;
-  padding: 25.5px 12px; }
 
 footer {
   padding: 45px 0 25px;
@@ -4872,7 +4872,7 @@ footer {
   padding: 67px 80px 79px 30px;
   font-size: 20px;
   line-height: 150%;
-  height: 397px; }
+  min-height: 397px; }
   .signal-algorithms-content strong {
     font-weight: 600; }
   .signal-algorithms-content p {
@@ -6386,7 +6386,7 @@ footer {
   .account-head .name-account, .account-body strong {
     font-size: 26px; }
   header .dropDown-menu {
-    top: 73px; }
+    top: 65px; }
   .table-license td, .table-license th {
     min-width: 165px; }
   .table-license thead .th-title {
@@ -6505,7 +6505,7 @@ footer {
   .about-signals__menu li {
     margin: 0 0 10px; }
   .signal-algorithms-content {
-    height: 443px;
+    min-height: 443px;
     padding: 67px 20px 79px; }
   .form-sing-result .form-body {
     -webkit-box-orient: vertical;
@@ -6520,13 +6520,13 @@ footer {
     text-align: center; }
   .navigation-box2 {
     left: -160px; }
-  .header-rus .header-menu li a {
+  .header-rus .header-menu li > a {
     font-size: 11px;
     padding: 25.5px 6px; }
-  .header-fr .header-menu li a {
+  .header-fr .header-menu li > a, .header-fl .header-menu li > a {
     font-size: 11px;
     padding: 25.5px 6px; }
-  .header-fr .support-box {
+  .header-fr .support-box, .header-fl .support-box {
     font-size: 10px; } }
 
 @media only screen and (max-width: 1100px) {
@@ -6611,7 +6611,9 @@ footer {
     .modal-content__left .dropItem {
       margin: 0 0 30px; }
   #modalDownload .modal-content {
-    max-width: 605px; } }
+    max-width: 605px; }
+  .header-fl .header-menu li > a {
+    font-size: 10px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -7126,11 +7128,13 @@ footer {
     margin: 0 auto 15px; }
   .header-rus .header-menu li a {
     font-size: 9px; }
-  .header-fr .header-menu li a {
+  .header-fr .header-menu li > a, .header-fl .header-menu li > a {
     font-size: 9px;
     padding: 25.5px 4px; }
-  .header-fr .support-box {
-    font-size: 9px; } }
+  .header-fr .support-box, .header-fl .support-box {
+    font-size: 9px; }
+  .header-fr .header-menu li .dropDown-menu a, .header-fl .header-menu li .dropDown-menu a {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -7276,7 +7280,7 @@ footer {
   #modalDownload .close {
     display: none; }
   header .dropDown-menu {
-    top: 57px; }
+    top: 61px; }
   .header-menu li a {
     font-size: 11px;
     padding: 22px 6px; }
@@ -7288,7 +7292,11 @@ footer {
     font-size: 8px;
     padding: 25.5px 4px; }
   .header-fr .support-box {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .header-fl .header-menu li > a {
+    font-size: 8px; }
+  .header-fl .support-box {
+    font-size: 7px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
