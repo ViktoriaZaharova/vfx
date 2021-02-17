@@ -4778,7 +4778,7 @@ footer {
     margin: 0 auto; }
   .signal-algorithms .btn {
     max-width: 222px;
-    margin: -40px auto 0;
+    margin: -90px auto 0;
     height: 61px;
     font-size: 21px; }
   .signal-algorithms .box-text {
@@ -4872,7 +4872,7 @@ footer {
   padding: 67px 80px 79px 30px;
   font-size: 20px;
   line-height: 150%;
-  min-height: 397px; }
+  min-height: 460px; }
   .signal-algorithms-content strong {
     font-weight: 600; }
   .signal-algorithms-content p {
@@ -7061,7 +7061,8 @@ footer {
     padding: 20px 30px 40px; }
   .signal-algorithms-content {
     margin: 0 0 40px;
-    padding: 12px 15px; }
+    padding: 12px 15px;
+    min-height: auto; }
     .signal-algorithms-content p {
       margin: 0 0 12px; }
   .signal-algorithms-img {
