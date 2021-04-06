@@ -3817,6 +3817,8 @@ footer
   align-items: center
   background: transparent
   outline: none
+  &:hover
+    color: #1AA3E0
 
 .main-brokers__box-content
   width: 100%
@@ -5265,6 +5267,126 @@ footer
   align-items: stretch
   flex-wrap: wrap
   justify-content: space-between
+
+//new brokers
+.main-brokers-page
+  .container
+    max-width: 1230px
+  .brokers-location
+    justify-content: center
+    margin: 28px auto 37px
+
+
+.broker-card
+  width: 100%
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15)
+  border-radius: 5px
+  overflow: hidden
+  background: rgba(#17191B, .35)
+  position: relative
+  height: 100%
+  .brokers-info-money
+    width: 100%
+    color: #909090
+    font-size: 10px
+    font-weight: normal
+    justify-content: space-between
+    align-items: flex-start
+  .brokers-info-money__box
+    margin: 0
+    p
+      font-size: 35px
+      font-weight: normal
+      color: #fff
+  .rating-wrapper
+    margin: 50px auto
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-weight: normal
+    font-size: 16px
+  .list-rating
+    justify-content: center
+    margin: 0 auto 10px
+    li
+      width: 36px
+      height: 36px
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
+      img
+        width: 100%
+        height: 100%
+        position: relative
+        top: 0
+        left: 0
+        right: 0
+        transform: none
+  .btn
+    box-shadow: none
+    max-width: 250px
+    width: 100%
+    margin: 0 auto
+    height: 50px
+    font-size: 17px
+    &:hover
+      box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3)
+
+.broker-card__head
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 16px 25px
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25)
+
+.broker-card__text
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25)
+  padding: 20px
+  line-height: 170%
+  font-size: 14px
+
+.broker-logo
+  max-width: 273px
+  height: 68px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-collapse
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 25px
+  height: 25px
+  min-width: 25px
+  border: 0.5px solid #FFFFFF
+    radius: 50%
+  padding: 5px
+  transform: rotate(180deg)
+
+.btn-collapse.collapsed
+  transform: none
+
+.broker-card__body
+  padding: 15px 25px
+  position: relative
+  z-index: 1
+
+.broker-card-bg
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 100%
+
+.broker-card-description
+  margin: 10px auto 0
+  font-size: 12px
+  display: block
+  text-align: center
+
+.broker-card-col
+  margin-bottom: 25px
 
 @import "media"
 // Всегда в конце

@@ -4416,6 +4416,8 @@ footer {
           align-items: center;
   background: transparent;
   outline: none; }
+  .brokers-location:hover {
+    color: #1AA3E0; }
 
 .main-brokers__box-content {
   width: 100%;
@@ -6170,6 +6172,160 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.main-brokers-page .container {
+  max-width: 1230px; }
+
+.main-brokers-page .brokers-location {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 28px auto 37px; }
+
+.broker-card {
+  width: 100%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(23, 25, 27, 0.35);
+  position: relative;
+  height: 100%; }
+  .broker-card .brokers-info-money {
+    width: 100%;
+    color: #909090;
+    font-size: 10px;
+    font-weight: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .broker-card .brokers-info-money__box {
+    margin: 0; }
+    .broker-card .brokers-info-money__box p {
+      font-size: 35px;
+      font-weight: normal;
+      color: #fff; }
+  .broker-card .rating-wrapper {
+    margin: 50px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px; }
+  .broker-card .list-rating {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 10px; }
+    .broker-card .list-rating li {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px 0 0; }
+      .broker-card .list-rating li:last-child {
+        margin: 0; }
+      .broker-card .list-rating li img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: none;
+                transform: none; }
+  .broker-card .btn {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 17px; }
+    .broker-card .btn:hover {
+      -webkit-box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3);
+              box-shadow: 0 10px 20px rgba(26, 163, 224, 0.3); }
+
+.broker-card__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 25px;
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25); }
+
+.broker-card__text {
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+  padding: 20px;
+  line-height: 170%;
+  font-size: 14px; }
+
+.broker-logo {
+  max-width: 273px;
+  height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.btn-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  border: 0.5px solid #FFFFFF;
+    border-radius: 50%;
+  padding: 5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.btn-collapse.collapsed {
+  -webkit-transform: none;
+          transform: none; }
+
+.broker-card__body {
+  padding: 15px 25px;
+  position: relative;
+  z-index: 1; }
+
+.broker-card-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%; }
+
+.broker-card-description {
+  margin: 10px auto 0;
+  font-size: 12px;
+  display: block;
+  text-align: center; }
+
+.broker-card-col {
+  margin-bottom: 25px; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
@@ -8148,7 +8304,9 @@ footer {
     top: 5px;
     right: 5px; }
   .pay-box-min {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .broker-logo {
+    padding: 0 10px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
