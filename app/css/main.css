@@ -6725,7 +6725,25 @@ footer {
 @media only screen and (max-width: 1750px) {
   .navigation-box3 img {
     max-width: 120px;
-    margin: 0 -10px 0 0; } }
+    margin: 0 -10px 0 0; }
+  .advantages-signal-phone-img {
+    max-width: 700px;
+    height: auto; }
+  .advantages-signal-wrap {
+    max-width: 750px; }
+  .advantages-signal-item5 {
+    bottom: 100px; }
+  .advantages-signal-item6 {
+    bottom: 170px; }
+  .advantages-signal-item7 {
+    bottom: 30px; }
+  .advantages-signal-item4 {
+    top: 180px;
+    right: -270px;
+    max-width: 370px; }
+  .advantages-signal-item2 {
+    max-width: 340px;
+    right: -318px; } }
 
 @media only screen and (max-width: 1640px) {
   #modalDownload .modal-content {
@@ -6883,12 +6901,40 @@ footer {
   .about-signals {
     padding: 100px 0 150px; }
   .navigation-box3 {
-    left: 30px; } }
+    left: 30px; }
+  .advantages-signal-wrap {
+    max-width: 700px; }
+  .advantages-signal-phone-img {
+    max-width: 500px; }
+  .advantages-signal-item1, .advantages-signal-item2 {
+    top: 10px; }
+  .advantages-signal-item2 {
+    right: -260px; }
+  .advantages-signal-item3 {
+    top: 100px; }
+  .advantages-signal-item4 {
+    top: 110px;
+    right: -220px; }
+  .advantages-signal-item6 {
+    bottom: 140px;
+    max-width: 380px;
+    right: -170px; } }
 
 @media only screen and (max-width: 1320px) {
   .signal-algorithms__slider .row {
     width: calc(100% - 15px);
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .option-trading-img {
+    width: 700px; }
+  .img-top {
+    max-width: 300px;
+    top: 0; }
+  .img-decor1 {
+    left: 180px;
+    bottom: 0; }
+  .img-decor2 {
+    right: 260px;
+    bottom: 0; } }
 
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
@@ -7077,7 +7123,48 @@ footer {
     font-size: 11px;
     padding: 25.5px 6px; }
   .header-fr .support-box, .header-fl .support-box {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .main-mobile-app .main-image {
+    width: 400px; }
+  .container-my h1 {
+    font-size: 40px; }
+  .advantages-app {
+    padding: 70px 0 50px; }
+    .advantages-app .advantages-app-box-col {
+      padding: 0 15px; }
+  .advantages-signal-wrap {
+    max-width: none;
+    width: 100%; }
+  .advantages-signal-item {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    max-width: 50%;
+    margin: 0 0 15px; }
+    .advantages-signal-item:last-child {
+      margin: 0; }
+  .advantages-signal-phone-img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    max-width: 400px; }
+  .advantages-signal {
+    padding: 0 0 50px; }
+    .advantages-signal h2 {
+      margin: 0 0 30px; }
+  .option-trading {
+    padding: 0 0 80px; }
+    .option-trading h2 {
+      margin: 0 auto 30px;
+      font-size: 40px;
+      max-width: none; }
+  .option-trading-img {
+    margin: 30px auto 0;
+    float: none; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -7685,7 +7772,50 @@ footer {
   .header-fr .support-box, .header-fl .support-box {
     font-size: 9px; }
   .header-fr .header-menu li .dropDown-menu a, .header-fl .header-menu li .dropDown-menu a {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .main-mobile-app .main-image {
+    width: auto;
+    max-width: 300px;
+    margin: 30px auto 0; }
+  .container-my h1 {
+    font-size: 30px;
+    line-height: normal; }
+  .appendix-wrapper {
+    margin: 20px 0 0; }
+  .advantages-signal-phone-img {
+    margin: 30px auto 0;
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    top: 0;
+    right: 0; }
+  .advantages-signal-item {
+    max-width: none;
+    font-size: 16px; }
+  .all-unicode {
+    padding: 30px 0; }
+    .all-unicode h2 {
+      margin: 0 0 30px;
+      font-size: 30px;
+      line-height: normal; }
+    .all-unicode .box-text {
+      font-size: 16px; }
+  .install-content {
+    padding: 30px; }
+    .install-content:before {
+      width: 100%; }
+  .install h2 {
+    font-size: 30px;
+    margin: 0 auto 30px;
+    max-width: none;
+    line-height: normal; }
+  .install-img {
+    margin: 20px auto 0;
+    max-width: 300px; }
+  .application {
+    padding: 50px 0 35px; }
+  .application-row {
+    padding: 0; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -8342,7 +8472,18 @@ footer {
       margin: 30px 0 0; }
   .form-result-text {
     max-width: 315px;
-    width: 100%; } }
+    width: 100%; }
+  .map-application-wrap .box-text {
+    font-size: 16px;
+    max-width: 500px; }
+  .map-application-wrap {
+    padding: 100px 0; }
+  .option-trading-img {
+    width: 100%; }
+  .img-decor1 {
+    max-width: 60px; }
+  .img-decor2 {
+    max-width: 30px; } }
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
@@ -8700,7 +8841,34 @@ footer {
   .pay-box-min {
     font-size: 9px; }
   .broker-logo {
-    padding: 0 10px 0 0; } }
+    padding: 0 10px 0 0; }
+  .map-application-img {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    -webkit-transform: none;
+            transform: none; }
+  .map-application-wrap {
+    padding: 30px 0; }
+    .map-application-wrap .box-text {
+      font-size: 14px;
+      margin: 0 auto 20px; }
+  .application .box-text {
+    font-size: 16px;
+    line-height: normal; }
+  .img-decor2 {
+    right: auto;
+    left: 60%; }
+  .img-decor1 {
+    left: 50%; }
+  .img-decor {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  .img-top {
+    max-width: 150px; }
+  .option-trading h2 {
+    font-size: 30px;
+    line-height: normal; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
@@ -8778,7 +8946,11 @@ footer {
     width: 100%;
     margin: 20px auto; }
   .modal-content__left {
-    width: 100%; } }
+    width: 100%; }
+  .application-img {
+    top: 10px;
+    -webkit-transform: none;
+            transform: none; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
