@@ -6701,15 +6701,6 @@ footer {
           justify-content: flex-end;
   float: right; }
 
-.img-top {
-  position: absolute;
-  top: 27px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  max-width: 494px;
-  width: 100%; }
-
 .img-decor {
   position: absolute;
   bottom: 14px; }
@@ -6926,9 +6917,6 @@ footer {
     margin: 0 auto; }
   .option-trading-img {
     width: 700px; }
-  .img-top {
-    max-width: 300px;
-    top: 0; }
   .img-decor1 {
     left: 180px;
     bottom: 0; }
@@ -8864,8 +8852,6 @@ footer {
   .img-decor {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
-  .img-top {
-    max-width: 150px; }
   .option-trading h2 {
     font-size: 30px;
     line-height: normal; } }
