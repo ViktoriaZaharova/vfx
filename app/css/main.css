@@ -123,6 +123,9 @@ a {
 .color-accent {
   color: #1AA3E0; }
 
+.color-blue {
+  color: #3069F3; }
+
 .description {
   font-size: 24px;
   font-weight: 500;
@@ -6326,6 +6329,397 @@ footer {
 
 .broker-card-col {
   margin-bottom: 25px; }
+
+.main-mobile-app {
+  background: url("../img/mobilea-app-bg.jpeg") no-repeat center;
+    background-size: cover;
+  position: relative;
+  padding: 73px 0 0;
+  overflow: hidden; }
+  .main-mobile-app:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 29, 49, 0.75); }
+  .main-mobile-app .main-image {
+    width: 726px;
+    position: relative;
+    margin: 0 -40px 0 0; }
+    .main-mobile-app .main-image:before {
+      content: '';
+      position: absolute;
+      width: 663px;
+      height: 663px;
+      background: #3069F3;
+      -webkit-filter: blur(240px);
+              filter: blur(240px);
+      top: 12px;
+      right: 47px;
+      border-radius: 50%; }
+    .main-mobile-app .main-image:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 726px;
+      height: 754px;
+      background: url("../img/shadow.png") no-repeat center;
+        background-size: contain; }
+    .main-mobile-app .main-image img {
+      position: relative;
+      z-index: 1; }
+
+.appendix-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0 0; }
+
+.app-links {
+  margin: 30px 15px 0 0;
+  border-radius: 9.5px;
+  overflow: hidden; }
+  .app-links:last-child {
+    margin-right: 0; }
+
+.container-my .container {
+  max-width: 1470px; }
+
+.container-my h2 {
+  font-weight: 600;
+  text-transform: none; }
+
+.container-my h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: none;
+  font-weight: 600;
+  font-size: 60px; }
+
+.advantages-app {
+  padding: 147px 0 90px; }
+  .advantages-app .advantages-app-box-col {
+    padding: 0 30px; }
+  .advantages-app .row {
+    margin: 0 -30px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.advantages-app-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 381px;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px 25px;
+  font-size: 18px;
+  background: #2BBC78;
+  line-height: 27px; }
+  .advantages-app-box h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 170%; }
+  .advantages-app-box p {
+    max-width: 280px;
+    width: 100%; }
+
+.advantages-app-box-two {
+  background: -webkit-gradient(linear, left top, left bottom, from(#796EF5), to(#7B71F7));
+  background: linear-gradient(180deg, #796EF5 0%, #7B71F7 100%); }
+
+.advantages-app-box-three {
+  background: #3069F3; }
+
+.advantages-app-box__img {
+  bottom: 0;
+  right: 0;
+  position: absolute; }
+
+.advantages-app-box__icon {
+  margin: 15px 0 0;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.advantages-signal {
+  background: url("../img/advg-bg-signal.svg") no-repeat center;
+    background-size: cover;
+  padding: 0 0 90px; }
+  .advantages-signal h2 {
+    margin: 0 0 90px; }
+
+.advantages-signal-phone-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 876px;
+  height: 723px;
+  width: 100%; }
+
+.advantages-signal-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 876px;
+  width: 100%; }
+
+.advantages-signal-item {
+  line-height: 150%;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  max-width: 394px;
+  width: 100%; }
+
+.advantages-signal-item1 {
+  top: 83px;
+  left: -46px; }
+
+.advantages-signal-item2 {
+  top: 70px;
+  max-width: 377px;
+  right: -398px; }
+
+.advantages-signal-item3 {
+  top: 262px;
+  max-width: 344px;
+  left: -142px; }
+
+.advantages-signal-item4 {
+  top: 230px;
+  right: -366px;
+  max-width: 435px; }
+
+.advantages-signal-item5 {
+  bottom: 228px;
+  max-width: 254px;
+  left: -219px; }
+
+.advantages-signal-item6 {
+  bottom: 258px;
+  max-width: 433px;
+  right: -256px; }
+
+.advantages-signal-item7 {
+  bottom: 77px;
+  max-width: 351px;
+  right: -45px; }
+
+.all-unicode {
+  padding: 70px 0 26px; }
+  .all-unicode h2 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 60px; }
+  .all-unicode .box-text {
+    font-size: 20px;
+    line-height: 170%; }
+
+.install h2 {
+  font-size: 50px;
+  max-width: 513px;
+  width: 100%;
+  line-height: 61px;
+  margin: 0 0 30px; }
+
+.install-content {
+  padding: 50px 70px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); }
+  .install-content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1227px;
+    z-index: -1;
+    background: #191825;
+    border-radius: 8px; }
+
+.install-img {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1; }
+
+.install-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.install-buttons-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 0 10px; }
+  .install-buttons-group .install-btn {
+    border-radius: 8px;
+    margin: 0 0 11px;
+    overflow: hidden; }
+    .install-buttons-group .install-btn:last-child {
+      margin: 0; }
+
+.application {
+  padding: 97px 0 46px; }
+  .application h2 {
+    margin: 0 0 49px; }
+  .application .box-text {
+    text-align: center;
+    margin: 32px auto 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 170%;
+    max-width: 800px;
+    width: 100%; }
+
+.application-row {
+  padding: 0 80px; }
+
+.application-col {
+  padding: 0 31px; }
+
+.application-box {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  height: 293px;
+  margin: 0 0 45px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#191825), to(#191825)), #C4C4C4;
+  background: linear-gradient(0deg, #191825, #191825), #C4C4C4;
+  color: #fff;
+  padding: 24px 22px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5; }
+  .application-box h3 {
+    margin: 22px 0 25px;
+    line-height: 1;
+    font-size: 70px; }
+  .application-box p {
+    max-width: 220px;
+    width: 100%; }
+
+.application-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.map-application-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1039px;
+  width: 100%;
+  padding: 117px 0 204px; }
+  .map-application-wrap .box-text {
+    text-align: center;
+    max-width: 844px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 170%; }
+
+.map-application-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.option-trading {
+  padding: 0 0 117px; }
+  .option-trading h2 {
+    max-width: 597px;
+    font-size: 50px;
+    letter-spacing: -0.2px;
+    line-height: 61px; }
+  .option-trading .app-links {
+    margin: 15px 0 0 0; }
+  .option-trading .appendix-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.option-trading-img {
+  position: relative;
+  width: 1157px;
+  margin: 0 auto 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  float: right; }
+
+.img-top {
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  max-width: 494px;
+  width: 100%; }
+
+.img-decor {
+  position: absolute;
+  bottom: 14px; }
+
+.img-decor1 {
+  left: 407px; }
+
+.img-decor2 {
+  bottom: 26px;
+  right: 441px; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {

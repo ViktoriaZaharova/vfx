@@ -93,6 +93,9 @@ a
 .color-accent
   color: #1AA3E0
 
+.color-blue
+  color: #3069F3
+
 .description
   font-size: 24px
   font-weight: 500
@@ -5345,7 +5348,6 @@ footer
   padding: 20px
   line-height: 170%
   font-size: 14px
-  //min-height: 153px
 
 .broker-logo
   max-width: 273px
@@ -5388,6 +5390,358 @@ footer
 
 .broker-card-col
   margin-bottom: 25px
+
+//main-mobile-app
+.main-mobile-app
+  background: url("../img/mobilea-app-bg.jpeg") no-repeat center
+    size: cover
+  position: relative
+  padding: 73px 0 0
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(23, 29, 49, 0.75)
+
+  .main-image
+    width: 726px
+    position: relative
+    margin: 0 -40px 0 0
+    &:before
+      content: ''
+      position: absolute
+      width: 663px
+      height: 663px
+      background: #3069F3
+      filter: blur(240px)
+      top: 12px
+      right: 47px
+      border-radius: 50%
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 726px
+      height: 754px
+      background: url("../img/shadow.png") no-repeat center
+        size: contain
+    img
+      position: relative
+      z-index: 1
+
+
+.appendix-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 40px 0 0
+
+.app-links
+  margin: 30px 15px 0 0
+  border-radius: 9.5px
+  overflow: hidden
+  &:last-child
+    margin-right: 0
+
+.container-my
+  .container
+    max-width: 1470px
+  h2
+    font-weight: 600
+    text-transform: none
+  h1
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    text-transform: none
+    font-weight: 600
+    font-size: 60px
+
+
+.advantages-app
+  padding: 147px 0 90px
+  .advantages-app-box-col
+    padding: 0 30px
+  .row
+    margin: 0 -30px
+
+
+.mb-30
+  margin-bottom: 30px
+
+.advantages-app-box
+  position: relative
+  overflow: hidden
+  width: 100%
+  height: 381px
+  border-radius: 20px
+  color: #fff
+  padding: 20px 25px
+  font-size: 18px
+  background: #2BBC78
+  line-height: 27px
+  h3
+    font-size: 35px
+    font-weight: 600
+    line-height: 170%
+  p
+    max-width: 280px
+    width: 100%
+
+.advantages-app-box-two
+  background: linear-gradient(180deg, #796EF5 0%, #7B71F7 100%)
+
+.advantages-app-box-three
+  background: #3069F3
+
+.advantages-app-box__img
+  bottom: 0
+  right: 0
+  position: absolute
+
+.advantages-app-box__icon
+  margin: 15px 0 0
+  width: 45px
+  height: 45px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//advantages-signal
+.advantages-signal
+  background: url("../img/advg-bg-signal.svg") no-repeat center
+    size: cover
+  padding: 0 0 90px
+  h2
+    margin: 0 0 90px
+
+.advantages-signal-phone-img
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  margin: 0 auto
+  max-width: 876px
+  height: 723px
+  width: 100%
+
+.advantages-signal-wrap
+  position: relative
+  margin: 0 auto
+  max-width: 876px
+  width: 100%
+
+.advantages-signal-item
+  line-height: 150%
+  font-size: 18px
+  font-weight: 600
+  position: absolute
+  max-width: 394px
+  width: 100%
+
+.advantages-signal-item1
+  top: 83px
+  left: -46px
+
+.advantages-signal-item2
+  top: 70px
+  max-width: 377px
+  right: -398px
+
+.advantages-signal-item3
+  top: 262px
+  max-width: 344px
+  left: -142px
+
+.advantages-signal-item4
+  top: 230px
+  right: -366px
+  max-width: 435px
+
+.advantages-signal-item5
+  bottom: 228px
+  max-width: 254px
+  left: -219px
+
+.advantages-signal-item6
+  bottom: 258px
+  max-width: 433px
+  right: -256px
+
+.advantages-signal-item7
+  bottom: 77px
+  max-width: 351px
+  right: -45px
+
+//all-unicode
+.all-unicode
+  padding: 70px 0 26px
+  h2
+    font-size: 48px
+    margin: 0
+    line-height: 60px
+  .box-text
+    font-size: 20px
+    line-height: 170%
+
+.install
+  h2
+    font-size: 50px
+    max-width: 513px
+    width: 100%
+    line-height: 61px
+    margin: 0 0 30px
+
+.install-content
+  padding: 50px 70px
+  border-radius: 8px
+  position: relative
+  z-index: 1
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 1227px
+    z-index: -1
+    background: #191825
+    border-radius: 8px
+
+.install-img
+  max-width: 400px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+
+.install-buttons
+  display: flex
+  align-items: center
+
+.install-buttons-group
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 0 0 10px
+  .install-btn
+    border-radius: 8px
+    margin: 0 0 11px
+    overflow: hidden
+    &:last-child
+      margin: 0
+
+//application
+.application
+  padding: 97px 0 46px
+  h2
+    margin: 0 0 49px
+  .box-text
+    text-align: center
+    margin: 32px auto 0
+    font-size: 22px
+    font-weight: 600
+    line-height: 170%
+    max-width: 800px
+    width: 100%
+
+.application-row
+  padding: 0 80px
+
+.application-col
+  padding: 0 31px
+
+.application-box
+  border-radius: 8px
+  position: relative
+  overflow: hidden
+  height: 293px
+  margin: 0 0 45px
+  background: linear-gradient(0deg, #191825, #191825), #C4C4C4
+  color: #fff
+  padding: 24px 22px
+  font-size: 22px
+  font-weight: bold
+  line-height: 1.5
+  h3
+    margin: 22px 0 25px
+    line-height: 1
+    font-size: 70px
+  p
+    max-width: 220px
+    width: 100%
+
+.application-img
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+
+.map-application-wrap
+  position: relative
+  margin: 0 auto
+  max-width: 1039px
+  width: 100%
+  padding: 117px 0 204px
+  .box-text
+    text-align: center
+    max-width: 844px
+    width: 100%
+    margin: 0 auto
+    font-size: 30px
+    line-height: 170%
+
+.map-application-img
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+//.option-trading
+.option-trading
+  padding: 0 0 117px
+  h2
+    max-width: 597px
+    font-size: 50px
+    letter-spacing: -0.2px
+    line-height: 61px
+  .app-links
+    margin: 15px 0 0 0
+  .appendix-wrapper
+    justify-content: space-between
+
+.option-trading-img
+  position: relative
+  width: 1157px
+  margin: 0 auto 0 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  float: right
+
+.img-top
+  position: absolute
+  top: 27px
+  left: 50%
+  transform: translate(-50%,0)
+  max-width: 494px
+  width: 100%
+
+.img-decor
+  position: absolute
+  bottom: 14px
+
+.img-decor1
+  left: 407px
+
+.img-decor2
+  bottom: 26px
+  right: 441px
 
 @import "media"
 // Всегда в конце
