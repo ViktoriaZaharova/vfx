@@ -969,7 +969,7 @@ footer {
   display: none;
   left: 0;
   background: #2F3545;
-  padding: 20px 47px;
+  padding: 20px 27px;
   z-index: 2;
   top: 52px;
   min-width: 100%; }
@@ -6370,6 +6370,42 @@ footer {
       position: relative;
       z-index: 1; }
 
+.download-app {
+  position: absolute;
+  left: 0;
+  bottom: 116px;
+  z-index: 2;
+  max-width: 236px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  color: #fff;
+  background: #333333;
+  border-radius: 20px;
+  padding: 20px; }
+  .download-app span {
+    margin: 5px 0 0;
+    display: inline-block;
+    font-size: 10px; }
+
+.download-app-links {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 0; }
+
+.download-app-qr {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .appendix-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6786,6 +6822,27 @@ footer {
   100% {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg); } }
+
+.btn-download {
+  height: 62px;
+  max-width: 232px;
+  width: 100%;
+  margin: 38px 0 0;
+  font-size: 21px; }
+  .btn-download .btn-icon {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
@@ -7227,7 +7284,18 @@ footer {
       max-width: none; }
   .option-trading-img {
     margin: 30px auto 0;
-    float: none; } }
+    float: none; }
+  .download-app {
+    max-width: 150px;
+    padding: 10px;
+    bottom: 0; }
+    .download-app span {
+      font-size: 8px; }
+  .download-app-qr {
+    padding: 10px; }
+  .download-app-links {
+    font-size: 10px;
+    margin: 0; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -8926,7 +8994,9 @@ footer {
     font-size: 30px;
     line-height: normal; }
   .install-img {
-    max-width: 150px; } }
+    max-width: 150px; }
+  .download-app {
+    bottom: 20px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
