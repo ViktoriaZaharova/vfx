@@ -2684,6 +2684,8 @@ footer {
       color: #fff; }
   .works .card-body {
     background: transparent; }
+    .works .card-body ul {
+      margin: 0 0 10px; }
     .works .card-body p {
       margin: 0 0 20px; }
       .works .card-body p:last-child {
@@ -6697,7 +6699,9 @@ footer {
     width: 100%;
     margin: 0 auto;
     font-size: 30px;
-    line-height: 170%; }
+    line-height: 170%;
+    position: relative;
+    z-index: 1; }
 
 .map-application-img {
   width: 100%;
@@ -6750,8 +6754,8 @@ footer {
   --animate-duration: .5s; }
 
 .img-animate {
-  -webkit-animation: shake 7s infinite;
-          animation: shake 7s infinite; }
+  -webkit-animation: shake 12s infinite;
+          animation: shake 12s infinite; }
 
 @-webkit-keyframes shake {
   0% {
