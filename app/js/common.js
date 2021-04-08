@@ -115,13 +115,7 @@ $('.go_to').click(function () {
     return false;
 });
 
-new WOW().init();
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
-
-var scene2 = document.getElementById('scene2');
-var parallaxInstance2 = new Parallax(scene2);
 
 
 // function get_name_browser(){

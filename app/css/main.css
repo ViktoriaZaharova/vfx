@@ -3733,7 +3733,6 @@ footer {
   .about-making .about-box {
     width: auto;
     margin: 0;
-    font-family: "norms", sans-serif;
     font-weight: normal; }
   .about-making .about-img-wrap {
     display: -webkit-box;
@@ -3788,8 +3787,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 14px;
-  font-family: 'norms', sans-serif; }
+  font-size: 14px; }
   .about-box .number {
     display: -webkit-box;
     display: -ms-flexbox;
