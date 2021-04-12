@@ -6528,7 +6528,8 @@ footer {
   font-weight: 600;
   position: absolute;
   max-width: 394px;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 .advantages-signal-item1 {
   top: 83px;
@@ -6874,7 +6875,11 @@ footer {
 
 @media only screen and (max-width: 1640px) {
   #modalDownload .modal-content {
-    max-width: 705px; } }
+    max-width: 705px; }
+  .option-trading-img {
+    width: 950px; }
+  .img-decor1 {
+    left: 300px; } }
 
 @media only screen and (max-width: 1550px) {
   .section-tools__image {
@@ -7045,7 +7050,15 @@ footer {
   .advantages-signal-item6 {
     bottom: 140px;
     max-width: 380px;
-    right: -170px; } }
+    right: -170px; }
+  .option-trading-img {
+    width: 750px; }
+  .img-decor1 {
+    left: 180px;
+    bottom: 0; }
+  .img-decor2 {
+    right: 260px;
+    bottom: 0; } }
 
 @media only screen and (max-width: 1320px) {
   .signal-algorithms__slider .row {
