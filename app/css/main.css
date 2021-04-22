@@ -9095,7 +9095,37 @@ footer {
   .application-img {
     top: 10px;
     -webkit-transform: none;
-            transform: none; } }
+            transform: none; }
+  .form-sing {
+    padding: 31px 18px; }
+    .form-sing .radio {
+      margin: 0 0 19px; }
+    .form-sing h3 {
+      font-size: 25px; }
+    .form-sing .logo-form {
+      width: 90px;
+      height: 37px;
+      margin: 9px 0 0; }
+    .form-sing .form-subtitle {
+      margin: -15px 0 0; }
+    .form-sing .form-body {
+      margin: 37px 0 0; }
+    .form-sing button {
+      margin: 29px 0 0;
+      height: 46px;
+      font-size: 12px; }
+  .form-subtitle {
+    font-size: 14px; }
+  .form-sing-result .logo-form {
+    width: 150px;
+    height: 60px; }
+  .form-sing-vertical .form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .form-sing-vertical .form-footer .radio {
+      margin: 0 0 10px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
@@ -9176,28 +9206,7 @@ footer {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
-  .form-sing {
-    padding: 45px 20px; }
-    .form-sing .radio {
-      margin: 10px 0 0; }
-    .form-sing h3 {
-      font-size: 32px; }
-    .form-sing .logo-form {
-      width: 100px;
-      height: 40px; }
-  .form-subtitle {
-    font-size: 14px; }
-  .form-sing-result .logo-form {
-    width: 150px;
-    height: 60px; }
-  .form-sing-vertical .form-footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .form-sing-vertical .form-footer .radio {
-      margin: 0 0 10px; } }
+            align-items: flex-start; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
