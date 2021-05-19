@@ -21,7 +21,7 @@ $(document).mouseup(function (e) { // событие клика по веб-до
 
 
 $('.tooltip-wrapper').hover(function () {
-   $(this).find('.tooltip-hidden').fadeToggle();
+    $(this).find('.tooltip-hidden').fadeToggle();
 });
 
 
@@ -67,6 +67,15 @@ $('.tools-slider').slick({
     appendDots: '.tools-slider-nav',
 });
 
+$('.binary-slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    appendArrows: '.binary-slider-nav',
+    appendDots: '.binary-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
 });
@@ -75,11 +84,11 @@ $('.main-history__content').click(function () {
 $('.playpause').click(function () {
     $('.video-wrapper').toggleClass('video-click');
 
-    if($(".fullscreen-video").get(0).paused){
+    if ($(".fullscreen-video").get(0).paused) {
         $(".fullscreen-video").get(0).play();
         $(this).fadeOut();
 
-    }else{
+    } else {
         $(".fullscreen-video").get(0).pause();
 
         $(this).fadeIn();
@@ -116,6 +125,17 @@ $('.go_to').click(function () {
 });
 
 
+// click tab = visible block
+$(".js-tab-trigger").on("click", function () {
+    let id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-tab="' + id + '"]');
+
+    $('.js-tab-trigger.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
 
 
 // function get_name_browser(){
@@ -171,11 +191,11 @@ var target = $('.benefits__inner');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
 var scrollToElem = targetPos - winHeight;
-$(window).scroll(function(){
+$(window).scroll(function () {
     var winScrollTop = $(this).scrollTop();
-    if(winScrollTop > scrollToElem){
-        $({ blurRadius: 5 }).animate(
-            { blurRadius: 0 },
+    if (winScrollTop > scrollToElem) {
+        $({blurRadius: 5}).animate(
+            {blurRadius: 0},
             {
                 duration: 3500,
                 easing: "swing",
@@ -197,8 +217,6 @@ $(window).scroll(function(){
         });
     }
 });
-
-
 
 
 // timer
