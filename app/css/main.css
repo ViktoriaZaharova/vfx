@@ -6958,7 +6958,7 @@ footer {
     width: 1268px;
     position: absolute;
     top: 0;
-    right: -900px; }
+    right: -800px; }
   .main-binary h1 {
     font-size: 49px;
     font-weight: 800;
@@ -7666,6 +7666,34 @@ footer {
 .binary-section5-two .slick-dots li:after {
   background: #232323; }
 
+.main-binary-three h1 {
+  font-size: 27px;
+  max-width: 608px; }
+
+.main-binary-three:before {
+  background: url("../img/decor-binary1-2.svg") no-repeat center;
+    background-size: 100%; }
+
+.main-binary-three:after {
+  background: url("../img/decor-binary2-3.svg") no-repeat center;
+    background-size: 100%; }
+
+.advantages-binary-two {
+  overflow: hidden; }
+  .advantages-binary-two:before {
+    top: 0; }
+
+.binary-instruction-three:before {
+  background: url("../img/circle-binary2-3.svg") no-repeat center;
+    background-size: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.signal-structure-my-three:before {
+  background: url("../img/circle-binary4-1.svg") no-repeat center;
+    background-size: 100%; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
   .navigation-box3 img {
@@ -8157,7 +8185,7 @@ footer {
     top: 0;
     margin: 20px auto 0; }
   .main-binary-content {
-    padding: 0; }
+    padding: 30px 0; }
   .binary-section4-item {
     font-size: 18px;
     line-height: normal; }
@@ -8193,7 +8221,9 @@ footer {
     height: 415px;
     margin: 0 -60px 0 0; }
   .binary-mobile-item3 .box-text {
-    max-width: 220px; } }
+    max-width: 220px; }
+  .main-binary-three h1 {
+    max-width: none; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
