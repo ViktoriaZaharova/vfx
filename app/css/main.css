@@ -6874,6 +6874,10 @@ footer {
   background: #111111;
   color: #fff; }
 
+.bg-white-section {
+  color: #232323;
+  background: #F9F7F7; }
+
 .my-font {
   font-family: 'display', sans-serif; }
 
@@ -6884,8 +6888,11 @@ footer {
   font-size: 18px;
   font-weight: bold;
   height: 56px;
-  max-width: 200px;
-  width: 100%; }
+  max-width: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 16px; }
 
 .my-lp .btn-icon {
   width: 24px;
@@ -6900,7 +6907,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 0 5px; }
+  margin: 0 0 0 12px; }
 
 .my-lp .button-group {
   width: 100%;
@@ -6919,7 +6926,7 @@ footer {
 
 .my-lp h2 {
   text-transform: none;
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 120%; }
 
@@ -6927,7 +6934,7 @@ footer {
   padding: 0;
   position: relative;
   overflow: hidden;
-  z-index: 1; }
+  z-index: 2; }
   .main-binary:after, .main-binary:before {
     content: '';
     position: absolute;
@@ -6959,6 +6966,19 @@ footer {
     .main-binary h1 strong {
       display: block;
       font-size: 145.428px; }
+
+.main-binary-two:before {
+  background: url("../img/decor-binary1-1.svg") no-repeat center;
+    background-size: 100%; }
+
+.main-binary-two:after {
+  background: url("../img/decor-binary2-2.svg") no-repeat center;
+    background-size: 100%; }
+
+.main-binary-two h1 {
+  font-size: 28px; }
+  .main-binary-two h1 strong {
+    font-size: 115px; }
 
 .main-binary-content {
   padding: 180px 0 109px;
@@ -7045,6 +7065,8 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0; }
+  .binary-section-img img {
+    width: 100%; }
 
 .binary-section4 {
   padding: 35px 0; }
@@ -7203,6 +7225,10 @@ footer {
     font-weight: normal;
     line-height: 150%; }
 
+.binary-instruction-two:before {
+  background: url("../img/circle-binary2-2.svg") no-repeat center;
+    background-size: 100%; }
+
 .binary-instruction-box {
   margin: 0 0 30px;
   font-size: 18px;
@@ -7215,7 +7241,18 @@ footer {
     line-height: 1; }
 
 .signal-structure-my {
-  padding: 108px 0 30px; }
+  padding: 108px 0 30px;
+  position: relative;
+  z-index: 1; }
+  .signal-structure-my:before {
+    content: '';
+    position: absolute;
+    width: 841px;
+    height: 897px;
+    background: url("../img/circle-binary4.svg") no-repeat center;
+      background-size: 100%;
+    left: 0;
+    z-index: -1; }
   .signal-structure-my h2 {
     margin: 0 0 70px; }
   .signal-structure-my .tab-content {
@@ -7234,6 +7271,13 @@ footer {
       text-transform: uppercase;
       margin: 0 0 18px;
       font-size: 30px; }
+
+.signal-structure-my-two:before {
+  background: url("../img/circle-binary4-4.svg") no-repeat center;
+    background-size: 100%; }
+
+.signal-structure-my-two .box-text {
+  margin: 0 0 50px; }
 
 .box-text-bottom {
   margin: 90px 0 0; }
@@ -7363,7 +7407,7 @@ footer {
 
 .binary-slider-nav {
   width: 100%;
-  margin: 120px 0 0;
+  margin: 80px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7441,7 +7485,7 @@ footer {
     background: transparent; }
 
 .binary-slider-info .form-sing-vertical {
-  margin: 0 30px 0 auto;
+  margin: 0 50px 75px auto;
   max-width: 389px;
   padding: 40px 35px 50px; }
   .binary-slider-info .form-sing-vertical .btn {
@@ -7505,7 +7549,8 @@ footer {
   max-width: 423px; }
 
 .binary-slider-img6 {
-  max-width: 494px; }
+  max-width: 594px;
+  padding: 50px; }
   .binary-slider-img6 img {
     -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
@@ -7556,8 +7601,15 @@ footer {
   height: 564px;
   padding: 0 0 26px; }
   .binary-mobile-item2 .box-text {
-    max-width: 222px;
+    max-width: 290px;
     margin: 0 0 0 150px; }
+
+.binary-mobile-item3 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .binary-mobile-item3 .box-text {
+    max-width: 375px; }
 
 .binary-mobile-item__img {
   position: absolute;
@@ -7573,7 +7625,7 @@ footer {
 .binary-start {
   padding: 10px 0 94px; }
   .binary-start h2 {
-    max-width: 514px; }
+    max-width: 554px; }
 
 .binary-start-content {
   width: 100%;
@@ -7591,7 +7643,8 @@ footer {
   background: url("../img/start-binary-bg.svg") no-repeat center;
     background-size: cover;
   border-radius: 20px;
-  padding: 46px 118px 47px 34px; }
+  padding: 46px 118px 47px 34px;
+  color: #fff; }
   .binary-start-content .form-sing-vertical {
     max-width: 389px;
     padding: 40px 36px 50px;
@@ -7604,6 +7657,12 @@ footer {
       font-weight: 600;
       height: 45px;
       margin: 33px auto 0; }
+
+.binary-section5-two .svg-icon {
+  fill: #232323; }
+
+.binary-section5-two .slick-dots li:after {
+  background: #232323; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
