@@ -6892,10 +6892,12 @@ footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 16px; }
+  padding: 0 16px;
+  white-space: nowrap; }
 
 .my-lp .btn-icon {
   width: 24px;
+  min-width: 24px;
   height: 24px;
   fill: #fff;
   display: -webkit-box;
@@ -7651,7 +7653,7 @@ footer {
     margin: 0; }
     .binary-start-content .form-sing-vertical .btn {
       max-width: none;
-      text-shadow: 0px 0.8251px 1.65019px rgba(0, 0, 0, 0.15);
+      text-shadow: 0 0.8251px 1.65019px rgba(0, 0, 0, 0.15);
       font-size: 12px;
       text-transform: none;
       font-weight: 600;
@@ -8146,10 +8148,16 @@ footer {
   .main-binary h1 {
     font-size: 40px; }
   .main-binary h1 strong {
-    font-size: 120px; }
+    font-size: 100px; }
   .main-binary .main-image {
-    max-width: 1000px;
-    right: -500px; }
+    max-width: none;
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 20px auto 0; }
+  .main-binary-content {
+    padding: 0; }
   .binary-section4-item {
     font-size: 18px;
     line-height: normal; }
@@ -8183,7 +8191,9 @@ footer {
   .binary-mobile-item1 {
     width: 390px;
     height: 415px;
-    margin: 0 -60px 0 0; } }
+    margin: 0 -60px 0 0; }
+  .binary-mobile-item3 .box-text {
+    max-width: 220px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -8853,11 +8863,6 @@ footer {
     left: -300px; }
   .main-binary:after {
     right: -300px; }
-  .main-binary .main-image {
-    max-width: 750px;
-    right: -400px; }
-  .main-binary-content {
-    padding: 120px 0 70px; }
   .main-binary h1 {
     font-size: 30px; }
     .main-binary h1 strong {
@@ -8886,7 +8891,7 @@ footer {
     .binary-mobile-item2 .box-text {
       margin: 0 0 0 90px; }
   .binary-mobile-item1 {
-    width: 314px;
+    width: 320px;
     height: 335px;
     margin: 0 -40px 0 0; } }
 
@@ -9557,15 +9562,6 @@ footer {
     max-width: 60px; }
   .img-decor2 {
     max-width: 30px; }
-  .main-binary .main-image {
-    max-width: none;
-    width: 100%;
-    position: relative;
-    right: 0;
-    top: 0;
-    margin: 20px auto 0; }
-  .main-binary-content {
-    padding: 20px 0; }
   .main-binary h1 br {
     display: none; }
   .main-binary h1 strong {
@@ -10017,7 +10013,7 @@ footer {
   .main-binary h1 {
     font-size: 26px; }
     .main-binary h1 strong {
-      font-size: 50px; }
+      font-size: 40px; }
   .my-lp h2 {
     font-size: 30px; }
   .advantages-binary h2 {
