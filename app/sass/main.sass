@@ -5879,6 +5879,7 @@ footer
   position: relative
   overflow: hidden
   z-index: 2
+  min-height: 640px
   &:after, &:before
     content: ''
     position: absolute
@@ -5940,7 +5941,7 @@ footer
     z-index: -1
     width: 1440px
     height: 587px
-    background: url("../img/circle-binary.svg") no-repeat center
+    background: url("../img/circle-binary.svg") no-repeat center top
       size: 100%
   h2
     font-weight: 500
@@ -6151,6 +6152,7 @@ footer
   .box-text
     font-size: 18px
     line-height: 170%
+    margin: 0 0 50px
   .signal-structure-content
     width: 100%
     max-width: none
@@ -6164,8 +6166,7 @@ footer
   &:before
     background: url("../img/circle-binary4-4.svg") no-repeat center
       size: 100%
-  .box-text
-    margin: 0 0 50px
+
 
 .box-text-bottom
   margin: 90px 0 0
@@ -6249,8 +6250,12 @@ footer
   overflow: hidden
   margin: 30px 0 50px
   z-index: 2
+  height: 630px
   img
     width: 100%
+  iframe
+    width: 100%
+    height: 100%
 
 .btn-play-video
   position: absolute
@@ -6346,6 +6351,7 @@ footer
     max-width: 389px
     padding: 40px 35px 50px
     .btn
+      width: 100%
       max-width: none
       margin: 33px 0 0
       height: 45px
@@ -6361,7 +6367,7 @@ footer
 .binary-slider-content
   padding: 36px 0 0
   .box-text
-    padding: 0 0 0 67px
+    //padding: 0 0 0 67px
     font-size: 18px
 
 .binary-slider-content__title
@@ -6374,7 +6380,7 @@ footer
     width: 50px
     height: 50px
   h3
-    margin: 0 15px
+    //margin: 0 15px
     text-transform: uppercase
     font-size: 35px
     font-weight: bold
@@ -6483,6 +6489,7 @@ footer
     padding: 40px 36px 50px
     margin: 0
     .btn
+      width: 100%
       max-width: none
       text-shadow: 0 0.825095px 1.65019px rgba(0, 0, 0, 0.15)
       font-size: 12px

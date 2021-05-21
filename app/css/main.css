@@ -6936,7 +6936,8 @@ footer {
   padding: 0;
   position: relative;
   overflow: hidden;
-  z-index: 2; }
+  z-index: 2;
+  min-height: 640px; }
   .main-binary:after, .main-binary:before {
     content: '';
     position: absolute;
@@ -7000,7 +7001,7 @@ footer {
     z-index: -1;
     width: 1440px;
     height: 587px;
-    background: url("../img/circle-binary.svg") no-repeat center;
+    background: url("../img/circle-binary.svg") no-repeat center top;
       background-size: 100%; }
   .advantages-binary h2 {
     font-weight: 500;
@@ -7264,7 +7265,8 @@ footer {
     font-weight: 600; }
   .signal-structure-my .box-text {
     font-size: 18px;
-    line-height: 170%; }
+    line-height: 170%;
+    margin: 0 0 50px; }
   .signal-structure-my .signal-structure-content {
     width: 100%;
     max-width: none;
@@ -7277,9 +7279,6 @@ footer {
 .signal-structure-my-two:before {
   background: url("../img/circle-binary4-4.svg") no-repeat center;
     background-size: 100%; }
-
-.signal-structure-my-two .box-text {
-  margin: 0 0 50px; }
 
 .box-text-bottom {
   margin: 90px 0 0; }
@@ -7379,9 +7378,13 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   margin: 30px 0 50px;
-  z-index: 2; }
+  z-index: 2;
+  height: 630px; }
   .start-work-binary-video img {
     width: 100%; }
+  .start-work-binary-video iframe {
+    width: 100%;
+    height: 100%; }
 
 .btn-play-video {
   position: absolute;
@@ -7491,6 +7494,7 @@ footer {
   max-width: 389px;
   padding: 40px 35px 50px; }
   .binary-slider-info .form-sing-vertical .btn {
+    width: 100%;
     max-width: none;
     margin: 33px 0 0;
     height: 45px;
@@ -7505,7 +7509,6 @@ footer {
 .binary-slider-content {
   padding: 36px 0 0; }
   .binary-slider-content .box-text {
-    padding: 0 0 0 67px;
     font-size: 18px; }
 
 .binary-slider-content__title {
@@ -7524,7 +7527,6 @@ footer {
     width: 50px;
     height: 50px; }
   .binary-slider-content__title h3 {
-    margin: 0 15px;
     text-transform: uppercase;
     font-size: 35px;
     font-weight: bold; }
@@ -7652,6 +7654,7 @@ footer {
     padding: 40px 36px 50px;
     margin: 0; }
     .binary-start-content .form-sing-vertical .btn {
+      width: 100%;
       max-width: none;
       text-shadow: 0 0.8251px 1.65019px rgba(0, 0, 0, 0.15);
       font-size: 12px;
@@ -8173,6 +8176,8 @@ footer {
   .download-app-links {
     font-size: 10px;
     margin: 0; }
+  .main-binary {
+    min-height: auto; }
   .main-binary h1 {
     font-size: 40px; }
   .main-binary h1 strong {
@@ -10054,7 +10059,9 @@ footer {
   .tab-header li {
     margin: 0 10px 10px 0; }
   .tab-content {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .start-work-binary-video {
+    height: 400px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
