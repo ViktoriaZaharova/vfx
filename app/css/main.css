@@ -6880,6 +6880,9 @@ footer {
 
 .my-font {
   font-family: 'display', sans-serif; }
+  .my-font h1 {
+    font-family: 'halvar', sans-serif;
+    line-height: normal; }
 
 .my-lp .container {
   max-width: 1230px; }
@@ -6931,6 +6934,17 @@ footer {
   font-size: 45px;
   font-weight: 600;
   line-height: 120%; }
+
+.my-lp.text-right {
+  text-align: right; }
+  .my-lp.text-right .main-text {
+    max-width: 512px; }
+  .my-lp.text-right .button-group {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .my-lp.text-right h1 {
+    line-height: 1.5; }
 
 .main-binary {
   padding: 0;
@@ -7799,6 +7813,30 @@ footer {
 
 .binary-section3-three {
   padding: 30px 0; }
+
+.signal-structure-my-sex:before {
+  background: url("../img/circle-binary4-3.svg") no-repeat center top;
+    background-size: 100%; }
+
+.my-font2 {
+  font-family: 'Mukta', sans-serif; }
+  .my-font2 h1, .my-font2 h2 {
+    font-family: 'Mukta', sans-serif; }
+
+.my-font3 {
+  font-family: 'Lemonada', sans-serif; }
+  .my-font3 h1, .my-font3 h2 {
+    font-family: 'Lemonada', sans-serif; }
+  .my-font3 h2 {
+    font-weight: 600; }
+  .my-font3 .box-text {
+    font-weight: normal; }
+
+.text-right {
+  text-align: right; }
+
+.form-sing .form-title.text-right h3 {
+  width: 100%; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
