@@ -6928,7 +6928,7 @@ footer {
 
 .my-lp h2 {
   text-transform: none;
-  font-size: 46px;
+  font-size: 45px;
   font-weight: 600;
   line-height: 120%; }
 
@@ -7010,9 +7010,14 @@ footer {
     line-height: 140%; }
   .advantages-binary .box-text {
     font-size: 18px;
-    line-height: 170%; }
+    line-height: 170%;
+    margin: 0 0 30px; }
   .advantages-binary .btn {
     margin: 0 auto; }
+
+.box-text-footer {
+  margin: 0 auto 39px;
+  text-align: center; }
 
 .advantages-binary-box {
   display: -webkit-box;
@@ -7078,7 +7083,7 @@ footer {
     line-height: 170%;
     font-weight: normal; }
   .binary-section4 h3 {
-    margin: 30px 0 44px;
+    margin: 30px 0;
     font-size: 20px;
     font-weight: 600; }
   .binary-section4 .btn {
@@ -7409,6 +7414,12 @@ footer {
     right: 0;
     background: url("../img/circle-binary3.svg") no-repeat center;
       background-size: 100%; }
+  .binary-section5 .text {
+    text-align: center;
+    margin: 89px auto 0;
+    max-width: 752px;
+    font-size: 20px;
+    line-height: 140%; }
 
 .binary-slider-nav {
   width: 100%;
@@ -7696,6 +7707,65 @@ footer {
 .signal-structure-my-three:before {
   background: url("../img/circle-binary4-1.svg") no-repeat center;
     background-size: 100%; }
+
+.main-binary-four h1 {
+  font-size: 34px;
+  line-height: normal; }
+
+.main-binary-four:before {
+  background: url("../img/decor-binary1-3.svg") no-repeat center;
+    background-size: 100%; }
+
+.main-binary-four:after {
+  background: url("../img/decor-binary2-3.svg") no-repeat center;
+    background-size: 100%; }
+
+.binary-section4-two h2 {
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+.main-binary-five:after {
+  background: url("../img/decor-binary2-3.svg") no-repeat center;
+    background-size: 100%; }
+
+.binary-start-two .binary-start-content {
+  background: linear-gradient(222.22deg, #37AEE2 9.9%, #407BFF 101.34%);
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.binary-start-two h3 {
+  font-size: 25px;
+  font-weight: 600; }
+
+.binary-start-two .btn-border {
+  border: 1px solid #FFFFFF;
+  margin: 30px 0 0; }
+  .binary-start-two .btn-border:hover {
+    border-color: #4b7dff; }
+
+.binary-start-text {
+  max-width: 533px; }
+
+.binary-start-img {
+  margin: 0 -300px 0 0;
+  width: 769px; }
+
+.binary-section3-two {
+  padding: 30px 0 330px; }
+
+.binary-start-three h2 {
+  font-size: 30px; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
@@ -8328,7 +8398,9 @@ footer {
     font-size: 16px;
     padding: 0; }
   .binary-slider-img7 {
-    max-width: 250px; } }
+    max-width: 250px; }
+  .binary-start-text {
+    max-width: 450px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -8928,7 +9000,24 @@ footer {
   .binary-mobile-item1 {
     width: 320px;
     height: 335px;
-    margin: 0 -40px 0 0; } }
+    margin: 0 -40px 0 0; }
+  .main-binary h1 {
+    font-size: 24px; }
+  .binary-start-text {
+    max-width: none; }
+  .binary-start-two h3 {
+    font-size: 22px; }
+  .binary-start-img {
+    margin: 20px auto 0;
+    max-width: 100%;
+    width: 100%; }
+  .binary-section3-two {
+    padding: 30px 0 200px; }
+  .binary-section5 .text {
+    font-size: 18px;
+    margin: 40px auto 0; }
+  .binary-start-three h2 {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
