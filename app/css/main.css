@@ -10258,6 +10258,8 @@ footer {
     width: 300px; }
   .tab-header li {
     margin: 0 10px 10px 0; }
+    .tab-header li:last-child {
+      margin: 0 0 10px; }
   .tab-content {
     padding: 20px 0; }
   .start-work-binary-video {
@@ -10403,7 +10405,7 @@ footer {
   .binary-slider-nav .slick-dots li:after {
     width: 10px;
     margin: 0 7px; }
-  .my-lp .button-group {
+  .main-binary-egypt .button-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -10411,7 +10413,7 @@ footer {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
-    .my-lp .button-group .btn {
+    .main-binary-egypt .button-group .btn {
       margin: 0 0 10px; }
   .binary-mobile-two .binary-mobile-item2 .box-text {
     max-width: 190px; } }
