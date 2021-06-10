@@ -138,6 +138,11 @@ $(".js-tab-trigger").on("click", function () {
 });
 
 
+$('.label-radio-variable').on('click', function () {
+   $('.label-radio-variable').removeClass('active');
+   $(this).addClass('active');
+});
+
 // function get_name_browser(){
 //     // получаем данные userAgent
 //     var ua = navigator.userAgent;
