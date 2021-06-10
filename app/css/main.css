@@ -7908,7 +7908,8 @@ footer {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 0 0 -220px; }
 
 .download-mobile-content {
   height: 100%;
@@ -7924,7 +7925,9 @@ footer {
           align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative;
+  z-index: 1; }
 
 .list-device {
   width: 100%;
@@ -8022,25 +8025,29 @@ footer {
     width: 15px;
     height: 15px; }
 
-.payment-variable h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #424B62;
-  margin: 0 0 32px; }
+.wrapper-main-payment h1 {
+  margin: 30px 0 20px; }
 
-.payment-variable .line-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 11px; }
-  .payment-variable .line-wrapper h3 {
-    margin: 0; }
+.payment-variable {
+  margin: 30px 0 0; }
+  .payment-variable h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #424B62;
+    margin: 0 0 20px; }
+  .payment-variable .line-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 11px; }
+    .payment-variable .line-wrapper h3 {
+      margin: 0; }
 
 .links-grey {
   text-decoration: underline;
@@ -8357,7 +8364,7 @@ footer {
   .main-binary {
     padding: 0; }
   .download-mobile-img {
-    width: 1000px; } }
+    width: 1100px; } }
 
 @media only screen and (max-width: 1420px) {
   .table-license td, .table-license th {
@@ -8411,8 +8418,6 @@ footer {
   .img-decor2 {
     right: 260px;
     bottom: 0; }
-  .download-mobile-img {
-    width: 900px; }
   .qr-item {
     height: 120px;
     font-size: 18px; }
@@ -9445,7 +9450,8 @@ footer {
   .binary-start-three h2 {
     font-size: 24px; }
   .download-mobile-img {
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto; }
   .list-device {
     margin: 0 auto 20px; }
   .download-mobile h2 {
