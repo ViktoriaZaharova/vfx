@@ -8185,6 +8185,380 @@ footer {
     .list-dots li:last-child {
       margin: 0; }
 
+.forex-page {
+  background: linear-gradient(199.13deg, #00233D 1.89%, #090831 87.44%);
+  overflow: hidden;
+  z-index: 1;
+  position: relative; }
+  .forex-page:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/forex-decor1.svg") no-repeat center;
+      background-size: 100%;
+    width: 469px;
+    height: 1508px;
+    z-index: -1; }
+  .forex-page:after {
+    content: '';
+    position: absolute;
+    width: 1331px;
+    height: 993px;
+    right: 0;
+    top: 0;
+    background: url("../img/forex-decor2.svg") no-repeat center;
+      background-size: 100%;
+    z-index: -1; }
+  .forex-page .container {
+    max-width: 1350px;
+    position: relative;
+    z-index: 2; }
+  .forex-page footer {
+    position: relative;
+    z-index: 2; }
+    .forex-page footer .logo {
+      height: 45px; }
+    .forex-page footer .container {
+      max-width: 1130px; }
+  .forex-page .footer-menu__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .forex-page .footer-box {
+    margin: 0 40px 34px 0; }
+    .forex-page .footer-box:last-child {
+      margin: 0 0 34px auto; }
+  .forex-page h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    z-index: 1;
+    margin: 0 auto 50px; }
+    .forex-page h2:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      background: radial-gradient(50% 50% at 50% 50%, rgba(60, 70, 119, 0.67) 0%, #5D5FEF 0.01%, rgba(196, 196, 196, 0) 100%);
+      overflow: hidden;
+      z-index: -1; }
+
+.main-forex {
+  padding: 157px 0 269px;
+  background: transparent;
+  z-index: 2; }
+  .main-forex h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 auto 80px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    max-width: none;
+    text-align: center; }
+  .main-forex .btn {
+    margin: 80px auto 0;
+    background: #5D5FEF;
+    border-radius: 10px;
+    height: 72px;
+    max-width: 312px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase; }
+
+.forex-work {
+  position: relative;
+  z-index: 1; }
+  .forex-work:before {
+    content: '';
+    position: absolute;
+    width: 1365px;
+    height: 2678px;
+    background: url("../img/forex-decor3.svg") no-repeat center;
+      background-size: 100%;
+    top: -459px;
+    left: 0; }
+
+.forex-work-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 25px; }
+  .forex-work-box:last-child {
+    margin: 0; }
+  .forex-work-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 17px 0 0;
+    max-width: 182px;
+    width: 100%; }
+  .forex-work-box .box-text p {
+    margin: 0; }
+
+.forex-work__img {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  max-width: 566px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .forex-work__img img {
+    position: relative;
+    z-index: 1; }
+  .forex-work__img:before {
+    content: '';
+    position: absolute;
+    background: url("../img/forex-circle2.svg") no-repeat center;
+      background-size: 100%;
+    width: 849px;
+    height: 711px;
+    top: -84px;
+    left: -116px; }
+
+.start-forex {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0; }
+  .start-forex:before {
+    content: '';
+    position: absolute;
+    top: -186px;
+    left: 0;
+    width: 1600px;
+    height: 2158px;
+    background: url("../img/forex-decor4.svg") no-repeat center;
+      background-size: 100%;
+    z-index: -1; }
+  .start-forex h2 {
+    margin: 0 auto 144px; }
+
+.start-forex-item {
+  font-size: 25px;
+  font-weight: 500;
+  color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 80px;
+  line-height: normal; }
+  .start-forex-item h3 {
+    text-transform: uppercase;
+    background: #5D5FEF;
+    font-weight: bold;
+    padding: 2px 7px; }
+  .start-forex-item:nth-child(2) {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .start-forex-item:nth-child(2) h3 {
+      background: #369DB1; }
+    .start-forex-item:nth-child(2) .start-forex-item__num {
+      color: #369DB1; }
+
+.start-forex-item__num {
+  font-family: 'Poppins', sans-serif;
+  font-size: 167px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color: #5D5FEF;
+  line-height: 1;
+  margin: -20px 14px 0 0; }
+
+.btn-turquoise {
+  background: #369DB1;
+  color: #fff;
+  height: 58px;
+  font-size: 26px;
+  font-weight: 500;
+  max-width: 268px;
+  width: 100%;
+  padding: 0; }
+
+.download-forex {
+  position: relative;
+  z-index: 2; }
+  .download-forex:before, .download-forex:after {
+    content: '';
+    position: absolute;
+    z-index: -1; }
+  .download-forex:before {
+    background: url("../img/forex-decor5.svg") no-repeat center;
+      background-size: 100%;
+    width: 699px;
+    height: 1481px;
+    left: 0;
+    top: -519px; }
+  .download-forex:after {
+    background: url("../img/forex-decor6.svg") no-repeat center;
+      background-size: 100%;
+    width: 716px;
+    height: 1480px;
+    left: 0;
+    top: -89px; }
+  .download-forex .btn {
+    margin: 0 auto; }
+  .download-forex h3 {
+    text-align: center;
+    margin: 0 auto 50px;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: none; }
+  .download-forex .btn-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 64px;
+    max-width: 1000px; }
+    .download-forex .btn-group .btn {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      margin: 0 10px 26px;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 26px;
+      font-weight: 500;
+      padding: 10px 24px;
+      max-width: none;
+      height: auto; }
+      .download-forex .btn-group .btn .icon {
+        width: 39px;
+        margin: 0 15px 0 0;
+        height: 33px; }
+      .download-forex .btn-group .btn .text {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+      .download-forex .btn-group .btn:nth-child(2) {
+        margin: 0 10px 26px; }
+    .download-forex .btn-group .btn-violet {
+      background: #5D5FEF; }
+  .download-forex h2 {
+    margin: 0 auto 98px; }
+
+.restrictions {
+  padding: 150px 0;
+  position: relative;
+  z-index: 1; }
+  .restrictions:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1600px;
+    height: 3039px;
+    background: url("../img/forex-decor7.svg") no-repeat center;
+      background-size: 100%; }
+  .restrictions h2 {
+    margin: 0 auto 98px; }
+
+.restrictions-box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 40px;
+  padding: 0 100px;
+  background: url("../img/forex-circle.svg") no-repeat center;
+    background-size: 100%;
+  width: 432px;
+  height: 432px;
+  font-size: 22px;
+  font-weight: 500; }
+  .restrictions-box__icon {
+    margin: 0 auto 32px; }
+
+.make-forex {
+  padding: 0 0 269px;
+  position: relative;
+  z-index: 1;
+  background: url("../img/forex-decor10.svg") no-repeat right bottom;
+    background-size: 1411px; }
+  .make-forex:before, .make-forex:after {
+    content: '';
+    position: absolute; }
+  .make-forex:after {
+    background: url("../img/forex-decor8.svg") no-repeat center;
+      background-size: 100%;
+    width: 1429px;
+    height: 1137px;
+    top: -203px;
+    right: 0; }
+  .make-forex:before {
+    background: url("../img/forex-decor9.svg") no-repeat center;
+      background-size: 100%;
+    height: 1677px;
+    width: 753px;
+    bottom: 0;
+    right: 0; }
+  .make-forex .btn {
+    margin: 0 auto;
+    height: 72px;
+    font-size: 36px;
+    font-weight: 500;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 29px; }
+  .make-forex h3 {
+    margin: 166px auto 72px;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
   .navigation-box3 img {
@@ -8364,7 +8738,16 @@ footer {
   .main-binary {
     padding: 0; }
   .download-mobile-img {
-    width: 1100px; } }
+    width: 1100px; }
+  .main-forex .btn {
+    margin: 30px auto;
+    font-size: 18px;
+    height: auto;
+    padding: 10px 20px;
+    max-width: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; } }
 
 @media only screen and (max-width: 1420px) {
   .table-license td, .table-license th {
@@ -8424,7 +8807,17 @@ footer {
   .qr-item .qr-item__links {
     max-width: 100px; }
   .download-mobile h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .restrictions:before {
+    width: 1020px;
+    height: 2020px; }
+  .restrictions-box {
+    width: 320px;
+    height: 320px;
+    font-size: 16px;
+    padding: 0 50px; }
+  .restrictions-box__icon {
+    max-width: 70px; } }
 
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
@@ -8729,7 +9122,50 @@ footer {
   .binary-mobile-two .binary-mobile-item1 {
     font-size: 15px; }
   .binary-mobile-two .binary-mobile-item2 .box-text {
-    margin: 0 0 0 80px; } }
+    margin: 0 0 0 80px; }
+  .forex-work:before {
+    width: 1020px;
+    height: 2200px; }
+  .forex-work__img {
+    max-width: 400px; }
+    .forex-work__img:before {
+      width: 640px;
+      height: 511px; }
+  .forex-work-box__icon {
+    max-width: 120px; }
+  .forex-work-box {
+    font-size: 18px; }
+  .start-forex:before {
+    width: 1200px;
+    height: 1800px; }
+  .start-forex-item {
+    font-size: 20px; }
+  .start-forex-item__num {
+    font-size: 120px; }
+  .start-forex h2 {
+    margin: 0 auto 50px; }
+  .download-forex:before {
+    width: 600px;
+    height: 1000px; }
+  .download-forex:after {
+    width: 520px;
+    height: 1020px; }
+  .make-forex {
+    background-size: 1000px;
+    padding: 0 0 130px; }
+    .make-forex:after {
+      width: 1100px;
+      height: 970px; }
+    .make-forex:before {
+      width: 1200px;
+      height: 573px; }
+    .make-forex h3 {
+      margin: 100px auto 40px;
+      font-size: 40px; }
+    .make-forex .btn {
+      font-size: 20px;
+      height: auto;
+      padding: 10px 20px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -8831,7 +9267,18 @@ footer {
   .binary-slider-img7 {
     max-width: 250px; }
   .binary-start-text {
-    max-width: 450px; } }
+    max-width: 450px; }
+  .main-forex {
+    padding: 100px 0; }
+    .main-forex h1 {
+      font-size: 50px;
+      margin: 0 auto 40px; }
+  .forex-page:before {
+    width: 369px;
+    height: 1100px; }
+  .forex-page:after {
+    width: 1020px;
+    height: 740px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -9466,7 +9913,31 @@ footer {
   .links-grey {
     font-size: 18px; }
   .your-plane-box h3 {
-    font-size: 38px; } }
+    font-size: 38px; }
+  .forex-work__img {
+    max-width: 320px; }
+    .forex-work__img:before {
+      width: 520px;
+      height: 430px;
+      top: -50px;
+      left: -70px; }
+  .forex-page h2 {
+    font-size: 30px; }
+  .forex-work:before {
+    width: 800px;
+    height: 1800px; }
+  .start-forex:before {
+    width: 1000px;
+    height: 1300px; }
+  .download-forex h3 {
+    font-size: 30px;
+    margin: 0 auto 30px; }
+  .download-forex .btn-group .btn {
+    font-size: 18px; }
+  .btn-turquoise {
+    font-size: 20px; }
+  .restrictions {
+    padding: 100px 0; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -10208,7 +10679,91 @@ footer {
     padding: 0;
     margin: 0 0 0 20px; }
   .binary-mobile-two .binary-mobile-item1 .box-text {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .main-forex:before {
+    height: 900px;
+    width: 310px; }
+  .main-forex:after {
+    width: 820px;
+    height: 540px; }
+  .main-forex h1 {
+    font-size: 40px;
+    line-height: normal; }
+  .forex-page h2 {
+    font-size: 30px;
+    margin: 0 auto 30px; }
+  .forex-work__img {
+    position: relative;
+    margin: 30px auto 0;
+    right: 0; }
+  .forex-work-box__icon {
+    max-width: 100px;
+    margin: 0 10px 0 0; }
+  .forex-work-box__icon {
+    font-size: 16px; }
+  .start-forex-item {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 30px;
+    font-size: 16px; }
+    .start-forex-item br {
+      display: none; }
+    .start-forex-item:nth-child(2) {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .start-forex-item:last-child {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+  .start-forex-item__num {
+    font-size: 90px; }
+  .start-forex {
+    padding: 50px 0; }
+    .start-forex:before {
+      width: 700px; }
+  .download-forex h3 {
+    font-size: 22px; }
+  .download-forex:after {
+    top: 50px;
+    height: 800px;
+    width: 420px; }
+  .download-forex:before {
+    top: -200px;
+    width: 400px;
+    height: 800px; }
+  .download-forex .btn-group {
+    margin: 0 0 30px; }
+  .restrictions-box {
+    margin: 0 auto; }
+  .restrictions:before {
+    width: 900px;
+    height: 1400px; }
+  .make-forex {
+    background-size: 700px;
+    padding: 0 0 60px; }
+    .make-forex:before {
+      width: 920px;
+      height: 340px; }
+    .make-forex:after {
+      width: 830px;
+      height: 740px; }
+    .make-forex h3 {
+      margin: 30px auto 20px;
+      font-size: 30px; }
+    .make-forex .btn {
+      font-size: 18px; }
+  .restrictions {
+    padding: 60px 0; }
+  .forex-page .footer-box {
+    margin: 0 0 30px; }
+    .forex-page .footer-box:last-child {
+      margin: 0 0 30px; }
+  .forex-page .footer-menu__wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media only screen and (max-width: 700px) {
   .table-history th:nth-child(3), .table-history th:nth-child(4), .table-history th:nth-child(5), .table-history td:nth-child(3), .table-history td:nth-child(4), .table-history td:nth-child(5) {
@@ -10617,7 +11172,17 @@ footer {
   .start-work-binary-video {
     height: 400px; }
   .my-lp .button-group .btn {
-    width: auto; } }
+    width: auto; }
+  .main-forex .btn {
+    margin: 30px auto; }
+  .main-forex h1 {
+    font-size: 24px; }
+  .forex-page:before {
+    height: 700px;
+    width: 200px; }
+  .forex-page:after {
+    height: 400px;
+    width: 750px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
@@ -10768,7 +11333,9 @@ footer {
     .main-binary-egypt .button-group .btn {
       margin: 0 0 10px; }
   .binary-mobile-two .binary-mobile-item2 .box-text {
-    max-width: 190px; } }
+    max-width: 190px; }
+  .forex-page h2 {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
