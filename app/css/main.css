@@ -463,7 +463,9 @@ h2 {
 
 header {
   background: #424B62;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  z-index: 3; }
   header .container {
     max-width: 1310px; }
   header .support-box {
