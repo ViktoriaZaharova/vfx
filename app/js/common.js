@@ -76,6 +76,46 @@ $('.binary-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
+$('.reviews-cripto-slider').slick({
+    slidesToShow: 4,
+    dots: true,
+    appendArrows: '.reviews-cripto-slider-nav',
+    appendDots: '.reviews-cripto-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left-new"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right-new"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 840,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
+});
+
+$('.best-forex-slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    fade: true,
+    appendArrows: '.best-forex-slider-nav',
+    appendDots: '.best-forex-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left-new"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right-new"></use></svg></button>',
+});
+
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
 });
