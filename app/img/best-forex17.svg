@@ -42,9 +42,9 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M242.929 164.915C243.131 164.819 243.215 164.579 243.119 164.378C242.532 163.148 242.785 161.674 243.749 160.71C245.005 159.454 247.049 159.454 248.306 160.71C249.27 161.674 249.523 163.148 248.936 164.378C248.84 164.578 248.924 164.819 249.125 164.915C249.326 165.01 249.566 164.926 249.662 164.725C250.397 163.188 250.08 161.346 248.875 160.141C247.305 158.57 244.75 158.57 243.179 160.141C241.974 161.346 241.658 163.187 242.392 164.725C242.488 164.926 242.728 165.011 242.929 164.915ZM246.029 164.128L247.717 165.816C246.72 166.563 245.337 166.563 244.34 165.816L246.029 164.128ZM248.592 166.121C248.749 165.964 248.749 165.709 248.592 165.552L246.313 163.273C246.156 163.116 245.901 163.116 245.744 163.273L243.465 165.552C243.308 165.709 243.308 165.964 243.465 166.121C244.879 167.535 247.179 167.535 248.592 166.121Z" fill="white"/>
         </g>
         <g filter="url(#filter3_f)">
-            <rect x="209.5" y="146.5" width="51" height="30" rx="4.5" stroke="#00FCFC"/>
+            <rect x="209.5" y="147.5" width="51" height="30" rx="4.5" stroke="#00FCFC"/>
         </g>
-        <rect x="209.5" y="146.5" width="51" height="30" rx="4.5" stroke="#00FCFC"/>
+        <rect x="209.5" y="147.5" width="51" height="30" rx="4.5" stroke="#00FCFC"/>
     </g>
     <path d="M33.8415 207.339L34.232 206.974L33.8415 206.608L17.5179 191.341C21.4224 143.738 43.0434 99.3395 78.0981 66.9524C113.212 34.5108 159.231 16.4989 207 16.5C254.769 16.4989 300.788 34.5108 335.902 66.9524C370.956 99.3385 392.576 143.736 396.482 191.337L379.664 206.63L379.256 207.001L379.664 207.37L396.482 222.611C392.589 270.222 370.973 314.631 335.919 347.028C300.804 379.481 254.777 397.5 207 397.5C159.223 397.5 113.196 379.481 78.0814 347.028C43.0254 314.63 21.4099 270.219 17.5179 222.606L33.8415 207.339Z" stroke="#00FCFC"/>
     <defs>
@@ -75,7 +75,7 @@
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
         </filter>
-        <filter id="filter3_f" x="205" y="142" width="60" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="filter3_f" x="205" y="143" width="60" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
