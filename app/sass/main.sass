@@ -8640,40 +8640,35 @@ footer
 .main-cripto
   position: relative
   z-index: 1
-  padding: 62px 0 0
-  .container
-    max-width: 1410px
-
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: calc(100% - 73px)
-    filter: blur(21px)
-    opacity: .5
-    background: url("../img/cripto-bg.png") no-repeat center
-      size: cover
-
-.main-cripto-wrapper
-  max-width: 1400px
-  width: 100%
-
-  position: relative
-  background: url("../img/cripto-img.jpg") #000000 no-repeat center top
+  padding: 27px 0 0
+  background: url("../img/bg-cripto.jpeg") no-repeat center
     size: cover
-  &:before
-    content: ''
-    position: absolute
-    top: -8.5px
-    left: 9px
-    width: 100%
-    height: 100%
-    background: url("../img/cripto-border.svg") no-repeat center
-      size: 100%
+  overflow: hidden
+  height: auto !important
+
+.main-cripto-img
+  overflow: visible
+  width: 978px
+  margin: 0 100px 0 -400px
+
+#demo-canvas
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+
+.main-cripto-content
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  position: relative
+  z-index: 1
   h1
     font-size: 55px
+    line-height: normal
     font-weight: bold
     color: #F1F1F1
     text-transform: uppercase
@@ -8686,24 +8681,7 @@ footer
     height: auto
     font-size: 18px
     font-weight: 600
-  .row
-    padding: 0 90px
-    overflow: hidden
-    margin: 0
 
-
-.main-cripto-img
-  width: 818px
-  margin: 0 0 0 -90px
-  overflow: hidden
-
-
-.main-cripto-content
-  height: 100%
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  justify-content: center
 
 .best-forex
   padding: 57px 0 0
@@ -8719,69 +8697,186 @@ footer
       size: cover
     width: 1978px
     height: 1537px
-  h2
-    margin: 0 0 80px
 
-.my-container .best-forex-container
-  max-width: 1400px
-  width: 100%
-  padding: 0 15px 27px
-  margin: 0 auto
-  position: relative
-  z-index: 1
-  &:before
-    content: ''
-    position: absolute
-    width: 100%
-    height: 375px
-    left: 0
-    top: 207px
-    background: url("../img/best-forex-border.svg") no-repeat center
-      size: 100%
+
+
 
 .best-forex-slider
   width: 100%
+  .slick-dots
+    li
+      border: 1px solid #00FCFC
+      width: 5px
+      height: 5px
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+    .slick-active
+      background: #00FCFC
+  .slick-slide
+    opacity: .2
+  .slick-current
+    opacity: 1
+    .best-forex-slider__item
+      transform: scale(1)
+
+.best-forex-wrapper
+  width: 100%
+  position: relative
+
+.best-forex-slider__nav
+  margin: 0 auto
+  max-width: 1070px
+  width: 100%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .slick-arrow
+    position: relative
+    width: 75px
+    height: 75px
+    border: 1px solid #00FCFC
+      radius: 50%
+    fill: #00FCFC
+    background: transparent
+    &:before
+      content: ''
+      position: absolute
+      display: inline-block
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: calc(100% - 10px)
+      height: calc(100% - 10px)
+      border: 1px solid #00FCFC
+        radius: 50%
+    svg
+      width: 16px
+      height: 14px
+  .slick-dots
+    li
+      border: 1px solid #00FCFC
+      width: 5px
+      height: 5px
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+    .slick-active
+      background: #00FCFC
+
+
+.slick-dotted.best-forex-slider
+  margin-bottom: 0
 
 .best-forex-slider__item
-  width: 100%
-  margin: 0 auto 10px
+  width: 991px
+  margin: 94px 29px 83px
+  position: relative
+  z-index: 1
+  background: #1F2539
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25))
+  transform: scale(1.1)
+  transition: transform .35s cubic-bezier(.55,.085,.68,.53) .8s
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+  &:before
+    background: url("../img/best-forex-border.svg") no-repeat center
+      size: 100%
+    width: 978px
+    height: 447px
+  &:after
+    background: url("../img/best-forex-border2.svg") no-repeat center
+      size: 100%
+    width: 966px
+    height: 460px
+
+
 
 .best-forex-slider__item-head
   width: 100%
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 0 167px
+  padding: 146px 150px 175px
   position: relative
+  overflow: hidden
+  z-index: 1
   &:before
     content: ''
     position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
-    height: 1px
-    width: calc(100% - 1095px)
-    background: #00FCFC
+    right: 0
+    top: 178px
+    width: 971px
+    height: 292px
+    background: url('../img/best-forex-bg.svg') no-repeat center
+      size: cover
+    opacity: .2
+    z-index: -1
+
 
 .best-forex-slider__item-img
   display: flex
   align-items: center
   justify-content: center
+  max-width: 300px
+  width: 100%
+  filter: drop-shadow(0px 4.2319px 21.1595px rgba(9, 187, 193, 0.2))
 
 .best-forex-slider__item-body
   text-align: center
-  max-width: 515px
+  max-width: 767px
+  position: absolute
+  bottom: -65px
+  left: 50%
+  transform: translate(-50%,0)
   width: 100%
-  margin: -20px auto 0
-  font-size: 18px
+  font-size: 16px
+  padding: 70px 100px 18px
+  background: url("../img/best-forex-bg2.svg") no-repeat center top
+    size: 100%
+  z-index: 1
   .box-text
     font-weight: normal
-    min-height: 59px
+    min-height: 75px
+    max-width: 387px
+    width: 100%
+    margin: 0 auto
+    padding: 16px 0 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%,0)
+      width: 477px
+      height: 8px
+      background: url("../img/best-forex-line.svg") no-repeat center
+        size: 100%
   h3
-    font-size: 25px
-    font-weight: 600
-    margin: 0 auto 6px
+    font-size: 24px
+    font-weight: bold
+    margin: 0 auto 12px
     text-transform: uppercase
+    font-family: 'Arial', sans-serif
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 23px
+    transform: translate(-50%,0)
+    width: 30px
+    height: 30px
+    background: url('../img/best-forex-decor.svg') no-repeat center
+      size: 100%
 
 @import "media"
 // Всегда в конце

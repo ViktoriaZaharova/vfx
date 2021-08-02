@@ -360,27 +360,8 @@
   .restrictions-box__icon
     max-width: 70px
 
-  .best-forex-slider__item-img
-    max-width: 350px
 
-  .best-forex-slider__item-head:before
-    width: calc(100% - 980px)
 
-  .my-container .best-forex-container:before
-    width: calc(100% - 42px)
-    left: 50%
-    transform: translate(-50%,0)
-    height: 325px
-    top: 170px
-
-  .best-forex-slider__item
-    margin: 0 auto
-
-  .my-container .best-forex-container
-    max-width: 1200px
-
-  .best-forex-slider__item-body
-    margin: -30px auto 0
 
 @media only screen and (max-width: 1250px)
   .header-menu li a
@@ -856,10 +837,11 @@
   .text-overlay
     font-size: 70px
 
-  .main-cripto-wrapper h1
+  .main-cripto-content h1
     font-size: 40px
 
   .main-cripto-img
+    margin: 0 100px 0 -300px
     width: 618px
 
   .reviews-cripto
@@ -879,8 +861,32 @@
   .my-container .best-forex-container:before
     display: none
 
+  .best-forex-slider__item
+    width: 771px
+    &:before
+      width: 785px
+    &:after
+      width: 773px
+      height: 374px
+
+  .best-forex-slider__item-head
+    padding: 120px
+
+  .best-forex-slider__nav
+    max-width: 850px
+    .slick-arrow
+      width: 55px
+      height: 55px
+
   .best-forex-slider__item-body
-    margin: 0 auto
+    max-width: 670px
+    padding: 70px 50px 18px
+    bottom: -90px
+    .box-text
+      max-width: none
+
+  .best-forex-slider__item-img
+    max-width: 200px
 
 @media only screen and (max-width: 1100px)
   .statistical-data__wrapper
@@ -1017,11 +1023,7 @@
       width: 1020px
       height: 740px
 
-  .best-forex-slider__item-head
-    padding: 0 30px
 
-  .best-forex-slider__item-head:before
-    width: calc(100% - 705px)
 
 @media only screen and (max-width: 991px)
   .header-item
@@ -1877,21 +1879,15 @@
   .about-signal-new-design:before
     top: -340px
 
-  .main-cripto-wrapper:before
-    background: transparent
-    border: 1px solid #00FCFC
-
   .main-cripto-img
     max-width: 500px
     width: 100%
     margin: 20px auto 0
 
 
-  .main-cripto-wrapper h1
+  .main-cripto-content h1
     font-size: 30px
 
-  .main-cripto-wrapper .row
-    padding: 30px
 
 
 
@@ -2095,17 +2091,34 @@
     .support-box
       font-size: 7px
 
-  .best-forex-slider__item-head
-    padding: 0
 
-  .best-forex-slider__item-img
-    max-width: 250px
-
-  .best-forex-slider__item-head:before
-    width: calc(100% - 465px)
 
   .best-forex h2
     margin: 0 0 30px
+
+  .best-forex-slider__item
+    width: 550px
+    margin: 70px 30px 110px
+    &:before
+      width: calc(100% + 8px)
+      height: 100%
+      border: 1px solid #00FCFC
+      background: transparent
+    &:after
+      width: 100%
+      height: calc(100% + 8px)
+      border: 1px solid #00FCFC
+      background: transparent
+  .best-forex-slider__item-head
+    padding: 80px 40px 140px
+
+  .best-forex-slider__item-body
+    background: rgba(31, 37, 57, 0.8)
+    border: 1px solid #00FCFC
+    max-width: 90%
+    .box-text
+      &:before
+        width: 300px
 
 @media only screen and (max-width: 767px)
   .btn-burger
@@ -3522,16 +3535,44 @@
     .info-text
       font-size: 16px
 
+  .best-forex-slider__nav
+    padding: 0 15px
+    .slick-arrow
+      width: 50px
+      height: 50px
+      svg
+        width: 12px
+        height: 10px
+
+  .best-forex-slider__item
+    width: 100%
+    margin: 30px auto 100px
+    transform: none
+    &:before
+      width: calc(100% - 16px)
+    &:after
+      width: calc(100% - 8px)
+      height: calc(100% - 8px)
+
+  .best-forex-slider
+    padding: 0 15px
+
+  .best-forex-slider__nav
+    position: relative
+    transform: none
+    top: 0
+    left: 0
+
   .best-forex-slider__item-body
-    margin: 30px auto 0
+    padding: 60px 30px 20px
+    font-size: 16px
+    &:before
+      top: 20px
     h3
       font-size: 20px
 
   .best-forex-slider__item-img
-    max-width: 180px
-
-  .best-forex-slider__item-head:before
-    width: calc(100% - 330px)
+    max-width: 160px
 
 @media only screen and (max-width: 480px)
   .account-footer
@@ -3728,6 +3769,29 @@
   .forex-page h2
     font-size: 24px
 
+  .best-forex-slider__item-head
+    padding: 30px 30px 110px
+    justify-content: space-around
+
+  .best-forex-slider__item-img
+    max-width: 100px
+
+  .best-forex-slider__item-body
+    padding: 40px 20px 20px
+    &:before
+      top: 10px
+      width: 20px
+      height: 20px
+    .box-text
+      font-size: 14px
+      min-height: auto
+      padding: 10px
+      &:before
+        width: 100%
+    h3
+      font-size: 18px
+
+
 @media only screen and (max-width: 420px)
   .download-info
     &:before
@@ -3840,22 +3904,12 @@
     flex-direction: column
     align-items: flex-start
 
-  .main-cripto-wrapper h1
+  .main-cripto-content h1
     font-size: 24px
     line-height: normal
 
-  .main-cripto-wrapper .btn
+  .main-cripto-content .btn
     font-size: 16px
-
-  .main-cripto-wrapper .row
-    padding: 25px
-
-  .best-forex-slider__item-head
-    &:before
-      width: calc(100% - 240px)
-
-  .best-forex-slider__item-img
-    max-width: 130px
 
 
 @media only screen and (max-width: 380px)

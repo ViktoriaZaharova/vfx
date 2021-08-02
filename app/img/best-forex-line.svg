@@ -1,0 +1,19 @@
+<svg width="477" height="9" viewBox="0 0 477 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="5.17711" height="6.1184" transform="matrix(1 0 0 -1 0 7.06104)" fill="#00FCFC"/>
+    <rect x="477" y="7.06104" width="5.17711" height="6.1184" transform="rotate(-180 477 7.06104)" fill="#00FCFC"/>
+    <rect width="5.17711" height="2.82388" transform="matrix(1 0 0 -1 6.35352 5.41382)" fill="#00FCFC"/>
+    <rect x="470.647" y="5.41382" width="5.17711" height="2.82388" transform="rotate(-180 470.647 5.41382)" fill="#00FCFC"/>
+    <rect width="10.3542" height="1.41194" transform="matrix(1 0 0 -1 12.7085 4.70752)" fill="#00FCFC"/>
+    <rect x="464.292" y="4.70752" width="10.3542" height="1.41194" transform="rotate(-180 464.292 4.70752)" fill="#00FCFC"/>
+    <rect width="137.899" height="1.41194" transform="matrix(1 0 0 -1 24.239 4.70752)" fill="#00FCFC"/>
+    <rect x="452.761" y="4.70752" width="137.899" height="1.41194" transform="rotate(-180 452.761 4.70752)" fill="#00FCFC"/>
+    <rect x="303.331" y="4.70752" width="48.7119" height="1.41194" transform="rotate(-180 303.331 4.70752)" fill="#00FCFC"/>
+    <rect x="222.616" y="4.70752" width="48.7119" height="1.41194" transform="rotate(-180 222.616 4.70752)" fill="#00FCFC"/>
+    <rect x="244.501" y="4.23669" width="11.5308" height="0.470646" transform="rotate(-180 244.501 4.23669)" fill="#00FCFC"/>
+    <circle r="3.64751" transform="matrix(1 0 0 -1 168.491 4.00146)" stroke="#00FCFC" stroke-width="0.705969"/>
+    <circle r="3.64751" transform="matrix(1 0 0 -1 308.744 4.00146)" stroke="#00FCFC" stroke-width="0.705969"/>
+    <circle r="1.64726" transform="matrix(1 0 0 -1 225.087 4.11902)" stroke="#00FCFC" stroke-width="0.705969"/>
+    <circle cx="252.149" cy="4.11902" r="1.64726" transform="rotate(-180 252.149 4.11902)" stroke="#00FCFC" stroke-width="0.705969"/>
+    <circle r="2.23557" transform="matrix(1 0 0 -1 228.969 4.00166)" stroke="#00FCFC" stroke-width="0.705969"/>
+    <circle cx="248.267" cy="4.00166" r="2.23557" transform="rotate(-180 248.267 4.00166)" stroke="#00FCFC" stroke-width="0.705969"/>
+</svg>

@@ -9154,62 +9154,23 @@ footer {
 .main-cripto {
   position: relative;
   z-index: 1;
-  padding: 62px 0 0; }
-  .main-cripto .container {
-    max-width: 1410px; }
-  .main-cripto:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: calc(100% - 73px);
-    -webkit-filter: blur(21px);
-            filter: blur(21px);
-    opacity: .5;
-    background: url("../img/cripto-bg.png") no-repeat center;
-      background-size: cover; }
-
-.main-cripto-wrapper {
-  max-width: 1400px;
-  width: 100%;
-  position: relative;
-  background: url("../img/cripto-img.jpg") #000000 no-repeat center top;
-    background-size: cover; }
-  .main-cripto-wrapper:before {
-    content: '';
-    position: absolute;
-    top: -8.5px;
-    left: 9px;
-    width: 100%;
-    height: 100%;
-    background: url("../img/cripto-border.svg") no-repeat center;
-      background-size: 100%; }
-  .main-cripto-wrapper h1 {
-    font-size: 55px;
-    font-weight: bold;
-    color: #F1F1F1;
-    text-transform: uppercase;
-    text-shadow: 4px 6px 22px rgba(0, 0, 0, 0.6);
-    margin: 0 0 23px; }
-  .main-cripto-wrapper .btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: none;
-    padding: 9px 33px;
-    height: auto;
-    font-size: 18px;
-    font-weight: 600; }
-  .main-cripto-wrapper .row {
-    padding: 0 90px;
-    overflow: hidden;
-    margin: 0; }
+  padding: 27px 0 0;
+  background: url("../img/bg-cripto.jpeg") no-repeat center;
+    background-size: cover;
+  overflow: hidden;
+  height: auto !important; }
 
 .main-cripto-img {
-  width: 818px;
-  margin: 0 0 0 -90px;
-  overflow: hidden; }
+  overflow: visible;
+  width: 978px;
+  margin: 0 100px 0 -400px; }
+
+#demo-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
 
 .main-cripto-content {
   height: 100%;
@@ -9225,7 +9186,26 @@ footer {
           align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative;
+  z-index: 1; }
+  .main-cripto-content h1 {
+    font-size: 55px;
+    line-height: normal;
+    font-weight: bold;
+    color: #F1F1F1;
+    text-transform: uppercase;
+    text-shadow: 4px 6px 22px rgba(0, 0, 0, 0.6);
+    margin: 0 0 23px; }
+  .main-cripto-content .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: none;
+    padding: 9px 33px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600; }
 
 .best-forex {
   padding: 57px 0 0;
@@ -9242,32 +9222,115 @@ footer {
       background-size: cover;
     width: 1978px;
     height: 1537px; }
-  .best-forex h2 {
-    margin: 0 0 80px; }
-
-.my-container .best-forex-container {
-  max-width: 1400px;
-  width: 100%;
-  padding: 0 15px 27px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1; }
-  .my-container .best-forex-container:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 375px;
-    left: 0;
-    top: 207px;
-    background: url("../img/best-forex-border.svg") no-repeat center;
-      background-size: 100%; }
 
 .best-forex-slider {
   width: 100%; }
+  .best-forex-slider .slick-dots li {
+    border: 1px solid #00FCFC;
+    width: 5px;
+    height: 5px;
+    margin: 0 5px 0 0; }
+    .best-forex-slider .slick-dots li:last-child {
+      margin: 0; }
+  .best-forex-slider .slick-dots .slick-active {
+    background: #00FCFC; }
+  .best-forex-slider .slick-slide {
+    opacity: .2; }
+  .best-forex-slider .slick-current {
+    opacity: 1; }
+    .best-forex-slider .slick-current .best-forex-slider__item {
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+
+.best-forex-wrapper {
+  width: 100%;
+  position: relative; }
+
+.best-forex-slider__nav {
+  margin: 0 auto;
+  max-width: 1070px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .best-forex-slider__nav .slick-arrow {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #00FCFC;
+      border-radius: 50%;
+    fill: #00FCFC;
+    background: transparent; }
+    .best-forex-slider__nav .slick-arrow:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      border: 1px solid #00FCFC;
+        border-radius: 50%; }
+    .best-forex-slider__nav .slick-arrow svg {
+      width: 16px;
+      height: 14px; }
+  .best-forex-slider__nav .slick-dots li {
+    border: 1px solid #00FCFC;
+    width: 5px;
+    height: 5px;
+    margin: 0 5px 0 0; }
+    .best-forex-slider__nav .slick-dots li:last-child {
+      margin: 0; }
+  .best-forex-slider__nav .slick-dots .slick-active {
+    background: #00FCFC; }
+
+.slick-dotted.best-forex-slider {
+  margin-bottom: 0; }
 
 .best-forex-slider__item {
-  width: 100%;
-  margin: 0 auto 10px; }
+  width: 991px;
+  margin: 94px 29px 83px;
+  position: relative;
+  z-index: 1;
+  background: #1F2539;
+  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s;
+  transition: -webkit-transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s;
+  transition: transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s;
+  transition: transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s, -webkit-transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s; }
+  .best-forex-slider__item:before, .best-forex-slider__item:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .best-forex-slider__item:before {
+    background: url("../img/best-forex-border.svg") no-repeat center;
+      background-size: 100%;
+    width: 978px;
+    height: 447px; }
+  .best-forex-slider__item:after {
+    background: url("../img/best-forex-border2.svg") no-repeat center;
+      background-size: 100%;
+    width: 966px;
+    height: 460px; }
 
 .best-forex-slider__item-head {
   width: 100%;
@@ -9280,18 +9343,21 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 167px;
-  position: relative; }
+  padding: 146px 150px 175px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
   .best-forex-slider__item-head:before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    height: 1px;
-    width: calc(100% - 1095px);
-    background: #00FCFC; }
+    right: 0;
+    top: 178px;
+    width: 971px;
+    height: 292px;
+    background: url("../img/best-forex-bg.svg") no-repeat center;
+      background-size: cover;
+    opacity: .2;
+    z-index: -1; }
 
 .best-forex-slider__item-img {
   display: -webkit-box;
@@ -9302,22 +9368,62 @@ footer {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  max-width: 300px;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 4.2319px 21.1595px rgba(9, 187, 193, 0.2));
+          filter: drop-shadow(0px 4.2319px 21.1595px rgba(9, 187, 193, 0.2)); }
 
 .best-forex-slider__item-body {
   text-align: center;
-  max-width: 515px;
+  max-width: 767px;
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 100%;
-  margin: -20px auto 0;
-  font-size: 18px; }
+  font-size: 16px;
+  padding: 70px 100px 18px;
+  background: url("../img/best-forex-bg2.svg") no-repeat center top;
+    background-size: 100%;
+  z-index: 1; }
   .best-forex-slider__item-body .box-text {
     font-weight: normal;
-    min-height: 59px; }
+    min-height: 75px;
+    max-width: 387px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+    position: relative; }
+    .best-forex-slider__item-body .box-text:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      width: 477px;
+      height: 8px;
+      background: url("../img/best-forex-line.svg") no-repeat center;
+        background-size: 100%; }
   .best-forex-slider__item-body h3 {
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0 auto 6px;
-    text-transform: uppercase; }
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 12px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; }
+  .best-forex-slider__item-body:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 30px;
+    height: 30px;
+    background: url("../img/best-forex-decor.svg") no-repeat center;
+      background-size: 100%; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {
@@ -9577,24 +9683,7 @@ footer {
     font-size: 16px;
     padding: 0 50px; }
   .restrictions-box__icon {
-    max-width: 70px; }
-  .best-forex-slider__item-img {
-    max-width: 350px; }
-  .best-forex-slider__item-head:before {
-    width: calc(100% - 980px); }
-  .my-container .best-forex-container:before {
-    width: calc(100% - 42px);
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    height: 325px;
-    top: 170px; }
-  .best-forex-slider__item {
-    margin: 0 auto; }
-  .my-container .best-forex-container {
-    max-width: 1200px; }
-  .best-forex-slider__item-body {
-    margin: -30px auto 0; } }
+    max-width: 70px; } }
 
 @media only screen and (max-width: 1250px) {
   .header-menu li a {
@@ -9949,9 +10038,10 @@ footer {
     width: 800px; }
   .text-overlay {
     font-size: 70px; }
-  .main-cripto-wrapper h1 {
+  .main-cripto-content h1 {
     font-size: 40px; }
   .main-cripto-img {
+    margin: 0 100px 0 -300px;
     width: 618px; }
   .reviews-cripto {
     padding: 40px 0; }
@@ -9965,8 +10055,28 @@ footer {
     padding: 100px 0 0; }
   .my-container .best-forex-container:before {
     display: none; }
+  .best-forex-slider__item {
+    width: 771px; }
+    .best-forex-slider__item:before {
+      width: 785px; }
+    .best-forex-slider__item:after {
+      width: 773px;
+      height: 374px; }
+  .best-forex-slider__item-head {
+    padding: 120px; }
+  .best-forex-slider__nav {
+    max-width: 850px; }
+    .best-forex-slider__nav .slick-arrow {
+      width: 55px;
+      height: 55px; }
   .best-forex-slider__item-body {
-    margin: 0 auto; } }
+    max-width: 670px;
+    padding: 70px 50px 18px;
+    bottom: -90px; }
+    .best-forex-slider__item-body .box-text {
+      max-width: none; }
+  .best-forex-slider__item-img {
+    max-width: 200px; } }
 
 @media only screen and (max-width: 1100px) {
   .statistical-data__wrapper {
@@ -10079,11 +10189,7 @@ footer {
     height: 1100px; }
   .forex-page:after {
     width: 1020px;
-    height: 740px; }
-  .best-forex-slider__item-head {
-    padding: 0 30px; }
-  .best-forex-slider__item-head:before {
-    width: calc(100% - 705px); } }
+    height: 740px; } }
 
 @media only screen and (max-width: 991px) {
   .header-item {
@@ -10759,17 +10865,12 @@ footer {
       font-size: 22px; }
   .about-signal-new-design:before {
     top: -340px; }
-  .main-cripto-wrapper:before {
-    background: transparent;
-    border: 1px solid #00FCFC; }
   .main-cripto-img {
     max-width: 500px;
     width: 100%;
     margin: 20px auto 0; }
-  .main-cripto-wrapper h1 {
-    font-size: 30px; }
-  .main-cripto-wrapper .row {
-    padding: 30px; } }
+  .main-cripto-content h1 {
+    font-size: 30px; } }
 
 @media only screen and (max-width: 940px) {
   .table-license td, .table-license th {
@@ -10932,14 +11033,29 @@ footer {
     font-size: 8px; }
   .header-fl .support-box {
     font-size: 7px; }
-  .best-forex-slider__item-head {
-    padding: 0; }
-  .best-forex-slider__item-img {
-    max-width: 250px; }
-  .best-forex-slider__item-head:before {
-    width: calc(100% - 465px); }
   .best-forex h2 {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .best-forex-slider__item {
+    width: 550px;
+    margin: 70px 30px 110px; }
+    .best-forex-slider__item:before {
+      width: calc(100% + 8px);
+      height: 100%;
+      border: 1px solid #00FCFC;
+      background: transparent; }
+    .best-forex-slider__item:after {
+      width: 100%;
+      height: calc(100% + 8px);
+      border: 1px solid #00FCFC;
+      background: transparent; }
+  .best-forex-slider__item-head {
+    padding: 80px 40px 140px; }
+  .best-forex-slider__item-body {
+    background: rgba(31, 37, 57, 0.8);
+    border: 1px solid #00FCFC;
+    max-width: 90%; }
+    .best-forex-slider__item-body .box-text:before {
+      width: 300px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -12048,14 +12164,41 @@ footer {
     padding: 0 0 50px; }
     .seo-container-new-design .info-text {
       font-size: 16px; }
+  .best-forex-slider__nav {
+    padding: 0 15px; }
+    .best-forex-slider__nav .slick-arrow {
+      width: 50px;
+      height: 50px; }
+      .best-forex-slider__nav .slick-arrow svg {
+        width: 12px;
+        height: 10px; }
+  .best-forex-slider__item {
+    width: 100%;
+    margin: 30px auto 100px;
+    -webkit-transform: none;
+            transform: none; }
+    .best-forex-slider__item:before {
+      width: calc(100% - 16px); }
+    .best-forex-slider__item:after {
+      width: calc(100% - 8px);
+      height: calc(100% - 8px); }
+  .best-forex-slider {
+    padding: 0 15px; }
+  .best-forex-slider__nav {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    top: 0;
+    left: 0; }
   .best-forex-slider__item-body {
-    margin: 30px auto 0; }
+    padding: 60px 30px 20px;
+    font-size: 16px; }
+    .best-forex-slider__item-body:before {
+      top: 20px; }
     .best-forex-slider__item-body h3 {
       font-size: 20px; }
   .best-forex-slider__item-img {
-    max-width: 180px; }
-  .best-forex-slider__item-head:before {
-    width: calc(100% - 330px); } }
+    max-width: 160px; } }
 
 @media only screen and (max-width: 480px) {
   .account-footer .btn {
@@ -12208,7 +12351,27 @@ footer {
   .binary-mobile-two .binary-mobile-item2 .box-text {
     max-width: 190px; }
   .forex-page h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .best-forex-slider__item-head {
+    padding: 30px 30px 110px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .best-forex-slider__item-img {
+    max-width: 100px; }
+  .best-forex-slider__item-body {
+    padding: 40px 20px 20px; }
+    .best-forex-slider__item-body:before {
+      top: 10px;
+      width: 20px;
+      height: 20px; }
+    .best-forex-slider__item-body .box-text {
+      font-size: 14px;
+      min-height: auto;
+      padding: 10px; }
+      .best-forex-slider__item-body .box-text:before {
+        width: 100%; }
+    .best-forex-slider__item-body h3 {
+      font-size: 18px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
@@ -12290,17 +12453,11 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .main-cripto-wrapper h1 {
+  .main-cripto-content h1 {
     font-size: 24px;
     line-height: normal; }
-  .main-cripto-wrapper .btn {
-    font-size: 16px; }
-  .main-cripto-wrapper .row {
-    padding: 25px; }
-  .best-forex-slider__item-head:before {
-    width: calc(100% - 240px); }
-  .best-forex-slider__item-img {
-    max-width: 130px; } }
+  .main-cripto-content .btn {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 380px) {
   .checkbox__text {
