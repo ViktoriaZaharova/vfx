@@ -12191,10 +12191,10 @@ footer {
   .best-forex-slider__item-body {
     padding: 60px 30px 20px;
     font-size: 16px; }
-    .best-forex-slider__item-body:before {
-      top: 20px; }
     .best-forex-slider__item-body h3 {
       font-size: 20px; }
+  .best-forex-slider__item-body-icon {
+    top: 20px; }
   .best-forex-slider__item-img {
     max-width: 160px; } }
 
@@ -12358,10 +12358,6 @@ footer {
     max-width: 100px; }
   .best-forex-slider__item-body {
     padding: 40px 20px 20px; }
-    .best-forex-slider__item-body:before {
-      top: 10px;
-      width: 20px;
-      height: 20px; }
     .best-forex-slider__item-body .box-text {
       font-size: 14px;
       min-height: auto;
@@ -12369,7 +12365,11 @@ footer {
       .best-forex-slider__item-body .box-text:before {
         width: 100%; }
     .best-forex-slider__item-body h3 {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .best-forex-slider__item-body-icon {
+    top: 10px;
+    width: 20px;
+    height: 20px; } }
 
 @media only screen and (max-width: 420px) {
   .download-info:before {
