@@ -129,6 +129,16 @@ $('.best-forex-slider').slick({
     ]
 });
 
+$('.best-forex-hiw__slider').slick({
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    appendArrows: '.best-forex-hiw__slider-nav',
+    appendDots: '.best-forex-hiw__slider-nav',
+    dots: true,
+    fade: true,
+});
+
 $('.main-history__content').click(function () {
     $(this).toggleClass('open').find('.main-history__info').slideToggle();
 });
@@ -192,8 +202,8 @@ $(".js-tab-trigger").on("click", function () {
 
 
 $('.label-radio-variable').on('click', function () {
-   $('.label-radio-variable').removeClass('active');
-   $(this).addClass('active');
+    $('.label-radio-variable').removeClass('active');
+    $(this).addClass('active');
 });
 
 // function get_name_browser(){
@@ -262,7 +272,7 @@ if (navigator.userAgent.search(/Firefox/) > 0) {
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = { x: width / 2, y: height / 2 };
+        target = {x: width / 2, y: height / 2};
 
         largeHeader = document.getElementById("large-header");
         largeHeader.style.height = height + "px";
@@ -278,7 +288,7 @@ if (navigator.userAgent.search(/Firefox/) > 0) {
             for (var y = 0; y < height; y = y + height / 20) {
                 var px = x + (Math.random() * width) / 20;
                 var py = y + (Math.random() * height) / 20;
-                var p = { x: px, originX: px, y: py, originY: py };
+                var p = {x: px, originX: px, y: py, originY: py};
                 points.push(p);
             }
         }
@@ -448,7 +458,6 @@ if (navigator.userAgent.search(/Firefox/) > 0) {
 })();
 
 // canvas and
-
 
 
 // animate number
