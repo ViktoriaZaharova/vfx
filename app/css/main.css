@@ -9597,6 +9597,25 @@ footer {
     margin: 0 0 5px; }
   .article .box-text {
     max-width: 575px; }
+  .article .list-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .article .list-social li {
+      margin: 0 0 20px; }
+      .article .list-social li:last-child {
+        margin: 0; }
+      .article .list-social li a {
+        width: 40px;
+        height: 40px;
+        fill: #909090; }
 
 .font-500 {
   font-weight: 500; }
@@ -9618,26 +9637,6 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 60px 0 0; }
-
-.list-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .list-social li {
-    margin: 0 0 20px; }
-    .list-social li:last-child {
-      margin: 0; }
-    .list-social li a {
-      width: 40px;
-      height: 40px;
-      fill: #909090; }
 
 .article-box-col {
   width: calc(100% - 40px);
@@ -11171,7 +11170,7 @@ footer {
     margin: 20px auto 0; }
   .main-cripto-content h1 {
     font-size: 30px; }
-  .list-social {
+  .article .list-social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -11179,7 +11178,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .list-social li {
+    .article .list-social li {
       margin: 0 20px 0 0; }
   .article-box {
     margin: 30px 0 0; }
