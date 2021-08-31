@@ -10497,7 +10497,9 @@ footer {
     max-width: none;
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content; } }
+    width: fit-content; }
+  .text-overlay {
+    margin: 0 0 -50px -13px; } }
 
 @media only screen and (max-width: 1420px) {
   .table-license td, .table-license th {
