@@ -360,7 +360,22 @@
   .restrictions-box__icon
     max-width: 70px
 
+  .main-hiw-about .main-image
+    width: 500px
+    margin: -100px 0 0
 
+  .main-hiw-about
+    padding: 80px 0
+
+  .signal-algorithms-hiw__img, .signal-algorithms-hiw__content
+    max-width: 600px
+
+  .signal-algorithms-hiw-box h4
+    margin: 0 0 13px
+    font-size: 22px
+
+  .signal-algorithms-hiw-box:nth-child(odd):before
+    height: 170px
 
 
 @media only screen and (max-width: 1250px)
@@ -391,6 +406,9 @@
     width: 490px
     height: 525px
     margin: 0 -80px 0 0
+
+  .signal-appear-box
+    padding: 0 50px 20px
 
 @media only screen and (max-width: 1199px)
   .header-menu li a, header .support-box
@@ -886,6 +904,61 @@
   .best-forex-slider__item-img
     max-width: 200px
 
+  .best-forex-hiw__img
+    width: 400px
+    height: 400px
+
+  .best-forex-hiw
+    padding: 70px 0 130px
+
+  .best-forex-hiw__content
+    font-size: 16px
+
+  .main-download-new-design .main-image
+    width: 600px
+
+  .main-hiw-about .main-text .box-text
+    margin: 40px 0 0
+
+  .main-hiw-about .main-text .text-overlay
+    left: -10px
+
+  .signal-structure-hiw .new-design-title
+    padding: 0
+
+  .signal-structure-hiw .signal-hiw-img
+    margin: 30px auto
+
+  .indicators-hiw .indicators-box__img
+    max-width: 500px
+
+  .indicators-hiw .indicators-box__content
+    padding: 0 30px 0 0
+    width: calc(100% - 500px)
+
+  .indicators-hiw .indicators-box__top
+    margin: 0 0 30px
+
+  .signal-appear-box__img
+    max-width: 500px
+
+  .signal-appear-wrapper
+    padding: 0
+    &:before
+      display: none
+
+  .signal-appear-box
+    padding: 0 0 20px
+
+  .signal-algorithms-hiw__img, .signal-algorithms-hiw__content
+    max-width: 440px
+
+  .signal-algorithms-hiw-box__text
+    h3
+      font-size: 22px
+    .box-text
+      font-size: 16px
+
 @media only screen and (max-width: 1100px)
   .statistical-data__wrapper
     justify-content: space-around
@@ -1021,7 +1094,18 @@
       width: 1020px
       height: 740px
 
+  .statistical-hiw
+    padding: 40px 80px
 
+  .power-hiw
+    padding: 50px 0 40px
+    .description
+      margin: 40px 0 30px
+
+  .indicators-hiw .indicators-slider
+    padding: 0
+    &:before, &:after
+      display: none
 
 @media only screen and (max-width: 991px)
   .header-item
@@ -1911,7 +1995,46 @@
     font-size: 26px
 
 
+  .main-hiw-about .main-text .box-text
+    max-width: none
 
+  .signal-structure-hiw
+    .signal-structure__box-description
+      max-width: none
+      width: 100%
+
+  .statistical-hiw .statistical-data__box
+    padding: 0 10px
+
+  .signal-algorithms-hiw-box__text
+    max-width: none
+    width: 100%
+
+  .signal-algorithms-hiw-box
+    padding: 0
+    margin: 0 0 40px
+    &:before, &:after
+      display: none
+
+  .signal-algorithms-hiw__img, .signal-algorithms-hiw__content
+    margin: 30px 0 0
+    max-width: none
+
+  .signal-algorithms-hiw-box:nth-child(3) .signal-algorithms-hiw-box__text
+    max-width: none
+    order: -1
+
+  .signal-algorithms-hiw-box:last-child
+    margin: 0 0 40px
+
+  .signal-algorithms-hiw-box h3
+    font-size: 26px
+
+  .signal-algorithms-hiw-box h4
+    font-size: 20px
+
+  .signal-algorithms-hiw
+    padding: 60px 0 80px
 
 @media only screen and (max-width: 940px)
   .table-license td, .table-license th
@@ -1948,6 +2071,34 @@
 
   .table-license .icon-check
     width: 23px
+
+  .best-forex-hiw-wrap:before
+    display: none
+
+  .best-forex-hiw__img
+    width: 280px
+    height: 280px
+    margin: 0 auto 30px
+    padding: 40px
+
+  .best-forex-hiw-wrap
+    padding: 0
+
+  .signal-appear-box__text
+    max-width: none
+    margin: 0 0 30px
+
+  .signal-appear h2
+    margin: 0 0 40px
+
+  .signal-appear-box h3
+    font-size: 24px
+
+  .signal-appear-box
+    margin: 0 0 50px
+
+  .signal-appear-box__img
+    margin: 0 auto
 
 
 @media only screen and (max-width: 860px)
@@ -2141,6 +2292,26 @@
     .box-text
       &:before
         width: 300px
+
+  .indicators-hiw .indicators-box__content
+    width: 100%
+    padding: 0
+    margin: 30px auto 0
+    order: 1
+
+  .indicators-hiw .indicators-box__img
+    max-width: 400px
+    margin: 0 auto
+    &:before
+      display: none
+
+  .indicators-hiw
+    .slick-slider
+      .slick-slide
+        padding: 0
+
+  .indicators-hiw .indicators-box__title
+    font-size: 24px
 
 @media only screen and (max-width: 767px)
   .btn-burger
@@ -2984,6 +3155,17 @@
     h1
       font-size: 30px
 
+  .signal-structure-hiw .signal-structure__box-description
+    padding: 0
+    margin: 0
+    &:before
+      display: none
+
+  .statistical-hiw
+    padding: 0 60px
+    margin: 30px auto 0
+    .statistical-data__wrapper
+      flex-wrap: wrap
 
 @media only screen and (max-width: 700px)
   .table-history
@@ -3014,6 +3196,8 @@
 
   .how-use-new-design
     padding: 60px 0 0
+
+
 
 @media only screen and (max-width: 575px)
   .main
@@ -3553,7 +3737,7 @@
       width: 750px
 
   .text-overlay
-    font-size: 30px
+    font-size: 26px
     line-height: normal
     margin: 0 0 -15px
 
@@ -3619,6 +3803,17 @@
 
   .blog
     padding: 60px 0 90px
+
+  .signal-structure-hiw .signal-structure__box-description
+    margin: 0
+
+  .statistical-hiw
+    padding: 0
+    &:before, &:after
+      display: none
+
+  .main-hiw-about .main-text
+    padding: 15px 0 0
 
 @media only screen and (max-width: 480px)
   .account-footer
