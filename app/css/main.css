@@ -9639,6 +9639,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 60px 0 0; }
+  .article-box ul {
+    list-style: disc;
+    padding: 0 0 0 20px; }
+  .article-box ol {
+    padding: 0 0 0 20px;
+    list-style: decimal; }
 
 .article-box-col {
   width: calc(100% - 40px);
@@ -9658,7 +9664,9 @@ footer {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .article-box-col .wp-block-image img {
       width: 100%; }
   .article-box-col h1 {
@@ -10293,6 +10301,18 @@ footer {
             order: 1;
     background: #00FCFC url("../img/next.svg") no-repeat center;
       background-size: 22px; }
+
+.has-text-align-center {
+  text-align: center; }
+
+.has-text-align-right {
+  text-align: right; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1750px) {

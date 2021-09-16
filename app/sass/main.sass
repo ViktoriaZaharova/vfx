@@ -9060,7 +9060,12 @@ footer
   align-items: flex-start
   flex-wrap: wrap
   margin: 60px 0 0
-
+  ul
+    list-style: disc
+    padding: 0 0 0 20px
+  ol
+    padding: 0 0 0 20px
+    list-style: decimal
 
 
 
@@ -9077,6 +9082,7 @@ footer
     display: flex
     align-items: center
     justify-content: center
+    flex-wrap: wrap
     img
       width: 100%
   h1
@@ -9651,7 +9657,17 @@ footer
     background: #00FCFC url("../img/next.svg") no-repeat center
       size: 22px
 
+.has-text-align-center
+  text-align: center
 
+.has-text-align-right
+  text-align: right
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
 
 @import "media"
 // Всегда в конце
